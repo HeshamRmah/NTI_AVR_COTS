@@ -30,12 +30,12 @@ ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 IMAGE_TYPE=debug
 OUTPUT_SUFFIX=elf
 DEBUGGABLE_SUFFIX=elf
-FINAL_IMAGE=${DISTDIR}/COST.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 else
 IMAGE_TYPE=production
 OUTPUT_SUFFIX=hex
 DEBUGGABLE_SUFFIX=elf
-FINAL_IMAGE=${DISTDIR}/COST.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 endif
 
 ifeq ($(COMPARE_BUILD), true)
@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=HAL_Layer/LED/hal_led.c MCAL_Layer/DIO/mcal_dio.c application.c HAL_Layer/button/hal_button.c HAL_Layer/7_Segment/hal_seven_segment.c
+SOURCEFILES_QUOTED_IF_SPACED=HAL_Layer/7_Segment/hal_seven_segment.c HAL_Layer/button/hal_button.c HAL_Layer/keypad/hal_keypad.c HAL_Layer/LCD/hal_lcd.c HAL_Layer/LED/hal_led.c MCAL_Layer/DIO/mcal_dio.c application.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/HAL_Layer/LED/hal_led.o ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o ${OBJECTDIR}/application.o ${OBJECTDIR}/HAL_Layer/button/hal_button.o ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d ${OBJECTDIR}/application.o.d ${OBJECTDIR}/HAL_Layer/button/hal_button.o.d ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o ${OBJECTDIR}/HAL_Layer/button/hal_button.o ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o ${OBJECTDIR}/HAL_Layer/LED/hal_led.o ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o ${OBJECTDIR}/application.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d ${OBJECTDIR}/HAL_Layer/button/hal_button.o.d ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o.d ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o.d ${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d ${OBJECTDIR}/application.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/HAL_Layer/LED/hal_led.o ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o ${OBJECTDIR}/application.o ${OBJECTDIR}/HAL_Layer/button/hal_button.o ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o
+OBJECTFILES=${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o ${OBJECTDIR}/HAL_Layer/button/hal_button.o ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o ${OBJECTDIR}/HAL_Layer/LED/hal_led.o ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o ${OBJECTDIR}/application.o
 
 # Source Files
-SOURCEFILES=HAL_Layer/LED/hal_led.c MCAL_Layer/DIO/mcal_dio.c application.c HAL_Layer/button/hal_button.c HAL_Layer/7_Segment/hal_seven_segment.c
+SOURCEFILES=HAL_Layer/7_Segment/hal_seven_segment.c HAL_Layer/button/hal_button.c HAL_Layer/keypad/hal_keypad.c HAL_Layer/LCD/hal_lcd.c HAL_Layer/LED/hal_led.c MCAL_Layer/DIO/mcal_dio.c application.c
 
 
 
@@ -82,72 +82,96 @@ FIXDEPS=fixDeps
 ifneq ($(INFORMATION_MESSAGE), )
 	@echo $(INFORMATION_MESSAGE)
 endif
-	${MAKE}  -f nbproject/Makefile-default.mk ${DISTDIR}/COST.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+	${MAKE}  -f nbproject/Makefile-default.mk ${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
 MP_PROCESSOR_OPTION=ATmega32
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/HAL_Layer/LED/hal_led.o: HAL_Layer/LED/hal_led.c  .generated_files/flags/default/6a1018a51c75aefdcb24f88e311a81feae08033a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/HAL_Layer/LED" 
-	@${RM} ${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d 
-	@${RM} ${OBJECTDIR}/HAL_Layer/LED/hal_led.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d" -MT "${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d" -MT ${OBJECTDIR}/HAL_Layer/LED/hal_led.o -o ${OBJECTDIR}/HAL_Layer/LED/hal_led.o HAL_Layer/LED/hal_led.c 
-	
-${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o: MCAL_Layer/DIO/mcal_dio.c  .generated_files/flags/default/a5f0339975c5ec7adaf4c7b7978a436ff5cda704 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/MCAL_Layer/DIO" 
-	@${RM} ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d 
-	@${RM} ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d" -MT "${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d" -MT ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o -o ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o MCAL_Layer/DIO/mcal_dio.c 
-	
-${OBJECTDIR}/application.o: application.c  .generated_files/flags/default/aaeb730984e3eddf7edb8b72a4a34c79d7f1ddad .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/application.o.d 
-	@${RM} ${OBJECTDIR}/application.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/application.o.d" -MT "${OBJECTDIR}/application.o.d" -MT ${OBJECTDIR}/application.o -o ${OBJECTDIR}/application.o application.c 
-	
-${OBJECTDIR}/HAL_Layer/button/hal_button.o: HAL_Layer/button/hal_button.c  .generated_files/flags/default/cb9522acf088be6e5e146c8a2b10722ca339d931 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/HAL_Layer/button" 
-	@${RM} ${OBJECTDIR}/HAL_Layer/button/hal_button.o.d 
-	@${RM} ${OBJECTDIR}/HAL_Layer/button/hal_button.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/button/hal_button.o.d" -MT "${OBJECTDIR}/HAL_Layer/button/hal_button.o.d" -MT ${OBJECTDIR}/HAL_Layer/button/hal_button.o -o ${OBJECTDIR}/HAL_Layer/button/hal_button.o HAL_Layer/button/hal_button.c 
-	
-${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o: HAL_Layer/7_Segment/hal_seven_segment.c  .generated_files/flags/default/5417eb94d82a095430b1ee4c1fce0cd7296bf3a2 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o: HAL_Layer/7_Segment/hal_seven_segment.c  .generated_files/flags/default/3683835c64a6d6ebd720922a6016fe2825afd490 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/HAL_Layer/7_Segment" 
 	@${RM} ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d 
 	@${RM} ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d" -MT "${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d" -MT ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o -o ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o HAL_Layer/7_Segment/hal_seven_segment.c 
 	
-else
-${OBJECTDIR}/HAL_Layer/LED/hal_led.o: HAL_Layer/LED/hal_led.c  .generated_files/flags/default/bff3688105c36acf77824a2bb84a8006d54798d7 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/HAL_Layer/button/hal_button.o: HAL_Layer/button/hal_button.c  .generated_files/flags/default/46ef54f53079f3669b7f4be5d6fb6d7b76783c04 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/HAL_Layer/button" 
+	@${RM} ${OBJECTDIR}/HAL_Layer/button/hal_button.o.d 
+	@${RM} ${OBJECTDIR}/HAL_Layer/button/hal_button.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/button/hal_button.o.d" -MT "${OBJECTDIR}/HAL_Layer/button/hal_button.o.d" -MT ${OBJECTDIR}/HAL_Layer/button/hal_button.o -o ${OBJECTDIR}/HAL_Layer/button/hal_button.o HAL_Layer/button/hal_button.c 
+	
+${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o: HAL_Layer/keypad/hal_keypad.c  .generated_files/flags/default/a50df21a9ed3ab2120a861a55f6276c214444a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/HAL_Layer/keypad" 
+	@${RM} ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o.d 
+	@${RM} ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o.d" -MT "${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o.d" -MT ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o -o ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o HAL_Layer/keypad/hal_keypad.c 
+	
+${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o: HAL_Layer/LCD/hal_lcd.c  .generated_files/flags/default/fa2fba1fe4c89653f36f2d481873207b14b1c699 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/HAL_Layer/LCD" 
+	@${RM} ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o.d 
+	@${RM} ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o.d" -MT "${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o.d" -MT ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o -o ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o HAL_Layer/LCD/hal_lcd.c 
+	
+${OBJECTDIR}/HAL_Layer/LED/hal_led.o: HAL_Layer/LED/hal_led.c  .generated_files/flags/default/3390988fbf0534e38ec1fd25f1260f550d823fee .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/HAL_Layer/LED" 
 	@${RM} ${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d 
 	@${RM} ${OBJECTDIR}/HAL_Layer/LED/hal_led.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d" -MT "${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d" -MT ${OBJECTDIR}/HAL_Layer/LED/hal_led.o -o ${OBJECTDIR}/HAL_Layer/LED/hal_led.o HAL_Layer/LED/hal_led.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d" -MT "${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d" -MT ${OBJECTDIR}/HAL_Layer/LED/hal_led.o -o ${OBJECTDIR}/HAL_Layer/LED/hal_led.o HAL_Layer/LED/hal_led.c 
 	
-${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o: MCAL_Layer/DIO/mcal_dio.c  .generated_files/flags/default/9e592d9331773c08a7fc3fe9c3d896f231f720a0 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o: MCAL_Layer/DIO/mcal_dio.c  .generated_files/flags/default/38ddbcbf6123315db843c54991be54a921a24f8a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/MCAL_Layer/DIO" 
 	@${RM} ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d 
 	@${RM} ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d" -MT "${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d" -MT ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o -o ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o MCAL_Layer/DIO/mcal_dio.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d" -MT "${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d" -MT ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o -o ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o MCAL_Layer/DIO/mcal_dio.c 
 	
-${OBJECTDIR}/application.o: application.c  .generated_files/flags/default/3f01d4b6c3f5fb2eda4d793c404040a135a23d46 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/application.o: application.c  .generated_files/flags/default/e70c1c726d612c757eb61d9c5f6a068bb608c40 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/application.o.d 
 	@${RM} ${OBJECTDIR}/application.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/application.o.d" -MT "${OBJECTDIR}/application.o.d" -MT ${OBJECTDIR}/application.o -o ${OBJECTDIR}/application.o application.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/application.o.d" -MT "${OBJECTDIR}/application.o.d" -MT ${OBJECTDIR}/application.o -o ${OBJECTDIR}/application.o application.c 
 	
-${OBJECTDIR}/HAL_Layer/button/hal_button.o: HAL_Layer/button/hal_button.c  .generated_files/flags/default/e3455a6a29c7d1a7b30b0663edd0b34acab52234 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+else
+${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o: HAL_Layer/7_Segment/hal_seven_segment.c  .generated_files/flags/default/10d6ef2414687b7efbf19aeb6b592682ead76022 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/HAL_Layer/7_Segment" 
+	@${RM} ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d 
+	@${RM} ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d" -MT "${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d" -MT ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o -o ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o HAL_Layer/7_Segment/hal_seven_segment.c 
+	
+${OBJECTDIR}/HAL_Layer/button/hal_button.o: HAL_Layer/button/hal_button.c  .generated_files/flags/default/f9cff961f91f1f443794ef32b770d9665f05cf32 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/HAL_Layer/button" 
 	@${RM} ${OBJECTDIR}/HAL_Layer/button/hal_button.o.d 
 	@${RM} ${OBJECTDIR}/HAL_Layer/button/hal_button.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/button/hal_button.o.d" -MT "${OBJECTDIR}/HAL_Layer/button/hal_button.o.d" -MT ${OBJECTDIR}/HAL_Layer/button/hal_button.o -o ${OBJECTDIR}/HAL_Layer/button/hal_button.o HAL_Layer/button/hal_button.c 
 	
-${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o: HAL_Layer/7_Segment/hal_seven_segment.c  .generated_files/flags/default/6827300fd92cad7aad0c2deecdda4613df80ef3b .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/HAL_Layer/7_Segment" 
-	@${RM} ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d 
-	@${RM} ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d" -MT "${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d" -MT ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o -o ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o HAL_Layer/7_Segment/hal_seven_segment.c 
+${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o: HAL_Layer/keypad/hal_keypad.c  .generated_files/flags/default/d514f8de42309b023649553ce2b0b427caf2310f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/HAL_Layer/keypad" 
+	@${RM} ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o.d 
+	@${RM} ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o.d" -MT "${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o.d" -MT ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o -o ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o HAL_Layer/keypad/hal_keypad.c 
+	
+${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o: HAL_Layer/LCD/hal_lcd.c  .generated_files/flags/default/b5bf867e5aa577b6b5d128196295cf2193dd8e19 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/HAL_Layer/LCD" 
+	@${RM} ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o.d 
+	@${RM} ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o.d" -MT "${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o.d" -MT ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o -o ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o HAL_Layer/LCD/hal_lcd.c 
+	
+${OBJECTDIR}/HAL_Layer/LED/hal_led.o: HAL_Layer/LED/hal_led.c  .generated_files/flags/default/479ce8788829f141289e1b76f09945f6842bdd36 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/HAL_Layer/LED" 
+	@${RM} ${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d 
+	@${RM} ${OBJECTDIR}/HAL_Layer/LED/hal_led.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d" -MT "${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d" -MT ${OBJECTDIR}/HAL_Layer/LED/hal_led.o -o ${OBJECTDIR}/HAL_Layer/LED/hal_led.o HAL_Layer/LED/hal_led.c 
+	
+${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o: MCAL_Layer/DIO/mcal_dio.c  .generated_files/flags/default/977b1e8fb7030ce2c0577e8ae7a542a509257f7 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/MCAL_Layer/DIO" 
+	@${RM} ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d 
+	@${RM} ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d" -MT "${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d" -MT ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o -o ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o MCAL_Layer/DIO/mcal_dio.c 
+	
+${OBJECTDIR}/application.o: application.c  .generated_files/flags/default/e291df2ff9b69363845abc43805eec9b44854efc .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/application.o.d 
+	@${RM} ${OBJECTDIR}/application.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/application.o.d" -MT "${OBJECTDIR}/application.o.d" -MT ${OBJECTDIR}/application.o -o ${OBJECTDIR}/application.o application.c 
 	
 endif
 
@@ -166,16 +190,16 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: link
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${DISTDIR}/COST.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
+${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} ${DISTDIR} 
-	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=${DISTDIR}/COST.${IMAGE_TYPE}.map  -D__DEBUG=1  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="${DFP_DIR}/xc8"   -gdwarf-2 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     $(COMPARISON_BUILD) -Wl,--memorysummary,${DISTDIR}/memoryfile.xml -o ${DISTDIR}/COST.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  -o ${DISTDIR}/COST.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -Wl,--start-group  -Wl,-lm -Wl,--end-group  -Wl,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1
-	@${RM} ${DISTDIR}/COST.${IMAGE_TYPE}.hex 
+	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.map  -D__DEBUG=1  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="${DFP_DIR}/xc8"   -gdwarf-2 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     $(COMPARISON_BUILD) -Wl,--memorysummary,${DISTDIR}/memoryfile.xml -o ${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  -o ${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -Wl,--start-group  -Wl,-lm -Wl,--end-group  -Wl,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1
+	@${RM} ${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.hex 
 	
 else
-${DISTDIR}/COST.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
+${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} ${DISTDIR} 
-	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=${DISTDIR}/COST.${IMAGE_TYPE}.map  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     $(COMPARISON_BUILD) -Wl,--memorysummary,${DISTDIR}/memoryfile.xml -o ${DISTDIR}/COST.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  -o ${DISTDIR}/COST.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -Wl,--start-group  -Wl,-lm -Wl,--end-group 
-	${MP_CC_DIR}\\avr-objcopy -O ihex "${DISTDIR}/COST.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}" "${DISTDIR}/COST.${IMAGE_TYPE}.hex"
+	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.map  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     $(COMPARISON_BUILD) -Wl,--memorysummary,${DISTDIR}/memoryfile.xml -o ${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  -o ${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -Wl,--start-group  -Wl,-lm -Wl,--end-group 
+	${MP_CC_DIR}\\avr-objcopy -O ihex "${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}" "${DISTDIR}/NTI_AVR_COST.${IMAGE_TYPE}.hex"
 endif
 
 

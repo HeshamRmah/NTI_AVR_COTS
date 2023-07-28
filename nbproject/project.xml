@@ -11,6 +11,7 @@
             <sourceRootList>
                 <sourceRootElem>HAL_Layer</sourceRootElem>
                 <sourceRootElem>MCAL_Layer</sourceRootElem>
+                <sourceRootElem>../COST/HAL_Layer/LCD</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

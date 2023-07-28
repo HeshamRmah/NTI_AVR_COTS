@@ -10,6 +10,7 @@
 
 /* Section : Includes */
 #include "../mcal_std_types.h"
+#include "../std_libraries.h"
 
 /* Section: Macro Declarations */
 #define BIT_MASK  (uint8)1

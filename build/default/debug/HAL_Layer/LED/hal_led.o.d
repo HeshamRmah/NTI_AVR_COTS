@@ -7,6 +7,7 @@ build/default/debug/HAL_Layer/LED/hal_led.o.d \
  c:\program\ files\microchip\xc8\v2.41\avr\avr\include\features.h \
  c:\program\ files\microchip\xc8\v2.41\avr\avr\include\bits\alltypes.h \
  c:\program\ files\microchip\xc8\v2.41\avr\avr\include\stdlib.h \
+ c:\program\ files\microchip\xc8\v2.41\avr\avr\include\string.h \
  c:\program\ files\microchip\xc8\v2.41\avr\avr\include\time.h \
  c:\program\ files\microchip\xc8\v2.41\avr\avr\include\sys\time.h \
  c:\program\ files\microchip\xc8\v2.41\avr\avr\include\util\delay.h \
@@ -25,7 +26,8 @@ build/default/debug/HAL_Layer/LED/hal_led.o.d \
  c:\program\ files\microchip\xc8\v2.41\avr\avr\include\avr\portpins.h \
  c:\program\ files\microchip\xc8\v2.41\avr\avr\include\avr\common.h \
  c:\program\ files\microchip\xc8\v2.41\avr\avr\include\avr\fuse.h \
- c:\program\ files\microchip\xc8\v2.41\avr\avr\include\avr\lock.h
+ c:\program\ files\microchip\xc8\v2.41\avr\avr\include\avr\lock.h \
+ HAL_Layer/LED/../../MCAL_Layer/DIO/../std_libraries.h
 
 HAL_Layer/LED/hal_led.h:
 
@@ -42,6 +44,8 @@ c:\program\ files\microchip\xc8\v2.41\avr\avr\include\features.h:
 c:\program\ files\microchip\xc8\v2.41\avr\avr\include\bits\alltypes.h:
 
 c:\program\ files\microchip\xc8\v2.41\avr\avr\include\stdlib.h:
+
+c:\program\ files\microchip\xc8\v2.41\avr\avr\include\string.h:
 
 c:\program\ files\microchip\xc8\v2.41\avr\avr\include\time.h:
 
@@ -80,3 +84,5 @@ c:\program\ files\microchip\xc8\v2.41\avr\avr\include\avr\common.h:
 c:\program\ files\microchip\xc8\v2.41\avr\avr\include\avr\fuse.h:
 
 c:\program\ files\microchip\xc8\v2.41\avr\avr\include\avr\lock.h:
+
+HAL_Layer/LED/../../MCAL_Layer/DIO/../std_libraries.h:

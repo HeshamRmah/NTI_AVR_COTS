@@ -3,17 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Hesham/Desktop/COST/MCAL_Layer/DIO/mcal_dio.c</file>
-            <file>file:/C:/Users/Hesham/Desktop/COST/HAL_Layer/button/hal_button.h</file>
-            <file>file:/C:/Users/Hesham/Desktop/COST/application.c</file>
-            <file>file:/C:/Users/Hesham/Desktop/COST/HAL_Layer/LED/hal_led.h</file>
-            <file>file:/C:/Users/Hesham/Desktop/COST/application.h</file>
-            <file>file:/C:/Users/Hesham/Desktop/COST/HAL_Layer/button/hal_button.c</file>
-            <file>file:/C:/Users/Hesham/Desktop/COST/HAL_Layer/LED/hal_led.c</file>
-            <file>file:/C:/Users/Hesham/Desktop/COST/HAL_Layer/7_Segment/hal_seven_segment.h</file>
-            <file>file:/C:/Users/Hesham/Desktop/COST/HAL_Layer/dio_reg_cfg.h</file>
-            <file>file:/C:/Users/Hesham/Desktop/COST/HAL_Layer/7_Segment/hal_seven_segment.c</file>
-            <file>file:/C:/Users/Hesham/Desktop/COST/MCAL_Layer/DIO/mcal_dio.h</file>
+            <file>file:/C:/Users/Hesham/Desktop/NTI_AVR_COST/application.h</file>
+            <file>file:/C:/Users/Hesham/Desktop/NTI_AVR_COST/HAL_Layer/LCD/hal_lcd.c</file>
+            <file>file:/C:/Users/Hesham/Desktop/NTI_AVR_COST/HAL_Layer/dio_reg_cfg.h</file>
+            <file>file:/C:/Users/Hesham/Desktop/NTI_AVR_COST/MCAL_Layer/DIO/mcal_dio.h</file>
+            <file>file:/C:/Users/Hesham/Desktop/NTI_AVR_COST/HAL_Layer/keypad/hal_keypad.h</file>
+            <file>file:/C:/Users/Hesham/Desktop/NTI_AVR_COST/HAL_Layer/keypad/hal_keypad.c</file>
+            <file>file:/C:/Users/Hesham/Desktop/NTI_AVR_COST/application.c</file>
+            <file>file:/C:/Users/Hesham/Desktop/NTI_AVR_COST/HAL_Layer/LCD/hal_lcd.h</file>
+            <file>file:/C:/Users/Hesham/Desktop/NTI_AVR_COST/MCAL_Layer/DIO/mcal_dio.c</file>
         </group>
     </open-files>
 </project-private>
