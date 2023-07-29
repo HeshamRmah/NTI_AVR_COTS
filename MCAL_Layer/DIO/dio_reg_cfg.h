@@ -21,6 +21,7 @@ typedef struct {
         unsigned PORTA7                  :1;
     }PORTAbits_t;
 
+    
 #define PORTB      *((volatile uint8 *) 0x38)
 
 typedef struct {

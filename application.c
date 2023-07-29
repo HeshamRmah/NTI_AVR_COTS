@@ -23,21 +23,30 @@ int main() {
     //Std_ReturnType ret = E_OK;
     //uint8 get_keypad = 0, old_get_keypad = 0;
     //uint8 str[]= "513452";
-    //uint8 str2[11];
-    //uint32 value = 0;
+    uint8 str2[11];
+    uint32 value = 0;
+    uint16 adc_value = 0;
     
     application_initialize();
     hal_led_turn_on(&led1);
     
     //lcd_print_story();
-    calculator_program();
+    //calculator_program();
     
     //convert_string_to_uint32(str, &value);
     //convert_uint32_to_string(value, str2);
     //lcd_4bit_send_string_pos(&lcd, 1, 1, str2);
     
+    ADC_voidEnable();
+    
     while(1){
         
+        ADC_voidStartConversion();
+        adc_value = ADC_u16ReadADCInMV();
+        value = adc_value;
+        convert_uint32_to_string(value, str2);
+        lcd_4bit_send_string_pos(&lcd, 2, 1, str2);
+        //str2 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         
         
         
@@ -64,6 +73,9 @@ Std_ReturnType application_initialize(void){
     ret |= lcd_4bit_intialize(&lcd);
     ret |= hal_seven_segement_intialize(&segment);
     ret |= keypad_initialize(&keypad);
+    //ret = Interrupt_INTx_Init(&int0_obj);
+    dio_pin_intialize(&adc1);
+    ADC_voidInit();
     
     return ret;
 }

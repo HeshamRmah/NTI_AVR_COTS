@@ -22,9 +22,16 @@
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="MCAL_Layer" displayName="MCAL_Layer" projectFiles="true">
+        <logicalFolder name="ADC" displayName="ADC" projectFiles="true">
+          <itemPath>MCAL_Layer/ADC/ADC.h</itemPath>
+          <itemPath>MCAL_Layer/ADC/ADC_config.h</itemPath>
+          <itemPath>MCAL_Layer/ADC/ADC_priv.h</itemPath>
+        </logicalFolder>
         <logicalFolder name="DIO" displayName="DIO" projectFiles="true">
           <itemPath>MCAL_Layer/DIO/mcal_dio.h</itemPath>
-          <itemPath>HAL_Layer/dio_reg_cfg.h</itemPath>
+          <itemPath>MCAL_Layer/DIO/dio_reg_cfg.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Interrupt" displayName="Interrupt" projectFiles="true">
         </logicalFolder>
         <itemPath>MCAL_Layer/std_libraries.h</itemPath>
         <itemPath>MCAL_Layer/compiler.h</itemPath>
@@ -57,8 +64,13 @@
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="MCAL_Layer" displayName="MCAL_Layer" projectFiles="true">
+        <logicalFolder name="ADC" displayName="ADC" projectFiles="true">
+          <itemPath>MCAL_Layer/ADC/ADC.c</itemPath>
+        </logicalFolder>
         <logicalFolder name="DIO" displayName="DIO" projectFiles="true">
           <itemPath>MCAL_Layer/DIO/mcal_dio.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Interrupt" displayName="Interrupt" projectFiles="true">
         </logicalFolder>
       </logicalFolder>
       <itemPath>application.c</itemPath>

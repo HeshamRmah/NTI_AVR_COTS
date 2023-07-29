@@ -15,6 +15,8 @@
 #include "HAL_Layer/7_Segment/hal_seven_segment.h"
 #include "HAL_Layer/LCD/hal_lcd.h"
 #include "HAL_Layer/keypad/hal_keypad.h"
+//#include "MCAL_Layer/Interrupt/mcal_external_interrupt.h"
+#include "MCAL_Layer/ADC/ADC.h"
 
 
 Std_ReturnType application_initialize(void);
@@ -129,6 +131,31 @@ keypad_t keypad = {
     
 };
 
+pin_config_t adc1 = {
+    .port = PORTA_INDEX,
+    .pin = DIO_PIN1, 
+    .direction = DIO_DIRECTION_INPUT,
+    .logic = DIO_LOW,
+    .pullup = PULL_UP_ENABLE
+};
+
+
+/*
+void Int1_APP_ISR(void){
+    hal_led_turn_toggle(&led1);
+}
+
+interrupt_INTx_t int1_obj = {
+  .EXT_InterruptHandler =  Int1_APP_ISR,
+  .source = INTERRUPT_EXTERNAL_INT1,
+  .pin_obj.port = PORTD_INDEX,
+  .pin_obj.pin = DIO_PIN3,
+  .pin_obj.direction = DIO_DIRECTION_INPUT,
+  .pin_obj.pullup = PULL_UP_ENABLE,
+  .pin_obj.logic = DIO_LOW,
+  .mode = INT1_FALLING_EDGE,
+};
+*/
 
 #endif	/* APPLICATION_H */
 

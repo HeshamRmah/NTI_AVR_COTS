@@ -56,13 +56,21 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/production/HAL_Layer/keypad/hal_keypad.o
  .data          0x0000000000000000        0x0 build/default/production/HAL_Layer/keypad/hal_keypad.o
  .bss           0x0000000000000000        0x0 build/default/production/HAL_Layer/keypad/hal_keypad.o
+ .text.keypad_get_value
+                0x0000000000000000      0x178 build/default/production/HAL_Layer/keypad/hal_keypad.o
+ .progmemx.data.btn_values
+                0x0000000000000000       0x10 build/default/production/HAL_Layer/keypad/hal_keypad.o
  .text          0x0000000000000000        0x0 build/default/production/HAL_Layer/LCD/hal_lcd.o
  .data          0x0000000000000000        0x0 build/default/production/HAL_Layer/LCD/hal_lcd.o
  .bss           0x0000000000000000        0x0 build/default/production/HAL_Layer/LCD/hal_lcd.o
  .text.lcd_4bit_send_char_data_pos
                 0x0000000000000000       0x30 build/default/production/HAL_Layer/LCD/hal_lcd.o
+ .text.lcd_4bit_send_string
+                0x0000000000000000       0x42 build/default/production/HAL_Layer/LCD/hal_lcd.o
  .text.lcd_4bit_send_custom_char
                 0x0000000000000000       0x96 build/default/production/HAL_Layer/LCD/hal_lcd.o
+ .text.convert_string_to_uint32
+                0x0000000000000000       0x90 build/default/production/HAL_Layer/LCD/hal_lcd.o
  .text          0x0000000000000000        0x0 build/default/production/HAL_Layer/LED/hal_led.o
  .data          0x0000000000000000        0x0 build/default/production/HAL_Layer/LED/hal_led.o
  .bss           0x0000000000000000        0x0 build/default/production/HAL_Layer/LED/hal_led.o
@@ -74,6 +82,8 @@ Discarded input sections
  .data          0x0000000000000000        0x0 build/default/production/MCAL_Layer/DIO/mcal_dio.o
  .bss           0x0000000000000000        0x0 build/default/production/MCAL_Layer/DIO/mcal_dio.o
  .text.dio_pin_get_direction_status
+                0x0000000000000000       0x5a build/default/production/MCAL_Layer/DIO/mcal_dio.o
+ .text.dio_pin_read_logic
                 0x0000000000000000       0x5a build/default/production/MCAL_Layer/DIO/mcal_dio.o
  .text.dio_pin_toggle_logic
                 0x0000000000000000       0x50 build/default/production/MCAL_Layer/DIO/mcal_dio.o
@@ -89,9 +99,23 @@ Discarded input sections
                 0x0000000000000000       0x2e build/default/production/MCAL_Layer/DIO/mcal_dio.o
  .text.dio_port_toggle_logic
                 0x0000000000000000       0x30 build/default/production/MCAL_Layer/DIO/mcal_dio.o
+ .data.pin_registers
+                0x0000000000000000        0x8 build/default/production/MCAL_Layer/DIO/mcal_dio.o
  .text          0x0000000000000000        0x0 build/default/production/application.o
  .data          0x0000000000000000        0x0 build/default/production/application.o
  .bss           0x0000000000000000        0x0 build/default/production/application.o
+ .text.get_operand
+                0x0000000000000000      0x11e build/default/production/application.o
+ .progmem.gcc_sw_table.get_operand
+                0x0000000000000000       0x7c build/default/production/application.o
+ .text.drop_array_uint8_ele
+                0x0000000000000000       0x22 build/default/production/application.o
+ .text.drop_array_uint32_ele
+                0x0000000000000000       0x4c build/default/production/application.o
+ .progmemx.data
+                0x0000000000000000       0x2c build/default/production/application.o
+ .text.calculator_program
+                0x0000000000000000      0x306 build/default/production/application.o
  .text.calculator_program_one_operation
                 0x0000000000000000      0x17c build/default/production/application.o
  .rodata        0x0000000000000000       0x58 build/default/production/application.o
@@ -101,9 +125,20 @@ Discarded input sections
                 0x0000000000000000      0x13c build/default/production/application.o
  .text.lcd_print_story
                 0x0000000000000000      0x190 build/default/production/application.o
+ .text          0x0000000000000000        0x0 build/default/production/MCAL_Layer/ADC/ADC.o
+ .data          0x0000000000000000        0x0 build/default/production/MCAL_Layer/ADC/ADC.o
+ .bss           0x0000000000000000        0x0 build/default/production/MCAL_Layer/ADC/ADC.o
+ .text.ADC_voidInterrputEnable
+                0x0000000000000000        0x4 build/default/production/MCAL_Layer/ADC/ADC.o
+ .text.ADC_voidAutoTrigger
+                0x0000000000000000        0x4 build/default/production/MCAL_Layer/ADC/ADC.o
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x20 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
  .stack.descriptors
                 0x0000000000000000       0x16 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
  .text.libgcc.div
@@ -140,8 +175,11 @@ Discarded input sections
                 0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
  .text.libgcc.div
                 0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc   0x0000000000000000        0xc c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
  .text.libgcc.prologue
                 0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
  .stack.descriptors
                 0x0000000000000000       0x1c c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
  .text.libgcc.builtins
@@ -169,6 +207,10 @@ Discarded input sections
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x16 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
  .stack.descriptors
                 0x0000000000000000       0x19 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
  .text.libgcc.div
@@ -189,8 +231,11 @@ Discarded input sections
                 0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
  .text.libgcc.div
                 0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .text.libgcc   0x0000000000000000       0x1a c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
  .text.libgcc.prologue
                 0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
  .stack.descriptors
                 0x0000000000000000       0x34 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
  .text.libgcc.builtins
@@ -202,6 +247,10 @@ Discarded input sections
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x1e c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
  .stack.descriptors
                 0x0000000000000000       0x19 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
  .text.libgcc.div
@@ -268,6 +317,7 @@ LOAD build/default/production/HAL_Layer/LCD/hal_lcd.o
 LOAD build/default/production/HAL_Layer/LED/hal_led.o
 LOAD build/default/production/MCAL_Layer/DIO/mcal_dio.o
 LOAD build/default/production/application.o
+LOAD build/default/production/MCAL_Layer/ADC/ADC.o
 START GROUP
 LOAD c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libm.a
 END GROUP
@@ -378,54 +428,52 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000      0x12c
+.text           0x0000000000000000       0xb0
  *(.vectors)
  .vectors       0x0000000000000000       0x54 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
                 0x0000000000000000                __vector_default
                 0x0000000000000000                __vectors
  *(.vectors)
  *(.progmem.gcc*)
- .progmem.gcc_sw_table.get_operand
-                0x0000000000000054       0x7c build/default/production/application.o
  *(.dinit)
- .dinit         0x00000000000000d0        0x7 data_init
-                0x00000000000000d8                . = ALIGN (0x2)
- *fill*         0x00000000000000d7        0x1 
-                0x00000000000000d8                __trampolines_start = .
+ .dinit         0x0000000000000054        0x7 data_init
+                0x000000000000005c                . = ALIGN (0x2)
+ *fill*         0x000000000000005b        0x1 
+                0x000000000000005c                __trampolines_start = .
  *(.trampolines)
- .trampolines   0x00000000000000d8        0x0 linker stubs
+ .trampolines   0x000000000000005c        0x0 linker stubs
  *(.trampolines*)
-                0x00000000000000d8                __trampolines_end = .
+                0x000000000000005c                __trampolines_end = .
  *libprintf_flt.a:*(.progmem.data)
  *libc.a:*(.progmem.data)
-                0x00000000000000d8                . = ALIGN (0x2)
+                0x000000000000005c                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x00000000000000d8                __ctors_start = .
+                0x000000000000005c                __ctors_start = .
  *(.ctors)
-                0x00000000000000d8                __ctors_end = .
-                0x00000000000000d8                __dtors_start = .
+                0x000000000000005c                __ctors_end = .
+                0x000000000000005c                __dtors_start = .
  *(.dtors)
-                0x00000000000000d8                __dtors_end = .
+                0x000000000000005c                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00000000000000d8        0x0 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
-                0x00000000000000d8                __init
+ .init0         0x000000000000005c        0x0 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+                0x000000000000005c                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00000000000000d8        0xc C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+ .init2         0x000000000000005c        0xc C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x00000000000000e4       0x3c c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
-                0x00000000000000e4                __do_copy_data
-                0x0000000000000112                __do_clear_bss
+ .init4         0x0000000000000068       0x3c c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+                0x0000000000000068                __do_copy_data
+                0x0000000000000096                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -436,12 +484,12 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x0000000000000120        0x8 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+ .init9         0x00000000000000a4        0x8 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
  *(.init9)
-                0x0000000000000128                . = ALIGN (0x2)
+                0x00000000000000ac                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000000128        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
-                0x0000000000000128                _exit
+ .fini9         0x00000000000000ac        0x0 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+                0x00000000000000ac                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -460,16 +508,15 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000000128        0x4 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .fini0         0x00000000000000ac        0x4 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
  *(.fini0)
-                0x000000000000012c                _etext = .
+                0x00000000000000b0                _etext = .
 
-.data           0x0000000000800060        0x0 load address 0x000000000000012c
+.data           0x0000000000800060        0x0 load address 0x00000000000000b0
                 [!provide]                        PROVIDE (__data_start, .)
  *(.gnu.linkonce.d*)
  *(.gnu.linkonce.r*)
                 0x0000000000800060                . = ALIGN (0x2)
- *fill*         0x0000000000800060        0x0 
                 0x0000000000800060                _edata = .
                 [!provide]                        PROVIDE (__data_end, .)
 
@@ -477,8 +524,8 @@ END GROUP
                 [!provide]                        PROVIDE (__bss_start, .)
  *(COMMON)
                 [!provide]                        PROVIDE (__bss_end, .)
-                0x000000000000012c                __data_load_start = LOADADDR (.data)
-                0x000000000000012c                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000000000000b0                __data_load_start = LOADADDR (.data)
+                0x00000000000000b0                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0000000000800060        0x0
                 [!provide]                        PROVIDE (__noinit_start, .)
@@ -535,30 +582,21 @@ END GROUP
  .comment       0x000000000000002f       0x30 build/default/production/HAL_Layer/LED/hal_led.o
  .comment       0x000000000000002f       0x30 build/default/production/MCAL_Layer/DIO/mcal_dio.o
  .comment       0x000000000000002f       0x30 build/default/production/application.o
+ .comment       0x000000000000002f       0x30 build/default/production/MCAL_Layer/ADC/ADC.o
  .comment       0x000000000000002f       0x2c c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
                                          0x2d (size before relaxing)
  .comment       0x000000000000005b       0x2d c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o)
 
 .stack.descriptors.hdr
-                0x0000000000000000       0x7e
+                0x0000000000000000       0x38
  .stack.descriptors.hdr
-                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
  .stack.descriptors.hdr
-                0x000000000000000e        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+                0x000000000000000e        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
  .stack.descriptors.hdr
-                0x000000000000001c        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+                0x000000000000001c        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o)
  .stack.descriptors.hdr
-                0x000000000000002a        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
- .stack.descriptors.hdr
-                0x0000000000000038        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
- .stack.descriptors.hdr
-                0x0000000000000046        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
- .stack.descriptors.hdr
-                0x0000000000000054        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
- .stack.descriptors.hdr
-                0x0000000000000062        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o)
- .stack.descriptors.hdr
-                0x0000000000000070        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+                0x000000000000002a        0xe c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
 
 .note.GNU-stack
                 0x0000000000000000        0x0
@@ -582,7 +620,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000      0x200
+.debug_aranges  0x0000000000000000      0x250
  *(.debug_aranges)
  .debug_aranges
                 0x0000000000000000       0x40 build/default/production/HAL_Layer/7_Segment/hal_seven_segment.o
@@ -596,11 +634,13 @@ END GROUP
                 0x0000000000000118       0x80 build/default/production/MCAL_Layer/DIO/mcal_dio.o
  .debug_aranges
                 0x0000000000000198       0x68 build/default/production/application.o
+ .debug_aranges
+                0x0000000000000200       0x50 build/default/production/MCAL_Layer/ADC/ADC.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x4ecf
+.debug_info     0x0000000000000000     0x539d
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x4e6 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
  .debug_info    0x00000000000004e6      0xdc8 build/default/production/HAL_Layer/7_Segment/hal_seven_segment.o
@@ -608,9 +648,10 @@ END GROUP
  .debug_info    0x0000000000001901      0xfe8 build/default/production/HAL_Layer/LCD/hal_lcd.o
  .debug_info    0x00000000000028e9      0x5e0 build/default/production/HAL_Layer/LED/hal_led.o
  .debug_info    0x0000000000002ec9      0x991 build/default/production/MCAL_Layer/DIO/mcal_dio.o
- .debug_info    0x000000000000385a     0x1675 build/default/production/application.o
+ .debug_info    0x000000000000385a     0x1786 build/default/production/application.o
+ .debug_info    0x0000000000004fe0      0x3bd build/default/production/MCAL_Layer/ADC/ADC.o
 
-.debug_abbrev   0x0000000000000000      0xeac
+.debug_abbrev   0x0000000000000000      0xf3c
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x4a3 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
  .debug_abbrev  0x00000000000004a3      0x17d build/default/production/HAL_Layer/7_Segment/hal_seven_segment.o
@@ -619,8 +660,9 @@ END GROUP
  .debug_abbrev  0x0000000000000a03      0x100 build/default/production/HAL_Layer/LED/hal_led.o
  .debug_abbrev  0x0000000000000b03      0x169 build/default/production/MCAL_Layer/DIO/mcal_dio.o
  .debug_abbrev  0x0000000000000c6c      0x240 build/default/production/application.o
+ .debug_abbrev  0x0000000000000eac       0x90 build/default/production/MCAL_Layer/ADC/ADC.o
 
-.debug_line     0x0000000000000000     0x178a
+.debug_line     0x0000000000000000     0x1941
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x119 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
  .debug_line    0x0000000000000119      0x380 build/default/production/HAL_Layer/7_Segment/hal_seven_segment.o
@@ -628,18 +670,20 @@ END GROUP
  .debug_line    0x00000000000006bc      0x4bc build/default/production/HAL_Layer/LCD/hal_lcd.o
  .debug_line    0x0000000000000b78      0x1ba build/default/production/HAL_Layer/LED/hal_led.o
  .debug_line    0x0000000000000d32      0x42a build/default/production/MCAL_Layer/DIO/mcal_dio.o
- .debug_line    0x000000000000115c      0x62e build/default/production/application.o
+ .debug_line    0x000000000000115c      0x681 build/default/production/application.o
+ .debug_line    0x00000000000017dd      0x164 build/default/production/MCAL_Layer/ADC/ADC.o
 
-.debug_frame    0x0000000000000000      0x7dc
+.debug_frame    0x0000000000000000      0x870
  *(.debug_frame)
  .debug_frame   0x0000000000000000      0x110 build/default/production/HAL_Layer/7_Segment/hal_seven_segment.o
  .debug_frame   0x0000000000000110       0xbc build/default/production/HAL_Layer/keypad/hal_keypad.o
  .debug_frame   0x00000000000001cc      0x260 build/default/production/HAL_Layer/LCD/hal_lcd.o
  .debug_frame   0x000000000000042c       0x94 build/default/production/HAL_Layer/LED/hal_led.o
  .debug_frame   0x00000000000004c0      0x104 build/default/production/MCAL_Layer/DIO/mcal_dio.o
- .debug_frame   0x00000000000005c4      0x218 build/default/production/application.o
+ .debug_frame   0x00000000000005c4      0x228 build/default/production/application.o
+ .debug_frame   0x00000000000007ec       0x84 build/default/production/MCAL_Layer/ADC/ADC.o
 
-.debug_str      0x0000000000000000      0x446
+.debug_str      0x0000000000000000      0x49f
  *(.debug_str)
  .debug_str     0x0000000000000000      0x196 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
  .debug_str     0x0000000000000196       0x2d build/default/production/HAL_Layer/7_Segment/hal_seven_segment.o
@@ -647,16 +691,18 @@ END GROUP
  .debug_str     0x0000000000000241       0x53 build/default/production/HAL_Layer/LCD/hal_lcd.o
  .debug_str     0x0000000000000294       0x43 build/default/production/HAL_Layer/LED/hal_led.o
  .debug_str     0x00000000000002d7       0x31 build/default/production/MCAL_Layer/DIO/mcal_dio.o
- .debug_str     0x0000000000000308      0x13e build/default/production/application.o
+ .debug_str     0x0000000000000308      0x197 build/default/production/application.o
+ .debug_str     0x000000000000049f        0x0 build/default/production/MCAL_Layer/ADC/ADC.o
 
-.debug_loc      0x0000000000000000     0x2198
+.debug_loc      0x0000000000000000     0x2216
  *(.debug_loc)
  .debug_loc     0x0000000000000000      0x4b8 build/default/production/HAL_Layer/7_Segment/hal_seven_segment.o
  .debug_loc     0x00000000000004b8      0x357 build/default/production/HAL_Layer/keypad/hal_keypad.o
  .debug_loc     0x000000000000080f      0xdca build/default/production/HAL_Layer/LCD/hal_lcd.o
  .debug_loc     0x00000000000015d9      0x1f0 build/default/production/HAL_Layer/LED/hal_led.o
  .debug_loc     0x00000000000017c9      0x3fa build/default/production/MCAL_Layer/DIO/mcal_dio.o
- .debug_loc     0x0000000000001bc3      0x5d5 build/default/production/application.o
+ .debug_loc     0x0000000000001bc3      0x62f build/default/production/application.o
+ .debug_loc     0x00000000000021f2       0x24 build/default/production/MCAL_Layer/ADC/ADC.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -676,7 +722,7 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x0000000000000000      0x1a0
+.debug_ranges   0x0000000000000000      0x1e0
  *(.debug_ranges)
  .debug_ranges  0x0000000000000000       0x30 build/default/production/HAL_Layer/7_Segment/hal_seven_segment.o
  .debug_ranges  0x0000000000000030       0x18 build/default/production/HAL_Layer/keypad/hal_keypad.o
@@ -684,6 +730,7 @@ END GROUP
  .debug_ranges  0x00000000000000b0       0x28 build/default/production/HAL_Layer/LED/hal_led.o
  .debug_ranges  0x00000000000000d8       0x70 build/default/production/MCAL_Layer/DIO/mcal_dio.o
  .debug_ranges  0x0000000000000148       0x58 build/default/production/application.o
+ .debug_ranges  0x00000000000001a0       0x40 build/default/production/MCAL_Layer/ADC/ADC.o
 
 .debug_macro
  *(.debug_macro)
@@ -696,279 +743,223 @@ LOAD data_init
  .note.gnu.avr.deviceinfo
                 0x0000000000000000       0x3c C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
 
-.progmemx.data  0x000000000000012c       0x2c
- .progmemx.data
-                0x000000000000012c       0x2c build/default/production/application.o
-
-.progmemx.data.btn_values
-                0x0000000000000158       0x10
- .progmemx.data.btn_values
-                0x0000000000000158       0x10 build/default/production/HAL_Layer/keypad/hal_keypad.o
-
-.text.calculator_program
-                0x0000000000000168      0x306
- .text.calculator_program
-                0x0000000000000168      0x306 build/default/production/application.o
-                0x0000000000000168                calculator_program
-
-.text.keypad_get_value
-                0x000000000000046e      0x178
- .text.keypad_get_value
-                0x000000000000046e      0x178 build/default/production/HAL_Layer/keypad/hal_keypad.o
-                0x000000000000046e                keypad_get_value
-
 .text.convert_uint32_to_string
-                0x00000000000005e6      0x14e
+                0x00000000000000b0      0x14e
  .text.convert_uint32_to_string
-                0x00000000000005e6      0x14e build/default/production/HAL_Layer/LCD/hal_lcd.o
-                0x00000000000005e6                convert_uint32_to_string
-
-.text.get_operand
-                0x0000000000000734      0x11e
- .text.get_operand
-                0x0000000000000734      0x11e build/default/production/application.o
-                0x0000000000000734                get_operand
+                0x00000000000000b0      0x14e build/default/production/HAL_Layer/LCD/hal_lcd.o
+                0x00000000000000b0                convert_uint32_to_string
 
 .text.lcd_4bit_intialize
-                0x0000000000000852      0x108
+                0x00000000000001fe      0x108
  .text.lcd_4bit_intialize
-                0x0000000000000852      0x108 build/default/production/HAL_Layer/LCD/hal_lcd.o
-                0x0000000000000852                lcd_4bit_intialize
+                0x00000000000001fe      0x108 build/default/production/HAL_Layer/LCD/hal_lcd.o
+                0x00000000000001fe                lcd_4bit_intialize
 
 .text.dio_pin_direction_intialize
-                0x000000000000095a       0xae
+                0x0000000000000306       0xae
  .text.dio_pin_direction_intialize
-                0x000000000000095a       0xae build/default/production/MCAL_Layer/DIO/mcal_dio.o
-                0x000000000000095a                dio_pin_direction_intialize
+                0x0000000000000306       0xae build/default/production/MCAL_Layer/DIO/mcal_dio.o
+                0x0000000000000306                dio_pin_direction_intialize
 
 .text.dio_set_pin_pull_up
-                0x0000000000000a08       0xac
+                0x00000000000003b4       0xac
  .text.dio_set_pin_pull_up
-                0x0000000000000a08       0xac build/default/production/MCAL_Layer/DIO/mcal_dio.o
-                0x0000000000000a08                dio_set_pin_pull_up
+                0x00000000000003b4       0xac build/default/production/MCAL_Layer/DIO/mcal_dio.o
+                0x00000000000003b4                dio_set_pin_pull_up
 
 .text.hal_seven_segement_intialize
-                0x0000000000000ab4       0x98
+                0x0000000000000460       0x98
  .text.hal_seven_segement_intialize
-                0x0000000000000ab4       0x98 build/default/production/HAL_Layer/7_Segment/hal_seven_segment.o
-                0x0000000000000ab4                hal_seven_segement_intialize
+                0x0000000000000460       0x98 build/default/production/HAL_Layer/7_Segment/hal_seven_segment.o
+                0x0000000000000460                hal_seven_segement_intialize
 
 .text.dio_pin_write_logic
-                0x0000000000000b4c       0x94
+                0x00000000000004f8       0x94
  .text.dio_pin_write_logic
-                0x0000000000000b4c       0x94 build/default/production/MCAL_Layer/DIO/mcal_dio.o
-                0x0000000000000b4c                dio_pin_write_logic
-
-.text.convert_string_to_uint32
-                0x0000000000000be0       0x90
- .text.convert_string_to_uint32
-                0x0000000000000be0       0x90 build/default/production/HAL_Layer/LCD/hal_lcd.o
-                0x0000000000000be0                convert_string_to_uint32
+                0x00000000000004f8       0x94 build/default/production/MCAL_Layer/DIO/mcal_dio.o
+                0x00000000000004f8                dio_pin_write_logic
 
 .text.keypad_initialize
-                0x0000000000000c70       0x82
+                0x000000000000058c       0x82
  .text.keypad_initialize
-                0x0000000000000c70       0x82 build/default/production/HAL_Layer/keypad/hal_keypad.o
-                0x0000000000000c70                keypad_initialize
+                0x000000000000058c       0x82 build/default/production/HAL_Layer/keypad/hal_keypad.o
+                0x000000000000058c                keypad_initialize
 
 .text.hal_led_turn_on
-                0x0000000000000cf2       0x6c
+                0x000000000000060e       0x6c
  .text.hal_led_turn_on
-                0x0000000000000cf2       0x6c build/default/production/HAL_Layer/LED/hal_led.o
-                0x0000000000000cf2                hal_led_turn_on
+                0x000000000000060e       0x6c build/default/production/HAL_Layer/LED/hal_led.o
+                0x000000000000060e                hal_led_turn_on
 
 .text.hal_led_initialize
-                0x0000000000000d5e       0x6a
+                0x000000000000067a       0x6a
  .text.hal_led_initialize
-                0x0000000000000d5e       0x6a build/default/production/HAL_Layer/LED/hal_led.o
-                0x0000000000000d5e                hal_led_initialize
+                0x000000000000067a       0x6a build/default/production/HAL_Layer/LED/hal_led.o
+                0x000000000000067a                hal_led_initialize
 
 .text.lcd_send_4bits
-                0x0000000000000dc8       0x60
+                0x00000000000006e4       0x60
  .text.lcd_send_4bits
-                0x0000000000000dc8       0x60 build/default/production/HAL_Layer/LCD/hal_lcd.o
+                0x00000000000006e4       0x60 build/default/production/HAL_Layer/LCD/hal_lcd.o
 
-.text.dio_pin_read_logic
-                0x0000000000000e28       0x5a
- .text.dio_pin_read_logic
-                0x0000000000000e28       0x5a build/default/production/MCAL_Layer/DIO/mcal_dio.o
-                0x0000000000000e28                dio_pin_read_logic
+.text.main      0x0000000000000744       0x5c
+ .text.main     0x0000000000000744       0x5c build/default/production/application.o
+                0x0000000000000744                main
 
 .text.lcd_4bit_send_command
-                0x0000000000000e82       0x52
+                0x00000000000007a0       0x52
  .text.lcd_4bit_send_command
-                0x0000000000000e82       0x52 build/default/production/HAL_Layer/LCD/hal_lcd.o
-                0x0000000000000e82                lcd_4bit_send_command
+                0x00000000000007a0       0x52 build/default/production/HAL_Layer/LCD/hal_lcd.o
+                0x00000000000007a0                lcd_4bit_send_command
 
 .text.lcd_4bit_send_char_data
-                0x0000000000000ed4       0x52
+                0x00000000000007f2       0x52
  .text.lcd_4bit_send_char_data
-                0x0000000000000ed4       0x52 build/default/production/HAL_Layer/LCD/hal_lcd.o
-                0x0000000000000ed4                lcd_4bit_send_char_data
-
-.text.drop_array_uint32_ele
-                0x0000000000000f26       0x4c
- .text.drop_array_uint32_ele
-                0x0000000000000f26       0x4c build/default/production/application.o
-                0x0000000000000f26                drop_array_uint32_ele
+                0x00000000000007f2       0x52 build/default/production/HAL_Layer/LCD/hal_lcd.o
+                0x00000000000007f2                lcd_4bit_send_char_data
 
 .text.lcd_4bit_send_string_pos
-                0x0000000000000f72       0x4a
+                0x0000000000000844       0x4a
  .text.lcd_4bit_send_string_pos
-                0x0000000000000f72       0x4a build/default/production/HAL_Layer/LCD/hal_lcd.o
-                0x0000000000000f72                lcd_4bit_send_string_pos
-
-.text.libgcc.div
-                0x0000000000000fbc       0x44
- .text.libgcc.div
-                0x0000000000000fbc       0x44 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
-                0x0000000000000fbc                __udivmodsi4
-
-.text.lcd_4bit_set_cursor
-                0x0000000000001000       0x42
- .text.lcd_4bit_set_cursor
-                0x0000000000001000       0x42 build/default/production/HAL_Layer/LCD/hal_lcd.o
-
-.text.lcd_4bit_send_string
-                0x0000000000001042       0x42
- .text.lcd_4bit_send_string
-                0x0000000000001042       0x42 build/default/production/HAL_Layer/LCD/hal_lcd.o
-                0x0000000000001042                lcd_4bit_send_string
-
-.text.dio_pin_intialize
-                0x0000000000001084       0x40
- .text.dio_pin_intialize
-                0x0000000000001084       0x40 build/default/production/MCAL_Layer/DIO/mcal_dio.o
-                0x0000000000001084                dio_pin_intialize
-
-.text.lcd_4bit_send_enable_signal
-                0x00000000000010c4       0x36
- .text.lcd_4bit_send_enable_signal
-                0x00000000000010c4       0x36 build/default/production/HAL_Layer/LCD/hal_lcd.o
+                0x0000000000000844       0x4a build/default/production/HAL_Layer/LCD/hal_lcd.o
+                0x0000000000000844                lcd_4bit_send_string_pos
 
 .text.application_initialize
-                0x00000000000010fa       0x36
+                0x000000000000088e       0x46
  .text.application_initialize
-                0x00000000000010fa       0x36 build/default/production/application.o
-                0x00000000000010fa                application_initialize
+                0x000000000000088e       0x46 build/default/production/application.o
+                0x000000000000088e                application_initialize
 
-.text.drop_array_uint8_ele
-                0x0000000000001130       0x22
- .text.drop_array_uint8_ele
-                0x0000000000001130       0x22 build/default/production/application.o
-                0x0000000000001130                drop_array_uint8_ele
+.text.libgcc.div
+                0x00000000000008d4       0x44
+ .text.libgcc.div
+                0x00000000000008d4       0x44 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+                0x00000000000008d4                __udivmodsi4
 
-.text.libgcc.mul
-                0x0000000000001152       0x20
- .text.libgcc.mul
-                0x0000000000001152       0x20 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
-                0x0000000000001152                __mulsi3
+.text.lcd_4bit_set_cursor
+                0x0000000000000918       0x42
+ .text.lcd_4bit_set_cursor
+                0x0000000000000918       0x42 build/default/production/HAL_Layer/LCD/hal_lcd.o
 
-.text.libgcc.mul
-                0x0000000000001172       0x1e
- .text.libgcc.mul
-                0x0000000000001172       0x1e c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
-                0x0000000000001172                __umulhisi3
+.text.dio_pin_intialize
+                0x000000000000095a       0x40
+ .text.dio_pin_intialize
+                0x000000000000095a       0x40 build/default/production/MCAL_Layer/DIO/mcal_dio.o
+                0x000000000000095a                dio_pin_intialize
 
-.text.libgcc    0x0000000000001190       0x1a
- .text.libgcc   0x0000000000001190       0x1a c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
-                0x0000000000001190                __movmemx_qi
-                0x0000000000001192                __movmemx_hi
+.text.lcd_4bit_send_enable_signal
+                0x000000000000099a       0x36
+ .text.lcd_4bit_send_enable_signal
+                0x000000000000099a       0x36 build/default/production/HAL_Layer/LCD/hal_lcd.o
 
-.text.libgcc.mul
-                0x00000000000011aa       0x16
- .text.libgcc.mul
-                0x00000000000011aa       0x16 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
-                0x00000000000011aa                __muluhisi3
+.text.ADC_voidInit
+                0x00000000000009d0       0x22
+ .text.ADC_voidInit
+                0x00000000000009d0       0x22 build/default/production/MCAL_Layer/ADC/ADC.o
+                0x00000000000009d0                ADC_voidInit
 
-.text.exit      0x00000000000011c0       0x16
- .text.exit     0x00000000000011c0       0x16 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
-                0x00000000000011c0                exit
+.text.exit      0x00000000000009f2       0x16
+ .text.exit     0x00000000000009f2       0x16 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+                0x00000000000009f2                exit
 
-.text.main      0x00000000000011d6       0x14
- .text.main     0x00000000000011d6       0x14 build/default/production/application.o
-                0x00000000000011d6                main
+.text.ADC_u16ReadADCInMV
+                0x0000000000000a08       0x10
+ .text.ADC_u16ReadADCInMV
+                0x0000000000000a08       0x10 build/default/production/MCAL_Layer/ADC/ADC.o
+                0x0000000000000a08                ADC_u16ReadADCInMV
 
-.text.libgcc    0x00000000000011ea        0xc
- .text.libgcc   0x00000000000011ea        0xc c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
-                0x00000000000011ea                __tablejump2__
+.text           0x0000000000000a18        0x4
+ .text          0x0000000000000a18        0x4 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+                0x0000000000000a18                __vector_1
+                0x0000000000000a18                __vector_12
+                0x0000000000000a18                __bad_interrupt
+                0x0000000000000a18                __vector_6
+                0x0000000000000a18                __vector_3
+                0x0000000000000a18                __vector_11
+                0x0000000000000a18                __vector_13
+                0x0000000000000a18                __vector_17
+                0x0000000000000a18                __vector_19
+                0x0000000000000a18                __vector_7
+                0x0000000000000a18                __vector_5
+                0x0000000000000a18                __vector_4
+                0x0000000000000a18                __vector_9
+                0x0000000000000a18                __vector_2
+                0x0000000000000a18                __vector_15
+                0x0000000000000a18                __vector_8
+                0x0000000000000a18                __vector_14
+                0x0000000000000a18                __vector_10
+                0x0000000000000a18                __vector_16
+                0x0000000000000a18                __vector_18
+                0x0000000000000a18                __vector_20
 
-.text           0x00000000000011f6        0x4
- .text          0x00000000000011f6        0x4 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
-                0x00000000000011f6                __vector_1
-                0x00000000000011f6                __vector_12
-                0x00000000000011f6                __bad_interrupt
-                0x00000000000011f6                __vector_6
-                0x00000000000011f6                __vector_3
-                0x00000000000011f6                __vector_11
-                0x00000000000011f6                __vector_13
-                0x00000000000011f6                __vector_17
-                0x00000000000011f6                __vector_19
-                0x00000000000011f6                __vector_7
-                0x00000000000011f6                __vector_5
-                0x00000000000011f6                __vector_4
-                0x00000000000011f6                __vector_9
-                0x00000000000011f6                __vector_2
-                0x00000000000011f6                __vector_15
-                0x00000000000011f6                __vector_8
-                0x00000000000011f6                __vector_14
-                0x00000000000011f6                __vector_10
-                0x00000000000011f6                __vector_16
-                0x00000000000011f6                __vector_18
-                0x00000000000011f6                __vector_20
+.text.ADC_voidEnable
+                0x0000000000000a1c        0x4
+ .text.ADC_voidEnable
+                0x0000000000000a1c        0x4 build/default/production/MCAL_Layer/ADC/ADC.o
+                0x0000000000000a1c                ADC_voidEnable
 
-.text._Exit     0x00000000000011fa        0x4
- .text._Exit    0x00000000000011fa        0x4 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o)
-                0x00000000000011fa                _Exit
+.text.ADC_voidDisable
+                0x0000000000000a20        0x4
+ .text.ADC_voidDisable
+                0x0000000000000a20        0x4 build/default/production/MCAL_Layer/ADC/ADC.o
+                0x0000000000000a20                ADC_voidDisable
+
+.text.ADC_voidStartConversion
+                0x0000000000000a24        0x4
+ .text.ADC_voidStartConversion
+                0x0000000000000a24        0x4 build/default/production/MCAL_Layer/ADC/ADC.o
+                0x0000000000000a24                ADC_voidStartConversion
+
+.text._Exit     0x0000000000000a28        0x4
+ .text._Exit    0x0000000000000a28        0x4 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o)
+                0x0000000000000a28                _Exit
 
 .text.__dummy_fini
-                0x00000000000011fe        0x2
+                0x0000000000000a2c        0x2
  .text.__dummy_fini
-                0x00000000000011fe        0x2 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
-                0x00000000000011fe                _fini
+                0x0000000000000a2c        0x2 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+                0x0000000000000a2c                _fini
 
 .text.__dummy_funcs_on_exit
-                0x0000000000001200        0x2
+                0x0000000000000a2e        0x2
  .text.__dummy_funcs_on_exit
-                0x0000000000001200        0x2 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
-                0x0000000000001200                __funcs_on_exit
+                0x0000000000000a2e        0x2 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+                0x0000000000000a2e                __funcs_on_exit
 
 .text.__dummy_simulator_exit
-                0x0000000000001202        0x2
+                0x0000000000000a30        0x2
  .text.__dummy_simulator_exit
-                0x0000000000001202        0x2 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
-                0x0000000000001202                __simulator_exit
-
-.data.pin_registers
-                0x0000000000800060        0x8 load address 0x0000000000001204
- .data.pin_registers
-                0x0000000000800060        0x8 build/default/production/MCAL_Layer/DIO/mcal_dio.o
-                0x0000000000800060                pin_registers
+                0x0000000000000a30        0x2 c:/program files/microchip/xc8/v2.41/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+                0x0000000000000a30                __simulator_exit
 
 .data.port_registers
-                0x0000000000800068        0x8 load address 0x000000000000120c
+                0x0000000000800060        0x8 load address 0x0000000000000a32
  .data.port_registers
-                0x0000000000800068        0x8 build/default/production/MCAL_Layer/DIO/mcal_dio.o
-                0x0000000000800068                port_registers
+                0x0000000000800060        0x8 build/default/production/MCAL_Layer/DIO/mcal_dio.o
+                0x0000000000800060                port_registers
 
 .data.ddr_registers
-                0x0000000000800070        0x8 load address 0x0000000000001214
+                0x0000000000800068        0x8 load address 0x0000000000000a3a
  .data.ddr_registers
-                0x0000000000800070        0x8 build/default/production/MCAL_Layer/DIO/mcal_dio.o
-                0x0000000000800070                ddr_registers
+                0x0000000000800068        0x8 build/default/production/MCAL_Layer/DIO/mcal_dio.o
+                0x0000000000800068                ddr_registers
 
-.data.keypad    0x0000000000800078        0x8 load address 0x000000000000121c
- .data.keypad   0x0000000000800078        0x8 build/default/production/application.o
-                0x0000000000800078                keypad
+.data.keypad    0x0000000000800070        0x8 load address 0x0000000000000a42
+ .data.keypad   0x0000000000800070        0x8 build/default/production/application.o
+                0x0000000000800070                keypad
 
-.data.segment   0x0000000000800080        0x8 load address 0x0000000000001224
- .data.segment  0x0000000000800080        0x8 build/default/production/application.o
-                0x0000000000800080                segment
+.data.segment   0x0000000000800078        0x8 load address 0x0000000000000a4a
+ .data.segment  0x0000000000800078        0x8 build/default/production/application.o
+                0x0000000000800078                segment
 
-.data.lcd       0x0000000000800088        0x6 load address 0x000000000000122c
- .data.lcd      0x0000000000800088        0x6 build/default/production/application.o
-                0x0000000000800088                lcd
+.data.lcd       0x0000000000800080        0x6 load address 0x0000000000000a52
+ .data.lcd      0x0000000000800080        0x6 build/default/production/application.o
+                0x0000000000800080                lcd
 
-.data.led1      0x000000000080008e        0x1 load address 0x0000000000001232
- .data.led1     0x000000000080008e        0x1 build/default/production/application.o
-                0x000000000080008e                led1
+.data.adc1      0x0000000000800086        0x1 load address 0x0000000000000a58
+ .data.adc1     0x0000000000800086        0x1 build/default/production/application.o
+                0x0000000000800086                adc1
+
+.data.led1      0x0000000000800087        0x1 load address 0x0000000000000a59
+ .data.led1     0x0000000000800087        0x1 build/default/production/application.o
+                0x0000000000800087                led1
