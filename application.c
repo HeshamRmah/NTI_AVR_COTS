@@ -23,9 +23,9 @@ int main() {
     //Std_ReturnType ret = E_OK;
     //uint8 get_keypad = 0, old_get_keypad = 0;
     //uint8 str[]= "513452";
-    uint8 str2[11];
-    uint32 value = 0;
-    uint16 adc_value = 0;
+    //uint8 str2[11];
+    //uint32 value = 0;
+    //uint16 adc_value = 0;
     
     application_initialize();
     hal_led_turn_on(&led1);
@@ -37,15 +37,15 @@ int main() {
     //convert_uint32_to_string(value, str2);
     //lcd_4bit_send_string_pos(&lcd, 1, 1, str2);
     
-    ADC_voidEnable();
+    //ADC_voidEnable();
     
     while(1){
         
-        ADC_voidStartConversion();
-        adc_value = ADC_u16ReadADCInMV();
-        value = adc_value;
-        convert_uint32_to_string(value, str2);
-        lcd_4bit_send_string_pos(&lcd, 2, 1, str2);
+        //ADC_voidStartConversion();
+        //adc_value = ADC_u16ReadADCInMV();
+        //value = adc_value;
+        //convert_uint32_to_string((uint32)adc_value, str2);
+        //lcd_4bit_send_string_pos(&lcd, 2, 1, str2);
         //str2 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         
         
@@ -71,11 +71,12 @@ Std_ReturnType application_initialize(void){
     
     ret  = hal_led_initialize(&led1); 
     ret |= lcd_4bit_intialize(&lcd);
+    ret |= hal_button_initialize(&button);
     ret |= hal_seven_segement_intialize(&segment);
     ret |= keypad_initialize(&keypad);
-    //ret = Interrupt_INTx_Init(&int0_obj);
-    dio_pin_intialize(&adc1);
-    ADC_voidInit();
+    ret = Interrupt_INTx_Init(&int1_obj);
+    //dio_pin_intialize(&adc1);
+    //ADC_voidInit();
     
     return ret;
 }
@@ -262,9 +263,6 @@ void calculator_program_one_operation(void){
     
 }
 
-
-
-
 void print_name_in_arabic(void){
 /* hesham*/
     uint8 customha[] = {0x0F,0x09,0x0F,0x09,0x1F,0x00,0x00,0x00};
@@ -302,7 +300,6 @@ void lcd_print_hamoksa(void){
     lcd_4bit_send_custom_char(&lcd, 1, 1,custom4, 1);
     _delay_ms(500);
 }
-
 
 void lcd_print_story(void){
     uint8 custom1[] = {0x04,0x0E,0x04,0x0E,0x15,0x04,0x0A,0x00};

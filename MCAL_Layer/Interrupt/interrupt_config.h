@@ -23,9 +23,9 @@
 
 /* ----------------- Macro Functions Declarations -----------------*/
 /* This macro will enable global interrupts. */
-#define INTERRUPT_GlobalInterruptEnable()  (SREGbits.I_bit = 1)
+#define INTERRUPT_GlobalInterruptEnable()  (SREGbits->I_bit = 1)
 /* This macro will disable global interrupts. */
-#define INTERRUPT_GlobalInterruptDisable() (SREGbits.I_bit = 0)
+#define INTERRUPT_GlobalInterruptDisable() (SREGbits->I_bit = 0)
 
 /* ----------------- Data Type Declarations -----------------*/
 

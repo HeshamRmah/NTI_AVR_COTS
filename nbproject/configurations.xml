@@ -32,6 +32,9 @@
           <itemPath>MCAL_Layer/DIO/dio_reg_cfg.h</itemPath>
         </logicalFolder>
         <logicalFolder name="Interrupt" displayName="Interrupt" projectFiles="true">
+          <itemPath>MCAL_Layer/Interrupt/interrupt_config.h</itemPath>
+          <itemPath>MCAL_Layer/Interrupt/interrupt_reg_cfg.h</itemPath>
+          <itemPath>MCAL_Layer/Interrupt/mcal_external_interrupt.h</itemPath>
         </logicalFolder>
         <itemPath>MCAL_Layer/std_libraries.h</itemPath>
         <itemPath>MCAL_Layer/compiler.h</itemPath>
@@ -71,6 +74,7 @@
           <itemPath>MCAL_Layer/DIO/mcal_dio.c</itemPath>
         </logicalFolder>
         <logicalFolder name="Interrupt" displayName="Interrupt" projectFiles="true">
+          <itemPath>MCAL_Layer/Interrupt/mcal_external_interrupt.c</itemPath>
         </logicalFolder>
       </logicalFolder>
       <itemPath>application.c</itemPath>

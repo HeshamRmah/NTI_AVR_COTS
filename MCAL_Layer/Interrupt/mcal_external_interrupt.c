@@ -11,12 +11,18 @@ static void (*INT0_InterruptHandler)(void) = NULL;
 static void (*INT1_InterruptHandler)(void) = NULL;
 static void (*INT2_InterruptHandler)(void) = NULL;
 
+void INT0_ISR(void);
+void INT1_ISR(void);
+void INT2_ISR(void);
+
 static Std_ReturnType Interrupt_INTx_Enable(const interrupt_INTx_t *int_obj);
 static Std_ReturnType Interrupt_INTx_Disable(const interrupt_INTx_t *int_obj);
+static Std_ReturnType Interrupt_INTx_SetInterruptMode(const interrupt_INTx_t *int_obj);
 
 static Std_ReturnType Interrupt_INTx_SetInterruptHandler(const interrupt_INTx_t *int_obj);
 
 
+void __vector_2(void) __attribute__((signal , used));
 
 void INT0_ISR(void){
     if(INT0_InterruptHandler){ INT0_InterruptHandler(); }
@@ -42,70 +48,12 @@ Std_ReturnType Interrupt_INTx_Init(const interrupt_INTx_t *int_obj){
     else{
         ret = Interrupt_INTx_Disable(int_obj);
         
-        switch(int_obj->mode){
-            case INT0_LOW_LEVEL:
-                MCUCRbits.ISC00_bit = 0;
-                MCUCRbits.ISC01_bit = 0;
-                break;
-            case INT0_LOGICAL_CHANGE:
-                MCUCRbits.ISC00_bit = 1;
-                MCUCRbits.ISC01_bit = 0;
-                break;
-            case INT0_FALLING_EDGE:
-                MCUCRbits.ISC00_bit = 0;
-                MCUCRbits.ISC01_bit = 1;
-                break;
-            case INT0_RISING_EDGE:
-                MCUCRbits.ISC00_bit = 1;
-                MCUCRbits.ISC01_bit = 1;
-                break;
-            
-            case INT1_LOW_LEVEL:
-                MCUCRbits.ISC10_bit = 0;
-                MCUCRbits.ISC11_bit = 0;
-                break;
-            case INT1_LOGICAL_CHANGE:
-                MCUCRbits.ISC10_bit = 1;
-                MCUCRbits.ISC11_bit = 0;
-                break;
-            case INT1_FALLING_EDGE:
-                MCUCRbits.ISC10_bit = 0;
-                MCUCRbits.ISC11_bit = 1;
-                break;
-            case INT1_RISING_EDGE:
-                MCUCRbits.ISC10_bit = 1;
-                MCUCRbits.ISC11_bit = 1;
-                break;
-            
-            case INT2_FALLING_EDGE:
-                MCUCSRbits.ISC2_bit = 0;
-                break;
-            case INT2_RISING_EDGE:
-                MCUCSRbits.ISC2_bit = 1;
-                break;
-        }
+        ret |= Interrupt_INTx_SetInterruptMode(int_obj);
         
         /* Set the DIO Pins */
-        dio_pin_intialize(&(int_obj->pin_obj));
-        /* set function callback */
-        switch(int_obj->pin_obj.port){
-            case PORTD_INDEX : 
-                switch(int_obj->pin_obj.pin){
-                    case DIO_PIN2:
-                    INT0_InterruptHandler = int_obj->EXT_InterruptHandler;
-                        break;
-                    case DIO_PIN3:
-                    INT1_InterruptHandler = int_obj->EXT_InterruptHandler;
-                        break;
-                }
-                break;
-            case PORTB_INDEX : 
-                INT2_InterruptHandler = int_obj->EXT_InterruptHandler;
-                break;
-            default:
-                ret = E_NOT_OK;
-        }
+        ret |= dio_pin_intialize(&(int_obj->pin_obj));
         
+        /* set function callback */
         ret |= Interrupt_INTx_SetInterruptHandler(int_obj);
         
         ret |= Interrupt_INTx_Enable(int_obj);
@@ -178,6 +126,58 @@ static Std_ReturnType Interrupt_INTx_SetInterruptHandler(const interrupt_INTx_t 
                 INT2_InterruptHandler = int_obj->EXT_InterruptHandler;
                 break;
             default : ret = E_NOT_OK;
+        }
+    }
+    return ret;
+}
+
+static Std_ReturnType Interrupt_INTx_SetInterruptMode(const interrupt_INTx_t *int_obj){
+    Std_ReturnType ret = E_OK;
+    if(NULL == int_obj){
+        ret = E_NOT_OK;
+    }
+    else{
+        switch(int_obj->mode){
+            case INT0_LOW_LEVEL:
+                MCUCRbits->ISC00_bit = 0;
+                MCUCRbits->ISC01_bit = 0;
+                break;
+            case INT0_LOGICAL_CHANGE:
+                MCUCRbits->ISC00_bit = 1;
+                MCUCRbits->ISC01_bit = 0;
+                break;
+            case INT0_FALLING_EDGE:
+                MCUCRbits->ISC00_bit = 0;
+                MCUCRbits->ISC01_bit = 1;
+                break;
+            case INT0_RISING_EDGE:
+                MCUCRbits->ISC00_bit = 1;
+                MCUCRbits->ISC01_bit = 1;
+                break;
+            
+            case INT1_LOW_LEVEL:
+                MCUCRbits->ISC10_bit = 0;
+                MCUCRbits->ISC11_bit = 0;
+                break;
+            case INT1_LOGICAL_CHANGE:
+                MCUCRbits->ISC10_bit = 1;
+                MCUCRbits->ISC11_bit = 0;
+                break;
+            case INT1_FALLING_EDGE:
+                MCUCRbits->ISC10_bit = 0;
+                MCUCRbits->ISC11_bit = 1;
+                break;
+            case INT1_RISING_EDGE:
+                MCUCRbits->ISC10_bit = 1;
+                MCUCRbits->ISC11_bit = 1;
+                break;
+            
+            case INT2_FALLING_EDGE:
+                MCUCSRbits->ISC2_bit = 0;
+                break;
+            case INT2_RISING_EDGE:
+                MCUCSRbits->ISC2_bit = 1;
+                break;
         }
     }
     return ret;

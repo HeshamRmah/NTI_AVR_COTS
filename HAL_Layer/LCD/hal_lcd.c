@@ -198,7 +198,7 @@ Std_ReturnType convert_uint32_to_string(uint32 value, uint8 *str){
     Std_ReturnType ret = E_OK;
     uint32 divider = 1000000000;
 	uint8 _digit_number = 0;
-    uint8 flag = 1;
+    //uint8 flag = 1;
     if(NULL == str){
         ret = E_NOT_OK;
     }
@@ -208,7 +208,7 @@ Std_ReturnType convert_uint32_to_string(uint32 value, uint8 *str){
                 continue;
             }
             else if(((value / divider) > 0) ){
-                flag = 0;
+                //flag = 0;
                 str[_digit_number++] = (value / divider) + 0x30;
                 
                 if((value % divider) < (divider/10)){

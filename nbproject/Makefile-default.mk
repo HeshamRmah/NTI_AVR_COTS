@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=HAL_Layer/7_Segment/hal_seven_segment.c HAL_Layer/button/hal_button.c HAL_Layer/keypad/hal_keypad.c HAL_Layer/LCD/hal_lcd.c HAL_Layer/LED/hal_led.c MCAL_Layer/DIO/mcal_dio.c application.c MCAL_Layer/ADC/ADC.c
+SOURCEFILES_QUOTED_IF_SPACED=HAL_Layer/7_Segment/hal_seven_segment.c HAL_Layer/button/hal_button.c HAL_Layer/keypad/hal_keypad.c HAL_Layer/LCD/hal_lcd.c HAL_Layer/LED/hal_led.c MCAL_Layer/ADC/ADC.c MCAL_Layer/DIO/mcal_dio.c application.c MCAL_Layer/Interrupt/mcal_external_interrupt.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o ${OBJECTDIR}/HAL_Layer/button/hal_button.o ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o ${OBJECTDIR}/HAL_Layer/LED/hal_led.o ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o ${OBJECTDIR}/application.o ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d ${OBJECTDIR}/HAL_Layer/button/hal_button.o.d ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o.d ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o.d ${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d ${OBJECTDIR}/application.o.d ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o ${OBJECTDIR}/HAL_Layer/button/hal_button.o ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o ${OBJECTDIR}/HAL_Layer/LED/hal_led.o ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o ${OBJECTDIR}/application.o ${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o.d ${OBJECTDIR}/HAL_Layer/button/hal_button.o.d ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o.d ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o.d ${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d ${OBJECTDIR}/application.o.d ${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o ${OBJECTDIR}/HAL_Layer/button/hal_button.o ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o ${OBJECTDIR}/HAL_Layer/LED/hal_led.o ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o ${OBJECTDIR}/application.o ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o
+OBJECTFILES=${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o ${OBJECTDIR}/HAL_Layer/button/hal_button.o ${OBJECTDIR}/HAL_Layer/keypad/hal_keypad.o ${OBJECTDIR}/HAL_Layer/LCD/hal_lcd.o ${OBJECTDIR}/HAL_Layer/LED/hal_led.o ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o ${OBJECTDIR}/application.o ${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o
 
 # Source Files
-SOURCEFILES=HAL_Layer/7_Segment/hal_seven_segment.c HAL_Layer/button/hal_button.c HAL_Layer/keypad/hal_keypad.c HAL_Layer/LCD/hal_lcd.c HAL_Layer/LED/hal_led.c MCAL_Layer/DIO/mcal_dio.c application.c MCAL_Layer/ADC/ADC.c
+SOURCEFILES=HAL_Layer/7_Segment/hal_seven_segment.c HAL_Layer/button/hal_button.c HAL_Layer/keypad/hal_keypad.c HAL_Layer/LCD/hal_lcd.c HAL_Layer/LED/hal_led.c MCAL_Layer/ADC/ADC.c MCAL_Layer/DIO/mcal_dio.c application.c MCAL_Layer/Interrupt/mcal_external_interrupt.c
 
 
 
@@ -118,6 +118,12 @@ ${OBJECTDIR}/HAL_Layer/LED/hal_led.o: HAL_Layer/LED/hal_led.c  .generated_files/
 	@${RM} ${OBJECTDIR}/HAL_Layer/LED/hal_led.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d" -MT "${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d" -MT ${OBJECTDIR}/HAL_Layer/LED/hal_led.o -o ${OBJECTDIR}/HAL_Layer/LED/hal_led.o HAL_Layer/LED/hal_led.c 
 	
+${OBJECTDIR}/MCAL_Layer/ADC/ADC.o: MCAL_Layer/ADC/ADC.c  .generated_files/flags/default/602830e338a314a34bb6ad12c4b44d1c4bf860db .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/MCAL_Layer/ADC" 
+	@${RM} ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d 
+	@${RM} ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d" -MT "${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d" -MT ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o -o ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o MCAL_Layer/ADC/ADC.c 
+	
 ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o: MCAL_Layer/DIO/mcal_dio.c  .generated_files/flags/default/38ddbcbf6123315db843c54991be54a921a24f8a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/MCAL_Layer/DIO" 
 	@${RM} ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d 
@@ -130,11 +136,11 @@ ${OBJECTDIR}/application.o: application.c  .generated_files/flags/default/e70c1c
 	@${RM} ${OBJECTDIR}/application.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/application.o.d" -MT "${OBJECTDIR}/application.o.d" -MT ${OBJECTDIR}/application.o -o ${OBJECTDIR}/application.o application.c 
 	
-${OBJECTDIR}/MCAL_Layer/ADC/ADC.o: MCAL_Layer/ADC/ADC.c  .generated_files/flags/default/602830e338a314a34bb6ad12c4b44d1c4bf860db .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/MCAL_Layer/ADC" 
-	@${RM} ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d 
-	@${RM} ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d" -MT "${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d" -MT ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o -o ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o MCAL_Layer/ADC/ADC.c 
+${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o: MCAL_Layer/Interrupt/mcal_external_interrupt.c  .generated_files/flags/default/3c9b5919aebb014b22df3ba25db2c7c156d57f5f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/MCAL_Layer/Interrupt" 
+	@${RM} ${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o.d 
+	@${RM} ${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o.d" -MT "${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o.d" -MT ${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o -o ${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o MCAL_Layer/Interrupt/mcal_external_interrupt.c 
 	
 else
 ${OBJECTDIR}/HAL_Layer/7_Segment/hal_seven_segment.o: HAL_Layer/7_Segment/hal_seven_segment.c  .generated_files/flags/default/10d6ef2414687b7efbf19aeb6b592682ead76022 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
@@ -167,6 +173,12 @@ ${OBJECTDIR}/HAL_Layer/LED/hal_led.o: HAL_Layer/LED/hal_led.c  .generated_files/
 	@${RM} ${OBJECTDIR}/HAL_Layer/LED/hal_led.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d" -MT "${OBJECTDIR}/HAL_Layer/LED/hal_led.o.d" -MT ${OBJECTDIR}/HAL_Layer/LED/hal_led.o -o ${OBJECTDIR}/HAL_Layer/LED/hal_led.o HAL_Layer/LED/hal_led.c 
 	
+${OBJECTDIR}/MCAL_Layer/ADC/ADC.o: MCAL_Layer/ADC/ADC.c  .generated_files/flags/default/ae982a324365f0849ce4156ad16894069c474d1e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/MCAL_Layer/ADC" 
+	@${RM} ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d 
+	@${RM} ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d" -MT "${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d" -MT ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o -o ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o MCAL_Layer/ADC/ADC.c 
+	
 ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o: MCAL_Layer/DIO/mcal_dio.c  .generated_files/flags/default/977b1e8fb7030ce2c0577e8ae7a542a509257f7 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/MCAL_Layer/DIO" 
 	@${RM} ${OBJECTDIR}/MCAL_Layer/DIO/mcal_dio.o.d 
@@ -179,11 +191,11 @@ ${OBJECTDIR}/application.o: application.c  .generated_files/flags/default/e291df
 	@${RM} ${OBJECTDIR}/application.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/application.o.d" -MT "${OBJECTDIR}/application.o.d" -MT ${OBJECTDIR}/application.o -o ${OBJECTDIR}/application.o application.c 
 	
-${OBJECTDIR}/MCAL_Layer/ADC/ADC.o: MCAL_Layer/ADC/ADC.c  .generated_files/flags/default/ae982a324365f0849ce4156ad16894069c474d1e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/MCAL_Layer/ADC" 
-	@${RM} ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d 
-	@${RM} ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d" -MT "${OBJECTDIR}/MCAL_Layer/ADC/ADC.o.d" -MT ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o -o ${OBJECTDIR}/MCAL_Layer/ADC/ADC.o MCAL_Layer/ADC/ADC.c 
+${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o: MCAL_Layer/Interrupt/mcal_external_interrupt.c  .generated_files/flags/default/7d32e59435e5db5d3acb41743d938f8b2dee6058 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/MCAL_Layer/Interrupt" 
+	@${RM} ${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o.d 
+	@${RM} ${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mconst-data-in-progmem -mno-const-data-in-config-mapped-progmem     -MD -MP -MF "${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o.d" -MT "${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o.d" -MT ${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o -o ${OBJECTDIR}/MCAL_Layer/Interrupt/mcal_external_interrupt.o MCAL_Layer/Interrupt/mcal_external_interrupt.c 
 	
 endif
 

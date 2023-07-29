@@ -15,7 +15,7 @@
 #include "HAL_Layer/7_Segment/hal_seven_segment.h"
 #include "HAL_Layer/LCD/hal_lcd.h"
 #include "HAL_Layer/keypad/hal_keypad.h"
-//#include "MCAL_Layer/Interrupt/mcal_external_interrupt.h"
+#include "MCAL_Layer/Interrupt/mcal_external_interrupt.h"
 #include "MCAL_Layer/ADC/ADC.h"
 
 
@@ -64,6 +64,17 @@ led_t led1 = {
     .port = PORTA_INDEX,
     .pin = DIO_PIN5,
     .led_status = DIO_LOW
+};
+
+button_t button = {
+    .button_pin.port = PORTD_INDEX,
+    .button_pin.pin = PIN3,
+    .button_pin.direction = DIO_DIRECTION_INPUT,
+    .button_pin.logic = DIO_LOW,
+    .button_pin.pullup = PULL_UP_ENABLE,
+    
+    .button_connection = BUTTON_ACTIVE_HIGH,
+    .button_state = BUTTON_RELEASED
 };
 
 segment_t segment = {
@@ -140,7 +151,7 @@ pin_config_t adc1 = {
 };
 
 
-/*
+
 void Int1_APP_ISR(void){
     hal_led_turn_toggle(&led1);
 }
@@ -153,9 +164,9 @@ interrupt_INTx_t int1_obj = {
   .pin_obj.direction = DIO_DIRECTION_INPUT,
   .pin_obj.pullup = PULL_UP_ENABLE,
   .pin_obj.logic = DIO_LOW,
-  .mode = INT1_FALLING_EDGE,
+  .mode = INT1_RISING_EDGE,
 };
-*/
+
 
 #endif	/* APPLICATION_H */
 

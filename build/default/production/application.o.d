@@ -35,7 +35,13 @@ build/default/production/application.o.d \
  HAL_Layer/LCD/hal_lcd.h HAL_Layer/LCD/hal_lcd.h \
  HAL_Layer/LCD/../../MCAL_Layer/DIO/mcal_dio.h \
  HAL_Layer/keypad/hal_keypad.h \
- HAL_Layer/keypad/../../MCAL_Layer/DIO/mcal_dio.h MCAL_Layer/ADC/ADC.h \
+ HAL_Layer/keypad/../../MCAL_Layer/DIO/mcal_dio.h \
+ MCAL_Layer/Interrupt/mcal_external_interrupt.h \
+ MCAL_Layer/Interrupt/interrupt_reg_cfg.h \
+ MCAL_Layer/Interrupt/interrupt_config.h \
+ MCAL_Layer/Interrupt/../mcal_std_types.h \
+ MCAL_Layer/Interrupt/../std_libraries.h \
+ MCAL_Layer/Interrupt/../DIO/mcal_dio.h MCAL_Layer/ADC/ADC.h \
  MCAL_Layer/ADC/../mcal_std_types.h
 
 application.h:
@@ -119,6 +125,18 @@ HAL_Layer/LCD/../../MCAL_Layer/DIO/mcal_dio.h:
 HAL_Layer/keypad/hal_keypad.h:
 
 HAL_Layer/keypad/../../MCAL_Layer/DIO/mcal_dio.h:
+
+MCAL_Layer/Interrupt/mcal_external_interrupt.h:
+
+MCAL_Layer/Interrupt/interrupt_reg_cfg.h:
+
+MCAL_Layer/Interrupt/interrupt_config.h:
+
+MCAL_Layer/Interrupt/../mcal_std_types.h:
+
+MCAL_Layer/Interrupt/../std_libraries.h:
+
+MCAL_Layer/Interrupt/../DIO/mcal_dio.h:
 
 MCAL_Layer/ADC/ADC.h:
 
