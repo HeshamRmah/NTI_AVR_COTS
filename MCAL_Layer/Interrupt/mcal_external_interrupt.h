@@ -24,19 +24,34 @@
 /* ----------------- Macro Functions Declarations -----------------*/
 
 /* This routine clears the interrupt enable for the external interrupt, INT0 */
-#define EXT_INT0_InterruptDisable()         (GICRbits->INT0_bit = 0)
+#define EXT_INT0_InterruptDisable()         (GICRbits.INT0_bit = 0)
+//#define EXT_INT0_InterruptDisable()         CLEAR_BIT(GICR, INT0)
 /* This routine sets the interrupt enable for the external interrupt, INT0 */
-#define EXT_INT0_InterruptEnable()          (GICRbits->INT0_bit = 1)
+#define EXT_INT0_InterruptEnable()          (GICRbits.INT0_bit = 1)
+//#define EXT_INT0_InterruptEnable()          SET_BIT(GICR, INT0)
+/* This routine Clear the interrupt Flag for the external interrupt, INT0 */
+#define EXT_INT0_CLEAR_FLAG()                (GIFRbits.INTF0_bit = 1)
+//#define EXT_INT0_CLEAR_FLAG()               SET_BIT(GIFR, INTF0)
 
 /* This routine clears the interrupt enable for the external interrupt, INT1 */
-#define EXT_INT1_InterruptDisable()         (GICRbits->INT1_bit = 0)
+#define EXT_INT1_InterruptDisable()         (GICRbits.INT1_bit = 0)
+//#define EXT_INT1_InterruptDisable()         CLEAR_BIT(GICR, INT1)
 /* This routine sets the interrupt enable for the external interrupt, INT1 */
-#define EXT_INT1_InterruptEnable()          (GICRbits->INT1_bit = 1)
+#define EXT_INT1_InterruptEnable()          (GICRbits.INT1_bit = 1)
+//#define EXT_INT1_InterruptEnable()          SET_BIT(GICR, INT1)
+/* This routine Clear the interrupt Flag for the external interrupt, INT1 */
+#define EXT_INT1_CLEAR_FLAG()               (GIFRbits.INTF1_bit = 1)
+//#define EXT_INT1_CLEAR_FLAG()               SET_BIT(GIFR, INTF1)
 
 /* This routine clears the interrupt enable for the external interrupt, INT2 */
-#define EXT_INT2_InterruptDisable()         (GICRbits->INT2_bit = 0)
+#define EXT_INT2_InterruptDisable()         (GICRbits.INT2_bit = 0)
+//#define EXT_INT2_InterruptDisable()         CLEAR_BIT(GICR, INT2)
 /* This routine sets the interrupt enable for the external interrupt, INT2 */
-#define EXT_INT2_InterruptEnable()          (GICRbits->INT0_bit = 1)
+#define EXT_INT2_InterruptEnable()          (GICRbits.INT0_bit = 1)
+//#define EXT_INT2_InterruptEnable()          SET_BIT(GICR, INT2)
+/* This routine Clear the interrupt Flag for the external interrupt, INT2 */
+#define EXT_INT2_CLEAR_FLAG()               (GIFRbits.INTF2_bit = 1)
+//#define EXT_INT2_CLEAR_FLAG()               SET_BIT(GIFR, INTF2)
 
 /* ----------------- Data Type Declarations -----------------*/
 typedef enum{

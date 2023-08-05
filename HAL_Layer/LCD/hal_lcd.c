@@ -39,10 +39,10 @@ Std_ReturnType lcd_4bit_intialize(const chr_lcd_4bit_t *lcd){
         ret = lcd_4bit_send_command(lcd, _LCD_CLEAR);
         ret = lcd_4bit_send_command(lcd, _LCD_RETURN_HOME);
         ret = lcd_4bit_send_command(lcd, _LCD_ENTRY_MODE_INC_SHIFT_OFF);
-        ret = lcd_4bit_send_command(lcd, _LCD_DISPLAY_ON_UNDERLINE_OFF_CURSOR_OFF);
+        ret = lcd_4bit_send_command(lcd, _LCD_DISPLAY_ON_UNDERLINE_ON_CURSOR_OFF);
         ret = lcd_4bit_send_command(lcd, _LCD_4BIT_MODE_2_LINE);
-        ret = lcd_4bit_send_command(lcd, _LCD_CLEAR);
-        ret = lcd_4bit_send_command(lcd, 0x80);
+        //ret = lcd_4bit_send_command(lcd, _LCD_CLEAR);
+        //ret = lcd_4bit_send_command(lcd, _LCD_RETURN_HOME);
     }
     return ret;
 }
@@ -70,6 +70,23 @@ Std_ReturnType lcd_4bit_send_command(const chr_lcd_4bit_t *lcd, uint8 command){
         ret = lcd_send_4bits(lcd, command);
         /* Send the Enable Signal on the "E" Pin */
         ret = lcd_4bit_send_enable_signal(lcd);
+    }
+    return ret;
+}
+
+/**
+ * 
+ * @param lcd
+ * @return 
+ */
+Std_ReturnType lcd_4bit_clear_command(const chr_lcd_4bit_t *lcd){
+    Std_ReturnType ret = E_OK;
+    if(NULL == lcd){
+        ret = E_NOT_OK;
+    }
+    else{
+        ret = lcd_4bit_send_command(lcd, _LCD_CLEAR);
+        ret = lcd_4bit_set_cursor(lcd, 1, 1);
     }
     return ret;
 }
@@ -158,6 +175,56 @@ Std_ReturnType lcd_4bit_send_string_pos(const chr_lcd_4bit_t *lcd, uint8 row, ui
         while(*str){
             ret = lcd_4bit_send_char_data(lcd, *str++);
         }
+    }
+    return ret;
+}
+
+/**
+ * 
+ * @param lcd
+ * @param number
+ * @return 
+ */
+Std_ReturnType lcd_4bit_send_uint32(const chr_lcd_4bit_t *lcd, uint32 number){
+    Std_ReturnType ret = E_OK;
+    uint32 counter = 0;
+    uint8 flag = 0;
+    uint8 digit[10];
+    if(NULL == lcd){
+        ret = E_NOT_OK;
+    }
+    else{ 
+        for(counter = 10; counter > 0; counter--){
+            digit[counter - 1] = number % 10;
+            number /= 10;
+            }
+        for(counter = 0; counter < 10; counter++){
+            if((digit[counter] != 0) || flag){
+                flag = 1;
+                ret = lcd_4bit_send_char_data(lcd, (digit[counter] + 0x30));
+            }
+            else {/* DO NOTHING */}
+        }
+    }
+    return ret;
+}
+
+/**
+ * 
+ * @param lcd
+ * @param row
+ * @param column
+ * @param number
+ * @return 
+ */
+Std_ReturnType lcd_4bit_send_uint32_pos(const chr_lcd_4bit_t *lcd, uint8 row, uint8 column, uint32 number){
+    Std_ReturnType ret = E_OK;
+    if(NULL == lcd){
+        ret = E_NOT_OK;
+    }
+    else{ 
+        ret = lcd_4bit_set_cursor(lcd, row, column);
+        ret |= lcd_4bit_send_uint32(lcd, number);
     }
     return ret;
 }

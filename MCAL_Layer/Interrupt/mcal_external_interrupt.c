@@ -21,26 +21,34 @@ static Std_ReturnType Interrupt_INTx_SetInterruptMode(const interrupt_INTx_t *in
 
 static Std_ReturnType Interrupt_INTx_SetInterruptHandler(const interrupt_INTx_t *int_obj);
 
-
 void __vector_2(void) __attribute__((signal , used));
 
+void __vector_2(void){
+    EXT_INT1_CLEAR_FLAG();
+    if(INT1_InterruptHandler){ INT1_InterruptHandler(); }
+    else{ /* Nothing */ }
+}
+
 void INT0_ISR(void){
+    EXT_INT0_CLEAR_FLAG();
     if(INT0_InterruptHandler){ INT0_InterruptHandler(); }
     else{ /* Nothing */ }
 }
 
 void INT1_ISR(void){
+    EXT_INT1_CLEAR_FLAG();
     if(INT1_InterruptHandler){ INT1_InterruptHandler(); }
     else{ /* Nothing */ }
 }
 
 void INT2_ISR(void){
+    EXT_INT2_CLEAR_FLAG();
     if(INT2_InterruptHandler){ INT2_InterruptHandler(); }
     else{ /* Nothing */ }
 }
 
-
 Std_ReturnType Interrupt_INTx_Init(const interrupt_INTx_t *int_obj){
+    
     Std_ReturnType ret = E_OK;
     if(NULL == int_obj){
         ret = E_NOT_OK;
@@ -48,19 +56,22 @@ Std_ReturnType Interrupt_INTx_Init(const interrupt_INTx_t *int_obj){
     else{
         ret = Interrupt_INTx_Disable(int_obj);
         
-        ret |= Interrupt_INTx_SetInterruptMode(int_obj);
-        
         /* Set the DIO Pins */
         ret |= dio_pin_intialize(&(int_obj->pin_obj));
+        
+        /* */
+        ret |= Interrupt_INTx_SetInterruptMode(int_obj);
         
         /* set function callback */
         ret |= Interrupt_INTx_SetInterruptHandler(int_obj);
         
+        /* */
         ret |= Interrupt_INTx_Enable(int_obj);
         
     }
     return ret;
 }
+
 
 static Std_ReturnType Interrupt_INTx_Enable(const interrupt_INTx_t *int_obj){
     Std_ReturnType ret = E_OK;
@@ -139,44 +150,62 @@ static Std_ReturnType Interrupt_INTx_SetInterruptMode(const interrupt_INTx_t *in
     else{
         switch(int_obj->mode){
             case INT0_LOW_LEVEL:
-                MCUCRbits->ISC00_bit = 0;
-                MCUCRbits->ISC01_bit = 0;
+                MCUCRbits.ISC00_bit = 0;
+                MCUCRbits.ISC01_bit = 0;
+                //CLEAR_BIT(MCUCR, ISC00);
+                //CLEAR_BIT(MCUCR, ISC01);
                 break;
             case INT0_LOGICAL_CHANGE:
-                MCUCRbits->ISC00_bit = 1;
-                MCUCRbits->ISC01_bit = 0;
+                MCUCRbits.ISC00_bit = 1;
+                MCUCRbits.ISC01_bit = 0;
+                //SET_BIT(MCUCR, ISC00);
+                //CLEAR_BIT(MCUCR, ISC01);
                 break;
             case INT0_FALLING_EDGE:
-                MCUCRbits->ISC00_bit = 0;
-                MCUCRbits->ISC01_bit = 1;
+                MCUCRbits.ISC00_bit = 0;
+                MCUCRbits.ISC01_bit = 1;
+                //CLEAR_BIT(MCUCR, ISC00);
+                //SET_BIT(MCUCR, ISC01);
                 break;
             case INT0_RISING_EDGE:
-                MCUCRbits->ISC00_bit = 1;
-                MCUCRbits->ISC01_bit = 1;
+                MCUCRbits.ISC00_bit = 1;
+                MCUCRbits.ISC01_bit = 1;
+                //SET_BIT(MCUCR, ISC00);
+                //SET_BIT(MCUCR, ISC01);
                 break;
             
             case INT1_LOW_LEVEL:
-                MCUCRbits->ISC10_bit = 0;
-                MCUCRbits->ISC11_bit = 0;
+                MCUCRbits.ISC10_bit = 0;
+                MCUCRbits.ISC11_bit = 0;
+                //CLEAR_BIT(MCUCR, ISC10);
+                //CLEAR_BIT(MCUCR, ISC11);
                 break;
             case INT1_LOGICAL_CHANGE:
-                MCUCRbits->ISC10_bit = 1;
-                MCUCRbits->ISC11_bit = 0;
+                MCUCRbits.ISC10_bit = 1;
+                MCUCRbits.ISC11_bit = 0;
+                //SET_BIT(MCUCR, ISC10);
+                //CLEAR_BIT(MCUCR, ISC11);
                 break;
             case INT1_FALLING_EDGE:
-                MCUCRbits->ISC10_bit = 0;
-                MCUCRbits->ISC11_bit = 1;
+                MCUCRbits.ISC10_bit = 0;
+                MCUCRbits.ISC11_bit = 1;
+                //CLEAR_BIT(MCUCR, ISC10);
+                //SET_BIT(MCUCR, ISC11);
                 break;
             case INT1_RISING_EDGE:
-                MCUCRbits->ISC10_bit = 1;
-                MCUCRbits->ISC11_bit = 1;
+                MCUCRbits.ISC10_bit = 1;
+                MCUCRbits.ISC11_bit = 1;
+                //SET_BIT(MCUCR, ISC10);
+                //SET_BIT(MCUCR, ISC11);
                 break;
             
             case INT2_FALLING_EDGE:
-                MCUCSRbits->ISC2_bit = 0;
+                MCUCSRbits.ISC2_bit = 0;
+                //CLEAR_BIT(MCUSR, ISC2);
                 break;
             case INT2_RISING_EDGE:
-                MCUCSRbits->ISC2_bit = 1;
+                MCUCSRbits.ISC2_bit = 1;
+                //SET_BIT(MCUSR, ISC2);
                 break;
         }
     }

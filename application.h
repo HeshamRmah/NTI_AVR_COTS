@@ -16,10 +16,18 @@
 #include "HAL_Layer/LCD/hal_lcd.h"
 #include "HAL_Layer/keypad/hal_keypad.h"
 #include "MCAL_Layer/Interrupt/mcal_external_interrupt.h"
-#include "MCAL_Layer/ADC/ADC.h"
+#include "MCAL_Layer/ADC/hal_adc.h"
+#include "MCAL_Layer/USART/uart_int.h"
+#include "MCAL_Layer/SPI/mcal_spi.h"
+#include "MCAL_Layer/Timers/mcal_timer0.h"
 
 
 Std_ReturnType application_initialize(void);
+
+void Int1_APP_ISR(void);
+void ADC_APP_ISR(void);
+void SPI_APP_ISR(void);
+void Timer0_APP_ISR(void);
 
 chr_lcd_4bit_t lcd = {
     .lcd_rs.port = PORTA_INDEX,
@@ -34,8 +42,8 @@ chr_lcd_4bit_t lcd = {
     .lcd_en.logic = DIO_LOW,
     .lcd_en.pullup = PULL_UP_DISABLE,
     
-    .lcd_data[0].port = PORTB_INDEX,
-    .lcd_data[0].pin = DIO_PIN0,
+    .lcd_data[0].port = PORTD_INDEX,
+    .lcd_data[0].pin = DIO_PIN7,
     .lcd_data[0].direction = DIO_DIRECTION_OUTPUT,
     .lcd_data[0].logic = DIO_LOW,
     .lcd_data[0].pullup = PULL_UP_DISABLE,
@@ -68,7 +76,18 @@ led_t led1 = {
 
 button_t button = {
     .button_pin.port = PORTD_INDEX,
-    .button_pin.pin = PIN3,
+    .button_pin.pin = DIO_PIN3,
+    .button_pin.direction = DIO_DIRECTION_INPUT,
+    .button_pin.logic = DIO_LOW,
+    .button_pin.pullup = PULL_UP_ENABLE,
+    
+    .button_connection = BUTTON_ACTIVE_HIGH,
+    .button_state = BUTTON_RELEASED
+};
+
+button_t button_T0 = {
+    .button_pin.port = PORTB_INDEX,
+    .button_pin.pin = DIO_PIN0,
     .button_pin.direction = DIO_DIRECTION_INPUT,
     .button_pin.logic = DIO_LOW,
     .button_pin.pullup = PULL_UP_ENABLE,
@@ -142,20 +161,6 @@ keypad_t keypad = {
     
 };
 
-pin_config_t adc1 = {
-    .port = PORTA_INDEX,
-    .pin = DIO_PIN1, 
-    .direction = DIO_DIRECTION_INPUT,
-    .logic = DIO_LOW,
-    .pullup = PULL_UP_ENABLE
-};
-
-
-
-void Int1_APP_ISR(void){
-    hal_led_turn_toggle(&led1);
-}
-
 interrupt_INTx_t int1_obj = {
   .EXT_InterruptHandler =  Int1_APP_ISR,
   .source = INTERRUPT_EXTERNAL_INT1,
@@ -164,7 +169,74 @@ interrupt_INTx_t int1_obj = {
   .pin_obj.direction = DIO_DIRECTION_INPUT,
   .pin_obj.pullup = PULL_UP_ENABLE,
   .pin_obj.logic = DIO_LOW,
-  .mode = INT1_RISING_EDGE,
+  .mode = INT1_FALLING_EDGE,
+};
+
+adc_t adc_obj = {
+    .ADC_InterruptHandler = ADC_APP_ISR,
+    .channel_gain = ADC_INPUT_ADC1,
+    .convertion_alert = ADC_CONVERSTION_COMPLETE_POLLING,
+    .prescaler = ADC_PRESCALER_DIV_8,
+    .reference = AREF_EXTERNAL_REFERENCE_VOLTAGE,
+    .result_adjust = ADC_RESULT_LEFT_ADJUST,
+    .trigger_scr = FREE_RUNNING_MODE,
+    
+    .pin_obj.port = PORTA_INDEX,
+    .pin_obj.pin = DIO_PIN1, 
+    .pin_obj.direction = DIO_DIRECTION_INPUT,
+    .pin_obj.logic = DIO_LOW,
+    .pin_obj.pullup = PULL_UP_ENABLE
+};
+
+SPI_Config SPI_obj = {
+    .MOSI.port = PORTB_INDEX,
+    .MOSI.pin = DIO_PIN5,
+    .MOSI.logic = DIO_LOW,
+    .MOSI.direction = DIO_DIRECTION_OUTPUT,
+    .MOSI.pullup = PULL_UP_DISABLE,
+    
+    .MISO.port = PORTB_INDEX,
+    .MISO.pin = DIO_PIN6,
+    .MISO.logic = DIO_LOW,
+    .MISO.direction = DIO_DIRECTION_INPUT,
+    .MISO.pullup = PULL_UP_ENABLE,
+    
+    .SCK.port = PORTB_INDEX,
+    .SCK.pin = DIO_PIN7,
+    .SCK.logic = DIO_LOW,
+    .SCK.direction = DIO_DIRECTION_OUTPUT,
+    .SCK.pullup = PULL_UP_DISABLE,
+    
+    .SS.port = PORTB_INDEX,
+    .SS.pin = DIO_PIN4,
+    .SS.logic = DIO_HIGH,
+    .SS.direction = DIO_DIRECTION_OUTPUT,
+    .SS.pullup = PULL_UP_DISABLE,
+    
+    .SPI_InterruptHandler = SPI_APP_ISR,
+    .Complete_check = SPI_COMLETE_CHECK_ITERRUPT,
+    .Data_order = SPI_DATA_ORDER_LSB_FIRST,
+    .Operation_mode = SPI_MASTER_MODE,
+    .SCK_Frequency = SCK_EQUAL_OSCILLATOR_FREQUENCY_DIV_BY_4,
+    .SPI_Mode = SPI_SAMPLE_RISING_SETUP_FALLING
+};
+
+timer0_t Timer0 = {
+    .TMR0_Over_FlowInterruptHandler = NULL,
+    .TMR0_Compare_Match_InterruptHandler = NULL,
+    .clock_select = CLOCK_DIV_BY_1024,
+    .compare_output_mode = SET_OC0_ON_COMPARE_MATCH,
+    .waveform_generation_mode = FAST_PWM,
+    .preload = 0,
+    .ocr = 127
+};
+
+pin_config_t OC0 = {
+    .port = PORTB_INDEX,
+    .pin = DIO_PIN3,
+    .logic = DIO_LOW,
+    .direction = DIO_DIRECTION_OUTPUT,
+    .pullup = PULL_UP_DISABLE,
 };
 
 

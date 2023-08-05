@@ -8,24 +8,27 @@
 #include "application.h"
 
 
-void lcd_print_story (void);
-void calculator_program(void);
-void calculator_program_one_operation(void);
+//void lcd_print_story (void);
+//void calculator_program(void);
+//void calculator_program_one_operation(void);
 
 
-extern led_t led1;
-extern segment_t segment;
-extern chr_lcd_4bit_t lcd;
-extern keypad_t keypad;
+//extern led_t led1;
+//extern segment_t segment;
+//extern chr_lcd_4bit_t lcd;
+//extern keypad_t keypad;
+
+volatile uint16 adc_value_Interrupt = 0;
 
 int main() {
     
     //Std_ReturnType ret = E_OK;
-    //uint8 get_keypad = 0, old_get_keypad = 0;
-    //uint8 str[]= "513452";
+    //uint8 get_keypad = 'A', old_get_keypad = 0;
+    //uint8 str[]= "1230456";
     //uint8 str2[11];
-    //uint32 value = 0;
+    //uint32 value = 1230456;
     //uint16 adc_value = 0;
+    //uint8 timer0_value = 0;
     
     application_initialize();
     hal_led_turn_on(&led1);
@@ -33,22 +36,59 @@ int main() {
     //lcd_print_story();
     //calculator_program();
     
+    //lcd_4bit_send_char_data_pos(&lcd, 2, 1, 'A');
+    //lcd_4bit_send_uint32(&lcd, 654708);
     //convert_string_to_uint32(str, &value);
     //convert_uint32_to_string(value, str2);
-    //lcd_4bit_send_string_pos(&lcd, 1, 1, str2);
+    //lcd_4bit_send_string_pos(&lcd, 1, 1, str);
+    //lcd_4bit_send_char_data(&lcd, 'V');
+    //lcd_4bit_set_cursor(&lcd, 2, 1);
+    //lcd_4bit_send_uint32(&lcd, 654708);
+    
+    //lcd_4bit_send_uint32_pos(&lcd, 2, 1, 123400578);
+    
+    //lcd_4bit_send_uint32(&lcd, 987654321);
+    //lcd_4bit_send_string_pos(&lcd, 4, 1, str);
     
     //ADC_voidEnable();
-    
+    //USART_Transmit(get_keypad);
+    //lcd_4bit_send_string_pos(&lcd, 3, 1, str);
     while(1){
         
-        //ADC_voidStartConversion();
-        //adc_value = ADC_u16ReadADCInMV();
-        //value = adc_value;
-        //convert_uint32_to_string((uint32)adc_value, str2);
-        //lcd_4bit_send_string_pos(&lcd, 2, 1, str2);
-        //str2 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        //Timer0_Read_Value(&Timer0, &timer0_value);
+        //lcd_4bit_send_uint32_pos(&lcd, 2, 1, (uint32)timer0_value);
         
         
+        
+        
+        
+        
+        //ADC_GetConversion_Polling(&adc_obj, &adc_value);
+        //ADC_StartConversion_Interrupt(&adc_obj);
+        //lcd_4bit_send_uint32_pos(&lcd, 3, 1, (uint32)adc_value);
+        
+        //SPI_Send_Byte_Interrupt(&SPI_obj, '0');
+        //_delay_ms(1000);
+        //SPI_Send_Byte_Interrupt(&SPI_obj, '1');
+        //_delay_ms(1000);
+        //SPI_Send_Byte_Interrupt(&SPI_obj, '2');
+        //_delay_ms(1000);
+        //SPI_Send_Byte_Interrupt(&SPI_obj, '3');
+        //_delay_ms(1000);
+        //SPI_Send_Byte_Interrupt(&SPI_obj, '4');
+        //_delay_ms(1000);
+        //SPI_Send_Byte_Interrupt(&SPI_obj, '5');
+        //_delay_ms(1000);
+        //lcd_4bit_clear_command(&lcd);
+        
+        
+        //lcd_4bit_send_command(&lcd, _LCD_CLEAR);
+        //get_keypad++;
+        //USART_Transmit(get_keypad);
+        //_delay_ms(500);
+        //old_get_keypad = USART_Receive();
+        
+        //lcd_4bit_send_char_data(&lcd, old_get_keypad);
         
         
         /*
@@ -68,19 +108,45 @@ int main() {
 
 Std_ReturnType application_initialize(void){
     Std_ReturnType ret = E_OK;
-    
+    //INTERRUPT_GlobalInterruptEnable();
     ret  = hal_led_initialize(&led1); 
-    ret |= lcd_4bit_intialize(&lcd);
-    ret |= hal_button_initialize(&button);
-    ret |= hal_seven_segement_intialize(&segment);
-    ret |= keypad_initialize(&keypad);
-    ret = Interrupt_INTx_Init(&int1_obj);
-    //dio_pin_intialize(&adc1);
-    //ADC_voidInit();
+    //ret |= lcd_4bit_intialize(&lcd);
+    //ret |= hal_button_initialize(&button);
+    //ret |= hal_button_initialize(&button_T0);
+    //ret |= hal_seven_segement_intialize(&segment);
+    //ret |= keypad_initialize(&keypad);
+    //ret |= Interrupt_INTx_Init(&int1_obj);
+    //ret |= ADC_Init(&adc_obj);
+    //ret |= SPI_Init(&SPI_obj);
+    ret |= Timer0_Init(&Timer0);
+    ret |= dio_pin_intialize(&OC0);
+    
+    //USART_Init();
     
     return ret;
 }
 
+void Int1_APP_ISR(void){
+    hal_led_turn_toggle(&led1);
+    _delay_ms(25);
+}
+
+void ADC_APP_ISR(void){
+    adc_value_Interrupt++;
+    _delay_ms(1000);
+}
+
+void SPI_APP_ISR(void){
+    hal_led_turn_toggle(&led1);
+}
+void Timer0_APP_ISR(void){
+    hal_led_turn_toggle(&led1);
+}
+void Timer0_APP_CTC_ISR(void){
+    hal_led_turn_toggle(&led1);
+}
+
+#if 0
 void get_operand(uint32 *operand, uint8 *operation){
     uint8 get_keypad = 0;
     uint8 counter = 0;
@@ -326,3 +392,4 @@ void lcd_print_story(void){
     
     
 }
+#endif

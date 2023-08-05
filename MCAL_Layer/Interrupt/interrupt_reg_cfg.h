@@ -22,13 +22,9 @@ typedef struct {
         unsigned T_bit                  :1;
         unsigned I_bit                  :1;
     }SREGbits_t;
-    
-//#define SREG_      *((volatile uint8 *)(0x5F))
-//extern volatile SREGbits_t SREGbits _SFR_IO8(0x2F);
-//SREGbits_t SREGbits;
-volatile SREGbits_t *SREGbits = ((volatile SREGbits_t *)(0x5F));
-
-
+     
+#define SREGbits      (*((volatile SREGbits_t *)(0x5F)))
+//volatile SREGbits_t *SREGbits = ((volatile SREGbits_t *)(0x5F));
 
 
 typedef struct {
@@ -42,9 +38,8 @@ typedef struct {
         unsigned SE_bit                   :1;
     }MCUCRbits_t;
 
-//#define MCUCR_      *((volatile uint8 *) (0x55))   
-//MCUCRbits_t MCUCRbits;
-volatile MCUCRbits_t *MCUCRbits = ((volatile MCUCRbits_t *)(0x55));
+#define MCUCRbits      (*((volatile MCUCRbits_t *) (0x55)))   
+//volatile MCUCRbits_t *MCUCRbits = ((volatile MCUCRbits_t *)(0x55));
 
 
 typedef struct {
@@ -58,9 +53,8 @@ typedef struct {
         unsigned JTD_bit                   :1;
     }MCUCSRbits_t;
 
-//#define MCUCSR_      *((volatile uint8 *) (0x54))
-//MCUCSRbits_t MCUCSRbits;
-volatile MCUCSRbits_t *MCUCSRbits = ((volatile MCUCSRbits_t *)(0x54));
+#define MCUCSRbits      (*((volatile MCUCSRbits_t *) (0x54)))
+//volatile MCUCSRbits_t *MCUCSRbits = ((volatile MCUCSRbits_t *)(0x54));
 
 
 
@@ -76,12 +70,25 @@ typedef struct {
         unsigned INT1_bit              :1;
     }GICRbits_t;
 
-//#define GICR_      *((volatile uint8 *) 0x5B)
-//GICRbits_t GICRbits;
-volatile GICRbits_t *GICRbits = ((volatile GICRbits_t *)(0x5B));
+#define GICRbits      (*((volatile GICRbits_t *) 0x5B))
+//volatile GICRbits_t *GICRbits = ((volatile GICRbits_t *)(0x5B));
 
 
 
+    
+    
+    typedef struct {
+        unsigned                       :1;
+        unsigned                       :1;
+        unsigned                       :1;
+        unsigned                       :1;
+        unsigned                       :1;
+        unsigned INTF2_bit              :1;
+        unsigned INTF0_bit              :1;
+        unsigned INTF1_bit              :1;
+    }GIFRbits_t;
+
+#define GIFRbits      (*((volatile GIFRbits_t *) 0x5A))
 
 
 

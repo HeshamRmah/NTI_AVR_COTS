@@ -23,9 +23,8 @@
       </logicalFolder>
       <logicalFolder name="MCAL_Layer" displayName="MCAL_Layer" projectFiles="true">
         <logicalFolder name="ADC" displayName="ADC" projectFiles="true">
-          <itemPath>MCAL_Layer/ADC/ADC.h</itemPath>
-          <itemPath>MCAL_Layer/ADC/ADC_config.h</itemPath>
-          <itemPath>MCAL_Layer/ADC/ADC_priv.h</itemPath>
+          <itemPath>MCAL_Layer/ADC/hal_adc.h</itemPath>
+          <itemPath>MCAL_Layer/ADC/adc_reg_cfg.h</itemPath>
         </logicalFolder>
         <logicalFolder name="DIO" displayName="DIO" projectFiles="true">
           <itemPath>MCAL_Layer/DIO/mcal_dio.h</itemPath>
@@ -35,6 +34,22 @@
           <itemPath>MCAL_Layer/Interrupt/interrupt_config.h</itemPath>
           <itemPath>MCAL_Layer/Interrupt/interrupt_reg_cfg.h</itemPath>
           <itemPath>MCAL_Layer/Interrupt/mcal_external_interrupt.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="SPI" displayName="SPI" projectFiles="true">
+          <itemPath>MCAL_Layer/SPI/spi_reg_cfg.h</itemPath>
+          <itemPath>MCAL_Layer/SPI/mcal_spi.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Timers" displayName="Timers" projectFiles="true">
+          <itemPath>MCAL_Layer/Timers/timers_reg_cfg.h</itemPath>
+          <itemPath>MCAL_Layer/Timers/mcal_timer0.h</itemPath>
+          <itemPath>MCAL_Layer/Timers/mcal_timer1.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="USART" displayName="USART" projectFiles="true">
+          <itemPath>MCAL_Layer/USART/uart_config.h</itemPath>
+          <itemPath>MCAL_Layer/USART/uart_int.h</itemPath>
+          <itemPath>MCAL_Layer/USART/uart_priv.h</itemPath>
+          <itemPath>MCAL_Layer/USART/hal_usart.h</itemPath>
+          <itemPath>MCAL_Layer/USART/usart_reg_cfg.h</itemPath>
         </logicalFolder>
         <itemPath>MCAL_Layer/std_libraries.h</itemPath>
         <itemPath>MCAL_Layer/compiler.h</itemPath>
@@ -68,13 +83,24 @@
       </logicalFolder>
       <logicalFolder name="MCAL_Layer" displayName="MCAL_Layer" projectFiles="true">
         <logicalFolder name="ADC" displayName="ADC" projectFiles="true">
-          <itemPath>MCAL_Layer/ADC/ADC.c</itemPath>
+          <itemPath>MCAL_Layer/ADC/hal_adc.c</itemPath>
         </logicalFolder>
         <logicalFolder name="DIO" displayName="DIO" projectFiles="true">
           <itemPath>MCAL_Layer/DIO/mcal_dio.c</itemPath>
         </logicalFolder>
         <logicalFolder name="Interrupt" displayName="Interrupt" projectFiles="true">
           <itemPath>MCAL_Layer/Interrupt/mcal_external_interrupt.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="SPI" displayName="SPI" projectFiles="true">
+          <itemPath>MCAL_Layer/SPI/mcal_spi.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Timers" displayName="Timers" projectFiles="true">
+          <itemPath>MCAL_Layer/Timers/mcal_timer0.c</itemPath>
+          <itemPath>MCAL_Layer/Timers/mcal_timer1.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="USART" displayName="USART" projectFiles="true">
+          <itemPath>MCAL_Layer/USART/uart_prog.c</itemPath>
+          <itemPath>MCAL_Layer/USART/hal_usart.c</itemPath>
         </logicalFolder>
       </logicalFolder>
       <itemPath>application.c</itemPath>

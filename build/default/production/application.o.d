@@ -41,8 +41,18 @@ build/default/production/application.o.d \
  MCAL_Layer/Interrupt/interrupt_config.h \
  MCAL_Layer/Interrupt/../mcal_std_types.h \
  MCAL_Layer/Interrupt/../std_libraries.h \
- MCAL_Layer/Interrupt/../DIO/mcal_dio.h MCAL_Layer/ADC/ADC.h \
- MCAL_Layer/ADC/../mcal_std_types.h
+ MCAL_Layer/Interrupt/../DIO/mcal_dio.h MCAL_Layer/ADC/hal_adc.h \
+ MCAL_Layer/ADC/adc_reg_cfg.h MCAL_Layer/ADC/../mcal_std_types.h \
+ MCAL_Layer/ADC/../DIO/mcal_dio.h \
+ MCAL_Layer/ADC/../../MCAL_Layer/Interrupt/interrupt_config.h \
+ MCAL_Layer/USART/uart_int.h MCAL_Layer/USART/../mcal_std_types.h \
+ MCAL_Layer/USART/../DIO/mcal_dio.h MCAL_Layer/SPI/mcal_spi.h \
+ MCAL_Layer/SPI/spi_reg_cfg.h MCAL_Layer/SPI/../mcal_std_types.h \
+ MCAL_Layer/SPI/../Interrupt/interrupt_config.h \
+ MCAL_Layer/SPI/../DIO/mcal_dio.h MCAL_Layer/Timers/mcal_timer0.h \
+ MCAL_Layer/Timers/timers_reg_cfg.h MCAL_Layer/Timers/../mcal_std_types.h \
+ MCAL_Layer/Timers/../Interrupt/interrupt_config.h \
+ MCAL_Layer/Timers/../DIO/mcal_dio.h
 
 application.h:
 
@@ -138,6 +148,38 @@ MCAL_Layer/Interrupt/../std_libraries.h:
 
 MCAL_Layer/Interrupt/../DIO/mcal_dio.h:
 
-MCAL_Layer/ADC/ADC.h:
+MCAL_Layer/ADC/hal_adc.h:
+
+MCAL_Layer/ADC/adc_reg_cfg.h:
 
 MCAL_Layer/ADC/../mcal_std_types.h:
+
+MCAL_Layer/ADC/../DIO/mcal_dio.h:
+
+MCAL_Layer/ADC/../../MCAL_Layer/Interrupt/interrupt_config.h:
+
+MCAL_Layer/USART/uart_int.h:
+
+MCAL_Layer/USART/../mcal_std_types.h:
+
+MCAL_Layer/USART/../DIO/mcal_dio.h:
+
+MCAL_Layer/SPI/mcal_spi.h:
+
+MCAL_Layer/SPI/spi_reg_cfg.h:
+
+MCAL_Layer/SPI/../mcal_std_types.h:
+
+MCAL_Layer/SPI/../Interrupt/interrupt_config.h:
+
+MCAL_Layer/SPI/../DIO/mcal_dio.h:
+
+MCAL_Layer/Timers/mcal_timer0.h:
+
+MCAL_Layer/Timers/timers_reg_cfg.h:
+
+MCAL_Layer/Timers/../mcal_std_types.h:
+
+MCAL_Layer/Timers/../Interrupt/interrupt_config.h:
+
+MCAL_Layer/Timers/../DIO/mcal_dio.h:
