@@ -9,9 +9,8 @@
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList>
-                <sourceRootElem>HAL_Layer</sourceRootElem>
-                <sourceRootElem>MCAL_Layer</sourceRootElem>
                 <sourceRootElem>../COST/HAL_Layer/LCD</sourceRootElem>
+                <sourceRootElem>.</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

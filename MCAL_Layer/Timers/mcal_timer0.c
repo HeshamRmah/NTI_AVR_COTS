@@ -159,7 +159,9 @@ static inline void Timer0_Set_Interrupt_Handler(const timer0_t *_timer){
         TIMER0_OVERFLOW_INTERRUPT_ENABLE();
         TMR0_Over_FlowInterruptHandler = _timer->TMR0_Over_FlowInterruptHandler;
     }
-    else if(_timer->TMR0_Compare_Match_InterruptHandler){
+    else { /* DO NOTHING */}
+    
+    if(_timer->TMR0_Compare_Match_InterruptHandler){
         INTERRUPT_GlobalInterruptEnable();
         TIMER0_COMPARE_MATCH_INTERRUPT_ENABLE();
         TMR0_Compare_Match_InterruptHandler = _timer->TMR0_Compare_Match_InterruptHandler;

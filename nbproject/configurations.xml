@@ -4,6 +4,29 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="FreeRTOS" displayName="FreeRTOS" projectFiles="true">
+        <itemPath>FreeRTOS/atomic.h</itemPath>
+        <itemPath>FreeRTOS/croutine.h</itemPath>
+        <itemPath>FreeRTOS/deprecated_definitions.h</itemPath>
+        <itemPath>FreeRTOS/event_groups.h</itemPath>
+        <itemPath>FreeRTOS/FreeRTOS.h</itemPath>
+        <itemPath>FreeRTOS/FreeRTOSConfig.h</itemPath>
+        <itemPath>FreeRTOS/list.h</itemPath>
+        <itemPath>FreeRTOS/message_buffer.h</itemPath>
+        <itemPath>FreeRTOS/mpu_prototypes.h</itemPath>
+        <itemPath>FreeRTOS/mpu_wrappers.h</itemPath>
+        <itemPath>FreeRTOS/portable.h</itemPath>
+        <itemPath>FreeRTOS/portmacro.h</itemPath>
+        <itemPath>FreeRTOS/projdefs.h</itemPath>
+        <itemPath>FreeRTOS/queue.h</itemPath>
+        <itemPath>FreeRTOS/regtest.h</itemPath>
+        <itemPath>FreeRTOS/semphr.h</itemPath>
+        <itemPath>FreeRTOS/StackMacros.h</itemPath>
+        <itemPath>FreeRTOS/stack_macros.h</itemPath>
+        <itemPath>FreeRTOS/stream_buffer.h</itemPath>
+        <itemPath>FreeRTOS/task.h</itemPath>
+        <itemPath>FreeRTOS/timers.h</itemPath>
+      </logicalFolder>
       <logicalFolder name="HAL_Layer" displayName="HAL_Layer" projectFiles="true">
         <logicalFolder name="7_Segment" displayName="7_Segment" projectFiles="true">
           <itemPath>HAL_Layer/7_Segment/hal_seven_segment.h</itemPath>
@@ -29,6 +52,10 @@
         <logicalFolder name="DIO" displayName="DIO" projectFiles="true">
           <itemPath>MCAL_Layer/DIO/mcal_dio.h</itemPath>
           <itemPath>MCAL_Layer/DIO/dio_reg_cfg.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="I2C" displayName="I2C" projectFiles="true">
+          <itemPath>MCAL_Layer/I2C/i2c_reg_cfg.h</itemPath>
+          <itemPath>MCAL_Layer/I2C/mcal_i2c.h</itemPath>
         </logicalFolder>
         <logicalFolder name="Interrupt" displayName="Interrupt" projectFiles="true">
           <itemPath>MCAL_Layer/Interrupt/interrupt_config.h</itemPath>
@@ -64,6 +91,19 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="FreeRTOS" displayName="FreeRTOS" projectFiles="true">
+        <itemPath>FreeRTOS/croutine.c</itemPath>
+        <itemPath>FreeRTOS/event_groups.c</itemPath>
+        <itemPath>FreeRTOS/heap_1.c</itemPath>
+        <itemPath>FreeRTOS/list.c</itemPath>
+        <itemPath>FreeRTOS/mpu_wrappers.c</itemPath>
+        <itemPath>FreeRTOS/port.c</itemPath>
+        <itemPath>FreeRTOS/queue.c</itemPath>
+        <itemPath>FreeRTOS/regtest.c</itemPath>
+        <itemPath>FreeRTOS/stream_buffer.c</itemPath>
+        <itemPath>FreeRTOS/tasks.c</itemPath>
+        <itemPath>FreeRTOS/timers.c</itemPath>
+      </logicalFolder>
       <logicalFolder name="HAL_Layer" displayName="HAL_Layer" projectFiles="true">
         <logicalFolder name="7_Segment" displayName="7_Segment" projectFiles="true">
           <itemPath>HAL_Layer/7_Segment/hal_seven_segment.c</itemPath>
@@ -87,6 +127,9 @@
         </logicalFolder>
         <logicalFolder name="DIO" displayName="DIO" projectFiles="true">
           <itemPath>MCAL_Layer/DIO/mcal_dio.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="I2C" displayName="I2C" projectFiles="true">
+          <itemPath>MCAL_Layer/I2C/mcal_i2c.c</itemPath>
         </logicalFolder>
         <logicalFolder name="Interrupt" displayName="Interrupt" projectFiles="true">
           <itemPath>MCAL_Layer/Interrupt/mcal_external_interrupt.c</itemPath>
@@ -112,9 +155,8 @@
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
-    <Elem>HAL_Layer</Elem>
-    <Elem>MCAL_Layer</Elem>
     <Elem>../COST/HAL_Layer/LCD</Elem>
+    <Elem>.</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -126,7 +168,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>noID</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.36</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>

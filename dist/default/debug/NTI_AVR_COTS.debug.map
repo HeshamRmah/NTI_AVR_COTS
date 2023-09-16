@@ -1,0 +1,1883 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+                              build/default/debug/application.o (__mulsi3)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+                              build/default/debug/FreeRTOS/queue.o (__udivmodhi4)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+                              build/default/debug/HAL_Layer/LCD/hal_lcd.o (__udivmodsi4)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+                              build/default/debug/application.o (__divmodsi4)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+                              c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o) (__negsi2)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+                              build/default/debug/MCAL_Layer/ADC/hal_adc.o (__tablejump2__)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+                              build/default/debug/MCAL_Layer/DIO/mcal_dio.o (__do_copy_data)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+                              build/default/debug/application.o (__umulhisi3)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+                              c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o) (__muluhisi3)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+                              build/default/debug/FreeRTOS/event_groups.o (__xload_2)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+                              build/default/debug/application.o (__movmemx_qi)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+                              C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o (exit)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(memcpy.o)
+                              build/default/debug/FreeRTOS/queue.o (memcpy)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o)
+                              c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o) (_Exit)
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+                              c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o) (_exit)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+ .bss           0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+ .text          0x0000000000000000        0x0 build/default/debug/FreeRTOS/croutine.o
+ .data          0x0000000000000000        0x0 build/default/debug/FreeRTOS/croutine.o
+ .bss           0x0000000000000000        0x0 build/default/debug/FreeRTOS/croutine.o
+ .debug_info    0x0000000000000000      0x265 build/default/debug/FreeRTOS/croutine.o
+ .debug_abbrev  0x0000000000000000       0x1b build/default/debug/FreeRTOS/croutine.o
+ .debug_aranges
+                0x0000000000000000       0x18 build/default/debug/FreeRTOS/croutine.o
+ .debug_line    0x0000000000000000       0x1a build/default/debug/FreeRTOS/croutine.o
+ .debug_str     0x0000000000000000        0x0 build/default/debug/FreeRTOS/croutine.o
+ .comment       0x0000000000000000       0x30 build/default/debug/FreeRTOS/croutine.o
+ .text          0x0000000000000000        0x0 build/default/debug/FreeRTOS/event_groups.o
+ .data          0x0000000000000000        0x0 build/default/debug/FreeRTOS/event_groups.o
+ .bss           0x0000000000000000        0x0 build/default/debug/FreeRTOS/event_groups.o
+ .text.xEventGroupCreate
+                0x0000000000000000       0x26 build/default/debug/FreeRTOS/event_groups.o
+ .text.xEventGroupWaitBits
+                0x0000000000000000      0x110 build/default/debug/FreeRTOS/event_groups.o
+ .text.xEventGroupClearBits
+                0x0000000000000000       0x1e build/default/debug/FreeRTOS/event_groups.o
+ .text.xEventGroupGetBitsFromISR
+                0x0000000000000000        0xe build/default/debug/FreeRTOS/event_groups.o
+ .text.xEventGroupSetBits
+                0x0000000000000000       0xec build/default/debug/FreeRTOS/event_groups.o
+ .text.xEventGroupSync
+                0x0000000000000000       0xd2 build/default/debug/FreeRTOS/event_groups.o
+ .text.vEventGroupDelete
+                0x0000000000000000       0x74 build/default/debug/FreeRTOS/event_groups.o
+ .text.vEventGroupSetBitsCallback
+                0x0000000000000000        0x8 build/default/debug/FreeRTOS/event_groups.o
+ .text.vEventGroupClearBitsCallback
+                0x0000000000000000        0x8 build/default/debug/FreeRTOS/event_groups.o
+ .debug_info    0x0000000000000000      0xcae build/default/debug/FreeRTOS/event_groups.o
+ .debug_abbrev  0x0000000000000000      0x21f build/default/debug/FreeRTOS/event_groups.o
+ .debug_loc     0x0000000000000000      0x91c build/default/debug/FreeRTOS/event_groups.o
+ .debug_aranges
+                0x0000000000000000       0x60 build/default/debug/FreeRTOS/event_groups.o
+ .debug_ranges  0x0000000000000000       0x68 build/default/debug/FreeRTOS/event_groups.o
+ .debug_line    0x0000000000000000      0x398 build/default/debug/FreeRTOS/event_groups.o
+ .debug_str     0x0000000000000000      0x192 build/default/debug/FreeRTOS/event_groups.o
+ .comment       0x0000000000000000       0x30 build/default/debug/FreeRTOS/event_groups.o
+ .debug_frame   0x0000000000000000      0x178 build/default/debug/FreeRTOS/event_groups.o
+ .text          0x0000000000000000        0x0 build/default/debug/FreeRTOS/heap_1.o
+ .data          0x0000000000000000        0x0 build/default/debug/FreeRTOS/heap_1.o
+ .bss           0x0000000000000000        0x0 build/default/debug/FreeRTOS/heap_1.o
+ .text.pvPortMalloc
+                0x0000000000000000       0x74 build/default/debug/FreeRTOS/heap_1.o
+ .text.vPortFree
+                0x0000000000000000        0x2 build/default/debug/FreeRTOS/heap_1.o
+ .text.vPortInitialiseBlocks
+                0x0000000000000000        0xa build/default/debug/FreeRTOS/heap_1.o
+ .text.xPortGetFreeHeapSize
+                0x0000000000000000       0x12 build/default/debug/FreeRTOS/heap_1.o
+ .bss.pucAlignedHeap.2095
+                0x0000000000000000        0x2 build/default/debug/FreeRTOS/heap_1.o
+ .bss.xNextFreeByte
+                0x0000000000000000        0x2 build/default/debug/FreeRTOS/heap_1.o
+ .bss.ucHeap    0x0000000000000000      0x5dc build/default/debug/FreeRTOS/heap_1.o
+ .debug_info    0x0000000000000000      0x3fe build/default/debug/FreeRTOS/heap_1.o
+ .debug_abbrev  0x0000000000000000      0x111 build/default/debug/FreeRTOS/heap_1.o
+ .debug_loc     0x0000000000000000       0xe0 build/default/debug/FreeRTOS/heap_1.o
+ .debug_aranges
+                0x0000000000000000       0x38 build/default/debug/FreeRTOS/heap_1.o
+ .debug_ranges  0x0000000000000000       0x28 build/default/debug/FreeRTOS/heap_1.o
+ .debug_line    0x0000000000000000      0x127 build/default/debug/FreeRTOS/heap_1.o
+ .debug_str     0x0000000000000000       0x1f build/default/debug/FreeRTOS/heap_1.o
+ .comment       0x0000000000000000       0x30 build/default/debug/FreeRTOS/heap_1.o
+ .debug_frame   0x0000000000000000       0x60 build/default/debug/FreeRTOS/heap_1.o
+ .text          0x0000000000000000        0x0 build/default/debug/FreeRTOS/list.o
+ .data          0x0000000000000000        0x0 build/default/debug/FreeRTOS/list.o
+ .bss           0x0000000000000000        0x0 build/default/debug/FreeRTOS/list.o
+ .text.vListInitialise
+                0x0000000000000000       0x1c build/default/debug/FreeRTOS/list.o
+ .text.vListInitialiseItem
+                0x0000000000000000        0x8 build/default/debug/FreeRTOS/list.o
+ .text.vListInsertEnd
+                0x0000000000000000       0x42 build/default/debug/FreeRTOS/list.o
+ .text.vListInsert
+                0x0000000000000000       0x62 build/default/debug/FreeRTOS/list.o
+ .text.uxListRemove
+                0x0000000000000000       0x4e build/default/debug/FreeRTOS/list.o
+ .debug_info    0x0000000000000000      0x578 build/default/debug/FreeRTOS/list.o
+ .debug_abbrev  0x0000000000000000      0x116 build/default/debug/FreeRTOS/list.o
+ .debug_loc     0x0000000000000000       0xb8 build/default/debug/FreeRTOS/list.o
+ .debug_aranges
+                0x0000000000000000       0x40 build/default/debug/FreeRTOS/list.o
+ .debug_ranges  0x0000000000000000       0x30 build/default/debug/FreeRTOS/list.o
+ .debug_line    0x0000000000000000      0x1ba build/default/debug/FreeRTOS/list.o
+ .debug_str     0x0000000000000000       0x2b build/default/debug/FreeRTOS/list.o
+ .comment       0x0000000000000000       0x30 build/default/debug/FreeRTOS/list.o
+ .debug_frame   0x0000000000000000       0x88 build/default/debug/FreeRTOS/list.o
+ .text          0x0000000000000000        0x0 build/default/debug/FreeRTOS/mpu_wrappers.o
+ .data          0x0000000000000000        0x0 build/default/debug/FreeRTOS/mpu_wrappers.o
+ .bss           0x0000000000000000        0x0 build/default/debug/FreeRTOS/mpu_wrappers.o
+ .debug_info    0x0000000000000000      0x269 build/default/debug/FreeRTOS/mpu_wrappers.o
+ .debug_abbrev  0x0000000000000000       0x1b build/default/debug/FreeRTOS/mpu_wrappers.o
+ .debug_aranges
+                0x0000000000000000       0x18 build/default/debug/FreeRTOS/mpu_wrappers.o
+ .debug_line    0x0000000000000000       0x1a build/default/debug/FreeRTOS/mpu_wrappers.o
+ .debug_str     0x0000000000000000        0x0 build/default/debug/FreeRTOS/mpu_wrappers.o
+ .comment       0x0000000000000000       0x30 build/default/debug/FreeRTOS/mpu_wrappers.o
+ .text          0x0000000000000000        0x0 build/default/debug/FreeRTOS/port.o
+ .data          0x0000000000000000        0x0 build/default/debug/FreeRTOS/port.o
+ .bss           0x0000000000000000        0x0 build/default/debug/FreeRTOS/port.o
+ .text.pxPortInitialiseStack
+                0x0000000000000000       0xd8 build/default/debug/FreeRTOS/port.o
+ .text.xPortStartScheduler
+                0x0000000000000000       0x6a build/default/debug/FreeRTOS/port.o
+ .text.vPortEndScheduler
+                0x0000000000000000        0x2 build/default/debug/FreeRTOS/port.o
+ .text.vPortYield
+                0x0000000000000000       0xb2 build/default/debug/FreeRTOS/port.o
+ .text          0x0000000000000000        0x0 build/default/debug/FreeRTOS/queue.o
+ .data          0x0000000000000000        0x0 build/default/debug/FreeRTOS/queue.o
+ .bss           0x0000000000000000        0x0 build/default/debug/FreeRTOS/queue.o
+ .text.prvIsQueueEmpty
+                0x0000000000000000       0x22 build/default/debug/FreeRTOS/queue.o
+ .text.prvCopyDataToQueue
+                0x0000000000000000       0xbe build/default/debug/FreeRTOS/queue.o
+ .text.prvCopyDataFromQueue
+                0x0000000000000000       0x36 build/default/debug/FreeRTOS/queue.o
+ .text.prvNotifyQueueSetContainer
+                0x0000000000000000       0x96 build/default/debug/FreeRTOS/queue.o
+ .text.prvUnlockQueue
+                0x0000000000000000       0xce build/default/debug/FreeRTOS/queue.o
+ .text.xQueueGenericReset
+                0x0000000000000000       0xc8 build/default/debug/FreeRTOS/queue.o
+ .text.xQueueGenericCreate
+                0x0000000000000000       0x82 build/default/debug/FreeRTOS/queue.o
+ .text.xQueueGenericSend
+                0x0000000000000000      0x1d2 build/default/debug/FreeRTOS/queue.o
+ .text.xQueueCreateMutex
+                0x0000000000000000       0x3a build/default/debug/FreeRTOS/queue.o
+ .text.xQueueGenericSendFromISR
+                0x0000000000000000       0xbc build/default/debug/FreeRTOS/queue.o
+ .text.xQueueGiveFromISR
+                0x0000000000000000       0xa2 build/default/debug/FreeRTOS/queue.o
+ .text.xQueueReceive
+                0x0000000000000000      0x14c build/default/debug/FreeRTOS/queue.o
+ .text.xQueueSemaphoreTake
+                0x0000000000000000      0x1c4 build/default/debug/FreeRTOS/queue.o
+ .text.xQueuePeek
+                0x0000000000000000      0x14c build/default/debug/FreeRTOS/queue.o
+ .text.xQueueReceiveFromISR
+                0x0000000000000000       0x7e build/default/debug/FreeRTOS/queue.o
+ .text.xQueuePeekFromISR
+                0x0000000000000000       0x2e build/default/debug/FreeRTOS/queue.o
+ .text.uxQueueMessagesWaiting
+                0x0000000000000000       0x10 build/default/debug/FreeRTOS/queue.o
+ .text.uxQueueSpacesAvailable
+                0x0000000000000000       0x14 build/default/debug/FreeRTOS/queue.o
+ .text.uxQueueMessagesWaitingFromISR
+                0x0000000000000000        0x6 build/default/debug/FreeRTOS/queue.o
+ .text.vQueueDelete
+                0x0000000000000000        0x6 build/default/debug/FreeRTOS/queue.o
+ .text.xQueueIsQueueEmptyFromISR
+                0x0000000000000000        0xc build/default/debug/FreeRTOS/queue.o
+ .text.xQueueIsQueueFullFromISR
+                0x0000000000000000        0xe build/default/debug/FreeRTOS/queue.o
+ .text.xQueueCreateSet
+                0x0000000000000000        0xa build/default/debug/FreeRTOS/queue.o
+ .text.xQueueAddToSet
+                0x0000000000000000       0x2a build/default/debug/FreeRTOS/queue.o
+ .text.xQueueRemoveFromSet
+                0x0000000000000000       0x2c build/default/debug/FreeRTOS/queue.o
+ .text.xQueueSelectFromSet
+                0x0000000000000000       0x28 build/default/debug/FreeRTOS/queue.o
+ .text.xQueueSelectFromSetFromISR
+                0x0000000000000000       0x2a build/default/debug/FreeRTOS/queue.o
+ .debug_info    0x0000000000000000     0x1f5e build/default/debug/FreeRTOS/queue.o
+ .debug_abbrev  0x0000000000000000      0x2be build/default/debug/FreeRTOS/queue.o
+ .debug_loc     0x0000000000000000     0x18f6 build/default/debug/FreeRTOS/queue.o
+ .debug_aranges
+                0x0000000000000000       0xf0 build/default/debug/FreeRTOS/queue.o
+ .debug_ranges  0x0000000000000000      0x1a0 build/default/debug/FreeRTOS/queue.o
+ .debug_line    0x0000000000000000      0xcfe build/default/debug/FreeRTOS/queue.o
+ .debug_str     0x0000000000000000      0x2d6 build/default/debug/FreeRTOS/queue.o
+ .comment       0x0000000000000000       0x30 build/default/debug/FreeRTOS/queue.o
+ .debug_frame   0x0000000000000000      0x440 build/default/debug/FreeRTOS/queue.o
+ .text          0x0000000000000000        0x0 build/default/debug/FreeRTOS/regtest.o
+ .data          0x0000000000000000        0x0 build/default/debug/FreeRTOS/regtest.o
+ .bss           0x0000000000000000        0x0 build/default/debug/FreeRTOS/regtest.o
+ .text.prvRegisterCheck1
+                0x0000000000000000      0x144 build/default/debug/FreeRTOS/regtest.o
+ .text.prvRegisterCheck2
+                0x0000000000000000      0x144 build/default/debug/FreeRTOS/regtest.o
+ .progmemx.data
+                0x0000000000000000        0xa build/default/debug/FreeRTOS/regtest.o
+ .text.vStartRegTestTasks
+                0x0000000000000000       0x44 build/default/debug/FreeRTOS/regtest.o
+ .text.xAreRegTestTasksStillRunning
+                0x0000000000000000        0xc build/default/debug/FreeRTOS/regtest.o
+ .bss.xRegTestError
+                0x0000000000000000        0x1 build/default/debug/FreeRTOS/regtest.o
+ .debug_info    0x0000000000000000      0x44f build/default/debug/FreeRTOS/regtest.o
+ .debug_abbrev  0x0000000000000000       0xeb build/default/debug/FreeRTOS/regtest.o
+ .debug_aranges
+                0x0000000000000000       0x38 build/default/debug/FreeRTOS/regtest.o
+ .debug_ranges  0x0000000000000000       0x28 build/default/debug/FreeRTOS/regtest.o
+ .debug_line    0x0000000000000000      0xaf9 build/default/debug/FreeRTOS/regtest.o
+ .debug_str     0x0000000000000000       0x19 build/default/debug/FreeRTOS/regtest.o
+ .comment       0x0000000000000000       0x30 build/default/debug/FreeRTOS/regtest.o
+ .debug_frame   0x0000000000000000       0x70 build/default/debug/FreeRTOS/regtest.o
+ .text          0x0000000000000000        0x0 build/default/debug/FreeRTOS/stream_buffer.o
+ .data          0x0000000000000000        0x0 build/default/debug/FreeRTOS/stream_buffer.o
+ .bss           0x0000000000000000        0x0 build/default/debug/FreeRTOS/stream_buffer.o
+ .text.prvBytesInBuffer
+                0x0000000000000000       0x54 build/default/debug/FreeRTOS/stream_buffer.o
+ .text.prvWriteBytesToBuffer
+                0x0000000000000000       0x96 build/default/debug/FreeRTOS/stream_buffer.o
+ .text.prvWriteMessageToBuffer
+                0x0000000000000000       0xa0 build/default/debug/FreeRTOS/stream_buffer.o
+ .text.prvReadBytesFromBuffer
+                0x0000000000000000       0x8c build/default/debug/FreeRTOS/stream_buffer.o
+ .text.prvReadMessageFromBuffer
+                0x0000000000000000       0x90 build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferGenericCreate
+                0x0000000000000000       0x6c build/default/debug/FreeRTOS/stream_buffer.o
+ .text.vStreamBufferDelete
+                0x0000000000000000       0x1a build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferReset
+                0x0000000000000000       0x74 build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferSetTriggerLevel
+                0x0000000000000000       0x22 build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferSpacesAvailable
+                0x0000000000000000       0x80 build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferBytesAvailable
+                0x0000000000000000        0xa build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferSend
+                0x0000000000000000      0x178 build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferSendFromISR
+                0x0000000000000000       0xa2 build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferReceive
+                0x0000000000000000      0x11a build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferNextMessageLengthBytes
+                0x0000000000000000       0x58 build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferReceiveFromISR
+                0x0000000000000000       0x8c build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferIsEmpty
+                0x0000000000000000       0x24 build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferIsFull
+                0x0000000000000000       0x3a build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferSendCompletedFromISR
+                0x0000000000000000       0x4c build/default/debug/FreeRTOS/stream_buffer.o
+ .text.xStreamBufferReceiveCompletedFromISR
+                0x0000000000000000       0x4c build/default/debug/FreeRTOS/stream_buffer.o
+ .debug_info    0x0000000000000000     0x189c build/default/debug/FreeRTOS/stream_buffer.o
+ .debug_abbrev  0x0000000000000000      0x253 build/default/debug/FreeRTOS/stream_buffer.o
+ .debug_loc     0x0000000000000000     0x15ad build/default/debug/FreeRTOS/stream_buffer.o
+ .debug_aranges
+                0x0000000000000000       0xb8 build/default/debug/FreeRTOS/stream_buffer.o
+ .debug_ranges  0x0000000000000000       0xa8 build/default/debug/FreeRTOS/stream_buffer.o
+ .debug_line    0x0000000000000000      0x70b build/default/debug/FreeRTOS/stream_buffer.o
+ .debug_str     0x0000000000000000      0x242 build/default/debug/FreeRTOS/stream_buffer.o
+ .comment       0x0000000000000000       0x30 build/default/debug/FreeRTOS/stream_buffer.o
+ .debug_frame   0x0000000000000000      0x438 build/default/debug/FreeRTOS/stream_buffer.o
+ .text          0x0000000000000000        0x0 build/default/debug/FreeRTOS/tasks.o
+ .data          0x0000000000000000        0x0 build/default/debug/FreeRTOS/tasks.o
+ .bss           0x0000000000000000        0x0 build/default/debug/FreeRTOS/tasks.o
+ .text.prvIdleTask
+                0x0000000000000000        0x2 build/default/debug/FreeRTOS/tasks.o
+ .text.prvAddCurrentTaskToDelayedList
+                0x0000000000000000      0x102 build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskCreate
+                0x0000000000000000      0x28c build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskResume
+                0x0000000000000000      0x108 build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskResumeFromISR
+                0x0000000000000000      0x11c build/default/debug/FreeRTOS/tasks.o
+ .progmemx.data
+                0x0000000000000000        0x6 build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskStartScheduler
+                0x0000000000000000       0x5e build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskEndScheduler
+                0x0000000000000000        0xc build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskSuspendAll
+                0x0000000000000000        0xc build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskGetTickCount
+                0x0000000000000000       0x14 build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskGetTickCountFromISR
+                0x0000000000000000        0xa build/default/debug/FreeRTOS/tasks.o
+ .text.uxTaskGetNumberOfTasks
+                0x0000000000000000        0x6 build/default/debug/FreeRTOS/tasks.o
+ .text.pcTaskGetName
+                0x0000000000000000       0x10 build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskResumeAll
+                0x0000000000000000      0x1bc build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskDelay
+                0x0000000000000000       0x28 build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskCatchUpTicks
+                0x0000000000000000       0x32 build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskSuspend
+                0x0000000000000000       0xa4 build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskPlaceOnEventList
+                0x0000000000000000       0x24 build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskPlaceOnUnorderedEventList
+                0x0000000000000000       0x8c build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskRemoveFromEventList
+                0x0000000000000000      0x186 build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskRemoveFromUnorderedEventList
+                0x0000000000000000      0x14e build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskSetTimeOutState
+                0x0000000000000000       0x20 build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskInternalSetTimeOutState
+                0x0000000000000000       0x16 build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskCheckForTimeOut
+                0x0000000000000000       0x72 build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskMissedYield
+                0x0000000000000000        0x8 build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskGetCurrentTaskHandle
+                0x0000000000000000        0xa build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskPriorityInherit
+                0x0000000000000000      0x128 build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskPriorityDisinherit
+                0x0000000000000000       0xc6 build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskPriorityDisinheritAfterTimeout
+                0x0000000000000000       0xe6 build/default/debug/FreeRTOS/tasks.o
+ .text.uxTaskResetEventItemValue
+                0x0000000000000000       0x2e build/default/debug/FreeRTOS/tasks.o
+ .text.pvTaskIncrementMutexHeldCount
+                0x0000000000000000       0x24 build/default/debug/FreeRTOS/tasks.o
+ .text.ulTaskGenericNotifyTake
+                0x0000000000000000      0x102 build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskGenericNotifyWait
+                0x0000000000000000      0x142 build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskGenericNotify
+                0x0000000000000000      0x204 build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskGenericNotifyFromISR
+                0x0000000000000000      0x258 build/default/debug/FreeRTOS/tasks.o
+ .text.vTaskGenericNotifyGiveFromISR
+                0x0000000000000000      0x194 build/default/debug/FreeRTOS/tasks.o
+ .text.xTaskGenericNotifyStateClear
+                0x0000000000000000       0x34 build/default/debug/FreeRTOS/tasks.o
+ .text.ulTaskGenericNotifyValueClear
+                0x0000000000000000       0x68 build/default/debug/FreeRTOS/tasks.o
+ .bss.xIdleTaskHandle
+                0x0000000000000000        0x2 build/default/debug/FreeRTOS/tasks.o
+ .bss.uxTaskNumber
+                0x0000000000000000        0x1 build/default/debug/FreeRTOS/tasks.o
+ .bss.xSchedulerRunning
+                0x0000000000000000        0x1 build/default/debug/FreeRTOS/tasks.o
+ .bss.uxCurrentNumberOfTasks
+                0x0000000000000000        0x1 build/default/debug/FreeRTOS/tasks.o
+ .bss.xSuspendedTaskList
+                0x0000000000000000        0x9 build/default/debug/FreeRTOS/tasks.o
+ .bss.xPendingReadyList
+                0x0000000000000000        0x9 build/default/debug/FreeRTOS/tasks.o
+ .bss.xDelayedTaskList2
+                0x0000000000000000        0x9 build/default/debug/FreeRTOS/tasks.o
+ .bss.xDelayedTaskList1
+                0x0000000000000000        0x9 build/default/debug/FreeRTOS/tasks.o
+ .text          0x0000000000000000        0x0 build/default/debug/FreeRTOS/timers.o
+ .data          0x0000000000000000        0x0 build/default/debug/FreeRTOS/timers.o
+ .bss           0x0000000000000000        0x0 build/default/debug/FreeRTOS/timers.o
+ .debug_info    0x0000000000000000      0x263 build/default/debug/FreeRTOS/timers.o
+ .debug_abbrev  0x0000000000000000       0x1b build/default/debug/FreeRTOS/timers.o
+ .debug_aranges
+                0x0000000000000000       0x18 build/default/debug/FreeRTOS/timers.o
+ .debug_line    0x0000000000000000       0x1a build/default/debug/FreeRTOS/timers.o
+ .debug_str     0x0000000000000000        0x0 build/default/debug/FreeRTOS/timers.o
+ .comment       0x0000000000000000       0x30 build/default/debug/FreeRTOS/timers.o
+ .text          0x0000000000000000        0x0 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .data          0x0000000000000000        0x0 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .bss           0x0000000000000000        0x0 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .text.hal_seven_segement_intialize
+                0x0000000000000000       0x98 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .text.hal_seven_segement_write_one_digit
+                0x0000000000000000       0xc2 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .text.hal_seven_segement_write_two_digit
+                0x0000000000000000      0x1e2 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .text.hal_seven_segement_write_three_digit
+                0x0000000000000000       0xc2 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .text.hal_seven_segement_write_four_digit
+                0x0000000000000000       0xc2 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .debug_info    0x0000000000000000      0xdd9 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .debug_abbrev  0x0000000000000000      0x17d build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .debug_loc     0x0000000000000000      0x4b8 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .debug_aranges
+                0x0000000000000000       0x40 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .debug_ranges  0x0000000000000000       0x30 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .debug_line    0x0000000000000000      0x380 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .debug_str     0x0000000000000000       0x2d build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .comment       0x0000000000000000       0x30 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .debug_frame   0x0000000000000000      0x110 build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+ .text          0x0000000000000000        0x0 build/default/debug/HAL_Layer/button/hal_button.o
+ .data          0x0000000000000000        0x0 build/default/debug/HAL_Layer/button/hal_button.o
+ .bss           0x0000000000000000        0x0 build/default/debug/HAL_Layer/button/hal_button.o
+ .text.hal_button_initialize
+                0x0000000000000000       0x12 build/default/debug/HAL_Layer/button/hal_button.o
+ .text.hal_button_read_state
+                0x0000000000000000       0x90 build/default/debug/HAL_Layer/button/hal_button.o
+ .debug_info    0x0000000000000000      0x58a build/default/debug/HAL_Layer/button/hal_button.o
+ .debug_abbrev  0x0000000000000000      0x104 build/default/debug/HAL_Layer/button/hal_button.o
+ .debug_loc     0x0000000000000000      0x150 build/default/debug/HAL_Layer/button/hal_button.o
+ .debug_aranges
+                0x0000000000000000       0x28 build/default/debug/HAL_Layer/button/hal_button.o
+ .debug_ranges  0x0000000000000000       0x18 build/default/debug/HAL_Layer/button/hal_button.o
+ .debug_line    0x0000000000000000      0x15a build/default/debug/HAL_Layer/button/hal_button.o
+ .debug_str     0x0000000000000000       0x2f build/default/debug/HAL_Layer/button/hal_button.o
+ .comment       0x0000000000000000       0x30 build/default/debug/HAL_Layer/button/hal_button.o
+ .debug_frame   0x0000000000000000       0x60 build/default/debug/HAL_Layer/button/hal_button.o
+ .text          0x0000000000000000        0x0 build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .data          0x0000000000000000        0x0 build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .bss           0x0000000000000000        0x0 build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .text.keypad_get_value
+                0x0000000000000000      0x18c build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .progmemx.data.btn_values
+                0x0000000000000000       0x10 build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .text          0x0000000000000000        0x0 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .data          0x0000000000000000        0x0 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .bss           0x0000000000000000        0x0 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .text.lcd_4bit_clear_command
+                0x0000000000000000       0x30 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .text.lcd_4bit_send_char_data_pos
+                0x0000000000000000       0x30 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .text.lcd_4bit_send_string
+                0x0000000000000000       0x42 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .text.lcd_4bit_send_string_pos
+                0x0000000000000000       0x4a build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .text.lcd_4bit_send_custom_char
+                0x0000000000000000       0x96 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .text.convert_uint32_to_string
+                0x0000000000000000      0x14e build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .text.convert_string_to_uint32
+                0x0000000000000000       0x9a build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .text          0x0000000000000000        0x0 build/default/debug/HAL_Layer/LED/hal_led.o
+ .data          0x0000000000000000        0x0 build/default/debug/HAL_Layer/LED/hal_led.o
+ .bss           0x0000000000000000        0x0 build/default/debug/HAL_Layer/LED/hal_led.o
+ .text.hal_led_turn_on
+                0x0000000000000000       0x6c build/default/debug/HAL_Layer/LED/hal_led.o
+ .text.hal_led_turn_off
+                0x0000000000000000       0x6c build/default/debug/HAL_Layer/LED/hal_led.o
+ .text.hal_led_turn_toggle
+                0x0000000000000000       0x6a build/default/debug/HAL_Layer/LED/hal_led.o
+ .text          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .data          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .bss           0x0000000000000000        0x0 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .text.ADC_Init
+                0x0000000000000000      0x310 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .progmem.gcc_sw_table.ADC_Init
+                0x0000000000000000       0x60 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .text.ADC_DeInit
+                0x0000000000000000       0x12 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .text.ADC_StartConversion
+                0x0000000000000000       0x10 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .text.ADC_IsConversionDone
+                0x0000000000000000       0x18 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .text.ADC_GetConversionResult
+                0x0000000000000000       0x78 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .text.ADC_GetConversion_Polling
+                0x0000000000000000      0x192 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .progmem.gcc_sw_table.ADC_GetConversion_Polling
+                0x0000000000000000       0x40 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .text.ADC_StartConversion_Interrupt
+                0x0000000000000000       0x12 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .text          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .data          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .bss           0x0000000000000000        0x0 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .text.dio_pin_get_direction_status
+                0x0000000000000000       0x5a build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .text.dio_pin_read_logic
+                0x0000000000000000       0x5a build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .text.dio_pin_toggle_logic
+                0x0000000000000000       0x50 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .text.dio_set_port_pull_up
+                0x0000000000000000       0x22 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .text.dio_port_direction_intialize
+                0x0000000000000000       0x20 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .text.dio_port_get_direction_status
+                0x0000000000000000       0x2e build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .text.dio_port_write_logic
+                0x0000000000000000       0x20 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .text.dio_port_read_logic
+                0x0000000000000000       0x2e build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .text.dio_port_toggle_logic
+                0x0000000000000000       0x30 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .data.pin_registers
+                0x0000000000000000        0x8 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .text          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .data          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .bss           0x0000000000000000        0x0 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text.I2C_Master_Init
+                0x0000000000000000       0xb2 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text.I2C_Slave_Init
+                0x0000000000000000       0x42 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text.I2C_DeInit
+                0x0000000000000000       0x1a build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text.I2C_Master_Send_Start
+                0x0000000000000000       0x32 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text.I2C_Master_Send_Repeated_Start
+                0x0000000000000000       0x3e build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text.I2C_Master_Send_Stop
+                0x0000000000000000       0x1a build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text.I2C_Master_Write_Polling
+                0x0000000000000000       0x52 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text.I2C_Slave_Write_Polling
+                0x0000000000000000       0x18 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text.I2C_Master_Read_Polling
+                0x0000000000000000       0x48 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text.I2C_Slave_Read_Polling
+                0x0000000000000000       0x4e build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text.I2C_Master_Write_Interrupt
+                0x0000000000000000       0x10 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text.I2C_Master_Read_Interrupt
+                0x0000000000000000       0x14 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .debug_info    0x0000000000000000     0x1197 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .debug_abbrev  0x0000000000000000      0x172 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .debug_loc     0x0000000000000000      0x50b build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .debug_aranges
+                0x0000000000000000       0x78 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .debug_ranges  0x0000000000000000       0x68 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .debug_line    0x0000000000000000      0x435 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .debug_str     0x0000000000000000       0x26 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .comment       0x0000000000000000       0x30 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .debug_frame   0x0000000000000000       0xd4 build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+ .text          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .data          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .bss           0x0000000000000000        0x0 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .text.INT0_ISR
+                0x0000000000000000       0x16 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .text.INT1_ISR
+                0x0000000000000000       0x16 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .text.INT2_ISR
+                0x0000000000000000       0x16 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .text.Interrupt_INTx_Init
+                0x0000000000000000      0x1b0 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .progmem.gcc_sw_table.Interrupt_INTx_Init
+                0x0000000000000000       0x14 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .bss.INT2_InterruptHandler
+                0x0000000000000000        0x2 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .bss.INT0_InterruptHandler
+                0x0000000000000000        0x2 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .text          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .data          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .bss           0x0000000000000000        0x0 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .text.SPI_Init
+                0x0000000000000000      0x1a4 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .progmem.gcc_sw_table.SPI_Init
+                0x0000000000000000        0xe build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .text.SPI_DeInit
+                0x0000000000000000       0x12 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .text.SPI_Send_Byte_POLLING
+                0x0000000000000000       0x14 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .text.SPI_Read_Byte_POLLING
+                0x0000000000000000       0x18 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .text.SPI_Send_Byte_Interrupt
+                0x0000000000000000       0x10 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .text.SPI_Read_Byte_Interrupt
+                0x0000000000000000       0x14 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .text          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .data          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .bss           0x0000000000000000        0x0 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .text.Timer0_Init
+                0x0000000000000000      0x1f0 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .text.Timer0_DeInit
+                0x0000000000000000       0x20 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .text.Timer0_Write_Value
+                0x0000000000000000       0x10 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .text.Timer0_Read_Value
+                0x0000000000000000       0x14 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .text          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .data          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .bss           0x0000000000000000        0x0 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .text.Timer1_DeInit
+                0x0000000000000000       0x2c build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .text.Timer1_Read_Value
+                0x0000000000000000       0x22 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .text          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .data          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .bss           0x0000000000000000        0x0 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .text.USART_Init
+                0x0000000000000000       0x16 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .text.USART_Transmit
+                0x0000000000000000        0x8 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .text.USART_Receive
+                0x0000000000000000        0x8 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .debug_info    0x0000000000000000      0x37c build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .debug_abbrev  0x0000000000000000       0x8f build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .debug_loc     0x0000000000000000       0x22 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .debug_aranges
+                0x0000000000000000       0x30 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .debug_ranges  0x0000000000000000       0x20 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .debug_line    0x0000000000000000      0x132 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .debug_str     0x0000000000000000        0x0 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .comment       0x0000000000000000       0x30 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .debug_frame   0x0000000000000000       0x44 build/default/debug/MCAL_Layer/USART/uart_prog.o
+ .text          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .data          0x0000000000000000        0x0 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .bss           0x0000000000000000        0x0 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .text.EUSART_ASYNC_Init
+                0x0000000000000000      0x19a build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .text.EUSART_ASYNC_DeInit
+                0x0000000000000000       0x10 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .text.EUSART_ASYNC_ReadByteBlocking
+                0x0000000000000000        0xc build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .text.EUSART_ASYNC_ReadByteNonBlocking
+                0x0000000000000000        0xc build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .text.EUSART_ASYNC_RX_Restart
+                0x0000000000000000        0x4 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .text.EUSART_ASYNC_WriteByteBlocking
+                0x0000000000000000        0x4 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .text.EUSART_ASYNC_WriteStringBlocking
+                0x0000000000000000        0xc build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .text.EUSART_ASYNC_WriteByteNonBlocking
+                0x0000000000000000        0x4 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .text.EUSART_ASYNC_WriteStringNonBlocking
+                0x0000000000000000        0xc build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .debug_info    0x0000000000000000      0xcb5 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .debug_abbrev  0x0000000000000000      0x170 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .debug_loc     0x0000000000000000      0x2df build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .debug_aranges
+                0x0000000000000000       0x60 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .debug_ranges  0x0000000000000000       0x50 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .debug_line    0x0000000000000000      0x278 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .debug_str     0x0000000000000000        0xd build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .comment       0x0000000000000000       0x30 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .debug_frame   0x0000000000000000       0xa4 build/default/debug/MCAL_Layer/USART/hal_usart.o
+ .text          0x0000000000000000        0x0 build/default/debug/application.o
+ .data          0x0000000000000000        0x0 build/default/debug/application.o
+ .bss           0x0000000000000000        0x0 build/default/debug/application.o
+ .progmemx.data
+                0x0000000000000000       0x2a build/default/debug/application.o
+ .text.Calculator_voidGetString
+                0x0000000000000000      0x2de build/default/debug/application.o
+ .text.Calculator_voidAnalysisString
+                0x0000000000000000      0x18a build/default/debug/application.o
+ .text.Calculator_voidCalculate
+                0x0000000000000000      0x276 build/default/debug/application.o
+ .text.Calculator_voidRunable
+                0x0000000000000000       0x74 build/default/debug/application.o
+ .bss.op_flag.3890
+                0x0000000000000000        0x1 build/default/debug/application.o
+ .bss.sign_flag.3891
+                0x0000000000000000        0x1 build/default/debug/application.o
+ .data.ret      0x0000000000000000        0x1 build/default/debug/application.o
+ .bss.clear_flag
+                0x0000000000000000        0x1 build/default/debug/application.o
+ .bss.result    0x0000000000000000        0x4 build/default/debug/application.o
+ .bss.operations_arr_count
+                0x0000000000000000        0x1 build/default/debug/application.o
+ .bss.numbers_arr_count
+                0x0000000000000000        0x1 build/default/debug/application.o
+ .bss.operations_arr
+                0x0000000000000000       0x14 build/default/debug/application.o
+ .bss.numbers_arr
+                0x0000000000000000       0x50 build/default/debug/application.o
+ .bss.eq_flag   0x0000000000000000        0x1 build/default/debug/application.o
+ .bss.str_count
+                0x0000000000000000        0x1 build/default/debug/application.o
+ .bss.str       0x0000000000000000       0x28 build/default/debug/application.o
+ .data.SDA      0x0000000000000000        0x1 build/default/debug/application.o
+ .data.SCL      0x0000000000000000        0x1 build/default/debug/application.o
+ .data.I2C      0x0000000000000000        0x7 build/default/debug/application.o
+ .data.OC1B     0x0000000000000000        0x1 build/default/debug/application.o
+ .data.OC1A     0x0000000000000000        0x1 build/default/debug/application.o
+ .data.OC0      0x0000000000000000        0x1 build/default/debug/application.o
+ .data.Timer0   0x0000000000000000        0x9 build/default/debug/application.o
+ .data.SPI_obj  0x0000000000000000        0xb build/default/debug/application.o
+ .data.adc_obj_2
+                0x0000000000000000        0x9 build/default/debug/application.o
+ .data.adc_obj  0x0000000000000000        0x9 build/default/debug/application.o
+ .data.int1_obj
+                0x0000000000000000        0x5 build/default/debug/application.o
+ .data.segment  0x0000000000000000        0x8 build/default/debug/application.o
+ .data.button_T0
+                0x0000000000000000        0x3 build/default/debug/application.o
+ .data.button   0x0000000000000000        0x3 build/default/debug/application.o
+ .data.led3     0x0000000000000000        0x1 build/default/debug/application.o
+ .data.led2     0x0000000000000000        0x1 build/default/debug/application.o
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x20 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .stack.descriptors
+                0x0000000000000000       0x16 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_mulsi3.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x28 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+ .stack.descriptors
+                0x0000000000000000       0x1a c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+ .stack.descriptors
+                0x0000000000000000       0x1a c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x2e c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+ .stack.descriptors
+                0x0000000000000000       0x19 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_divmodsi4.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+ .text.libgcc.div
+                0x0000000000000000       0x10 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+ .stack.descriptors
+                0x0000000000000000       0x16 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_negsi2.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .stack.descriptors
+                0x0000000000000000       0x1c c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .stack.descriptors
+                0x0000000000000000       0x19 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x16 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .stack.descriptors
+                0x0000000000000000       0x19 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_muluhisi3.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+ .stack.descriptors
+                0x0000000000000000       0x17 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .text.libgcc   0x0000000000000000       0x1a c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .stack.descriptors
+                0x0000000000000000       0x34 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_movmemx.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(memcpy.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(memcpy.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(memcpy.o)
+ .text.memcpy   0x0000000000000000       0x32 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(memcpy.o)
+ .comment       0x0000000000000000       0x30 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(memcpy.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(memcpy.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .stack.descriptors
+                0x0000000000000000       0x13 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000008000 xr
+data             0x0000000000800060 0x0000000000000800 rw !x
+eeprom           0x0000000000810000 0x0000000000000400 rw !x
+fuse             0x0000000000820000 0x0000000000000002 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+                0x0000000000000001                __MPLAB_BUILD = 0x1
+LOAD build/default/debug/FreeRTOS/croutine.o
+LOAD build/default/debug/FreeRTOS/event_groups.o
+LOAD build/default/debug/FreeRTOS/heap_1.o
+LOAD build/default/debug/FreeRTOS/list.o
+LOAD build/default/debug/FreeRTOS/mpu_wrappers.o
+LOAD build/default/debug/FreeRTOS/port.o
+LOAD build/default/debug/FreeRTOS/queue.o
+LOAD build/default/debug/FreeRTOS/regtest.o
+LOAD build/default/debug/FreeRTOS/stream_buffer.o
+LOAD build/default/debug/FreeRTOS/tasks.o
+LOAD build/default/debug/FreeRTOS/timers.o
+LOAD build/default/debug/HAL_Layer/7_Segment/hal_seven_segment.o
+LOAD build/default/debug/HAL_Layer/button/hal_button.o
+LOAD build/default/debug/HAL_Layer/keypad/hal_keypad.o
+LOAD build/default/debug/HAL_Layer/LCD/hal_lcd.o
+LOAD build/default/debug/HAL_Layer/LED/hal_led.o
+LOAD build/default/debug/MCAL_Layer/ADC/hal_adc.o
+LOAD build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+LOAD build/default/debug/MCAL_Layer/I2C/mcal_i2c.o
+LOAD build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+LOAD build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+LOAD build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+LOAD build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+LOAD build/default/debug/MCAL_Layer/USART/uart_prog.o
+LOAD build/default/debug/MCAL_Layer/USART/hal_usart.o
+LOAD build/default/debug/application.o
+START GROUP
+LOAD c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libm.a
+END GROUP
+                0x0000000000000001                __MPLAB_DEBUG = 0x1
+                0x0000000000000001                __DEBUG = 0x1
+START GROUP
+LOAD c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a
+LOAD c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libm.a
+LOAD c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a
+LOAD C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const\libatmega32.a
+END GROUP
+                0x0000000000000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x0000000000800060]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x0000000000008000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x0000000000000800]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x0000000000000400]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000000000002]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0x120
+ *(.vectors)
+ .vectors       0x0000000000000000       0x54 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+                0x0000000000000000                __vector_default
+                0x0000000000000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table.Timer1_Init
+                0x0000000000000054       0x60 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ *(.dinit)
+ .dinit         0x00000000000000b4       0x18 data_init
+                0x00000000000000cc                . = ALIGN (0x2)
+ *fill*         0x00000000000000cc        0x0 
+                0x00000000000000cc                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000000000000cc        0x0 linker stubs
+ *(.trampolines*)
+                0x00000000000000cc                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+                0x00000000000000cc                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000000000000cc                __ctors_start = .
+ *(.ctors)
+                0x00000000000000cc                __ctors_end = .
+                0x00000000000000cc                __dtors_start = .
+ *(.dtors)
+                0x00000000000000cc                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000000000000cc        0x0 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+                0x00000000000000cc                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000000000000cc        0xc C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000000000000d8       0x3c c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+                0x00000000000000d8                __do_copy_data
+                0x0000000000000106                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000000000000114        0x8 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+ *(.init9)
+                0x000000000000011c                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000000000011c        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+                0x000000000000011c                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000000011c        0x4 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000000120                _etext = .
+
+.data           0x0000000000800060        0x0 load address 0x0000000000000120
+                [!provide]                        PROVIDE (__data_start, .)
+ *(.gnu.linkonce.d*)
+ *(.gnu.linkonce.r*)
+                0x0000000000800060                . = ALIGN (0x2)
+                0x0000000000800060                _edata = .
+                [!provide]                        PROVIDE (__data_end, .)
+
+.bss            0x0000000000800060        0x0
+                [!provide]                        PROVIDE (__bss_start, .)
+ *(COMMON)
+                [!provide]                        PROVIDE (__bss_end, .)
+                0x0000000000000120                __data_load_start = LOADADDR (.data)
+                0x0000000000000120                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000800060        0x0
+                [!provide]                        PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end, .)
+                0x0000000000800060                _end = .
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2f
+ *(.comment)
+ .comment       0x0000000000000000       0x2f build/default/debug/FreeRTOS/port.o
+                                         0x30 (size before relaxing)
+ .comment       0x000000000000002f       0x30 build/default/debug/FreeRTOS/tasks.o
+ .comment       0x000000000000002f       0x30 build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .comment       0x000000000000002f       0x30 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .comment       0x000000000000002f       0x30 build/default/debug/HAL_Layer/LED/hal_led.o
+ .comment       0x000000000000002f       0x30 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .comment       0x000000000000002f       0x30 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .comment       0x000000000000002f       0x30 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .comment       0x000000000000002f       0x30 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .comment       0x000000000000002f       0x30 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .comment       0x000000000000002f       0x30 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .comment       0x000000000000002f       0x30 build/default/debug/application.o
+ .comment       0x000000000000002f       0x30 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+ .comment       0x000000000000002f       0x30 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o)
+
+.stack.descriptors.hdr
+                0x0000000000000000       0x46
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+ .stack.descriptors.hdr
+                0x000000000000000e        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .stack.descriptors.hdr
+                0x000000000000001c        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+ .stack.descriptors.hdr
+                0x000000000000002a        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+ .stack.descriptors.hdr
+                0x0000000000000038        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x4f0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x48 build/default/debug/FreeRTOS/port.o
+ .debug_aranges
+                0x0000000000000048      0x158 build/default/debug/FreeRTOS/tasks.o
+ .debug_aranges
+                0x00000000000001a0       0x28 build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .debug_aranges
+                0x00000000000001c8       0x90 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .debug_aranges
+                0x0000000000000258       0x38 build/default/debug/HAL_Layer/LED/hal_led.o
+ .debug_aranges
+                0x0000000000000290       0x58 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .debug_aranges
+                0x00000000000002e8       0x80 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .debug_aranges
+                0x0000000000000368       0x40 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .debug_aranges
+                0x00000000000003a8       0x50 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .debug_aranges
+                0x00000000000003f8       0x48 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .debug_aranges
+                0x0000000000000440       0x60 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .debug_aranges
+                0x00000000000004a0       0x50 build/default/debug/application.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0xc67f
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x4e6 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+ .debug_info    0x00000000000004e6      0x517 build/default/debug/FreeRTOS/port.o
+ .debug_info    0x00000000000009fd     0x250c build/default/debug/FreeRTOS/tasks.o
+ .debug_info    0x0000000000002f09      0x5d3 build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .debug_info    0x00000000000034dc     0x11cd build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .debug_info    0x00000000000046a9      0x5f1 build/default/debug/HAL_Layer/LED/hal_led.o
+ .debug_info    0x0000000000004c9a     0x11bc build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .debug_info    0x0000000000005e56      0x9a2 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .debug_info    0x00000000000067f8      0xb24 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .debug_info    0x000000000000731c      0xcb4 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .debug_info    0x0000000000007fd0      0xb56 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .debug_info    0x0000000000008b26     0x11dd build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .debug_info    0x0000000000009d03     0x297c build/default/debug/application.o
+
+.debug_abbrev   0x0000000000000000     0x1a50
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x4a3 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+ .debug_abbrev  0x00000000000004a3      0x157 build/default/debug/FreeRTOS/port.o
+ .debug_abbrev  0x00000000000005fa      0x35f build/default/debug/FreeRTOS/tasks.o
+ .debug_abbrev  0x0000000000000959      0x146 build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .debug_abbrev  0x0000000000000a9f      0x253 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .debug_abbrev  0x0000000000000cf2      0x100 build/default/debug/HAL_Layer/LED/hal_led.o
+ .debug_abbrev  0x0000000000000df2      0x1e6 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .debug_abbrev  0x0000000000000fd8      0x169 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .debug_abbrev  0x0000000000001141      0x189 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .debug_abbrev  0x00000000000012ca      0x195 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .debug_abbrev  0x000000000000145f      0x195 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .debug_abbrev  0x00000000000015f4      0x1af build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .debug_abbrev  0x00000000000017a3      0x2ad build/default/debug/application.o
+
+.debug_line     0x0000000000000000     0x3c7d
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x119 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+ .debug_line    0x0000000000000119      0x272 build/default/debug/FreeRTOS/port.o
+ .debug_line    0x000000000000038b      0xff8 build/default/debug/FreeRTOS/tasks.o
+ .debug_line    0x0000000000001383      0x19c build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .debug_line    0x000000000000151f      0x58d build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .debug_line    0x0000000000001aac      0x1ba build/default/debug/HAL_Layer/LED/hal_led.o
+ .debug_line    0x0000000000001c66      0x4f9 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .debug_line    0x000000000000215f      0x42a build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .debug_line    0x0000000000002589      0x2ac build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .debug_line    0x0000000000002835      0x361 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .debug_line    0x0000000000002b96      0x2b9 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .debug_line    0x0000000000002e4f      0x64e build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .debug_line    0x000000000000349d      0x7e0 build/default/debug/application.o
+
+.debug_frame    0x0000000000000000     0x118c
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x74 build/default/debug/FreeRTOS/port.o
+ .debug_frame   0x0000000000000074      0x528 build/default/debug/FreeRTOS/tasks.o
+ .debug_frame   0x000000000000059c       0xc4 build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .debug_frame   0x0000000000000660      0x32c build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .debug_frame   0x000000000000098c       0x94 build/default/debug/HAL_Layer/LED/hal_led.o
+ .debug_frame   0x0000000000000a20       0xf8 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .debug_frame   0x0000000000000b18      0x104 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .debug_frame   0x0000000000000c1c       0xbc build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .debug_frame   0x0000000000000cd8       0xdc build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .debug_frame   0x0000000000000db4      0x104 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .debug_frame   0x0000000000000eb8      0x17c build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .debug_frame   0x0000000000001034      0x158 build/default/debug/application.o
+
+.debug_str      0x0000000000000000      0x843
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x196 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+ .debug_str     0x0000000000000196       0x26 build/default/debug/FreeRTOS/port.o
+ .debug_str     0x00000000000001bc      0x23a build/default/debug/FreeRTOS/tasks.o
+ .debug_str     0x00000000000003f6       0x7e build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .debug_str     0x0000000000000474       0x53 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .debug_str     0x00000000000004c7       0x43 build/default/debug/HAL_Layer/LED/hal_led.o
+ .debug_str     0x000000000000050a       0x2c build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .debug_str     0x0000000000000536       0x31 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .debug_str     0x0000000000000567       0x1a build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .debug_str     0x0000000000000581       0x34 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .debug_str     0x00000000000005b5       0x4a build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .debug_str     0x00000000000005ff       0xa7 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .debug_str     0x00000000000006a6      0x19d build/default/debug/application.o
+
+.debug_loc      0x0000000000000000     0x4510
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x2a0 build/default/debug/FreeRTOS/port.o
+ .debug_loc     0x00000000000002a0     0x1973 build/default/debug/FreeRTOS/tasks.o
+ .debug_loc     0x0000000000001c13      0x30f build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .debug_loc     0x0000000000001f22     0x10c1 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .debug_loc     0x0000000000002fe3      0x1f0 build/default/debug/HAL_Layer/LED/hal_led.o
+ .debug_loc     0x00000000000031d3      0x322 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .debug_loc     0x00000000000034f5      0x3fa build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .debug_loc     0x00000000000038ef      0x1bc build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .debug_loc     0x0000000000003aab      0x1f9 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .debug_loc     0x0000000000003ca4      0x1a8 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .debug_loc     0x0000000000003e4c      0x318 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .debug_loc     0x0000000000004164      0x3ac build/default/debug/application.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000      0x4c0
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x38 build/default/debug/FreeRTOS/port.o
+ .debug_ranges  0x0000000000000038      0x190 build/default/debug/FreeRTOS/tasks.o
+ .debug_ranges  0x00000000000001c8       0x18 build/default/debug/HAL_Layer/keypad/hal_keypad.o
+ .debug_ranges  0x00000000000001e0       0x80 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+ .debug_ranges  0x0000000000000260       0x28 build/default/debug/HAL_Layer/LED/hal_led.o
+ .debug_ranges  0x0000000000000288       0x48 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+ .debug_ranges  0x00000000000002d0       0x70 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+ .debug_ranges  0x0000000000000340       0x30 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+ .debug_ranges  0x0000000000000370       0x40 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+ .debug_ranges  0x00000000000003b0       0x38 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+ .debug_ranges  0x00000000000003e8       0x50 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+ .debug_ranges  0x0000000000000438       0x88 build/default/debug/application.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(dist/default/debug/NTI_AVR_COTS.debug.elf elf32-avr)
+LOAD linker stubs
+LOAD data_init
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+
+.bss.uxSchedulerSuspended
+                0x0000000000800115        0x1
+ .bss.uxSchedulerSuspended
+                0x0000000000800115        0x1 build/default/debug/FreeRTOS/tasks.o
+
+.bss.xNextTaskUnblockTime
+                0x00000000008000ed        0x2
+ .bss.xNextTaskUnblockTime
+                0x00000000008000ed        0x2 build/default/debug/FreeRTOS/tasks.o
+
+.bss.xNumOfOverflows
+                0x0000000000800116        0x1
+ .bss.xNumOfOverflows
+                0x0000000000800116        0x1 build/default/debug/FreeRTOS/tasks.o
+
+.bss.xYieldPending
+                0x0000000000800117        0x1
+ .bss.xYieldPending
+                0x0000000000800117        0x1 build/default/debug/FreeRTOS/tasks.o
+
+.bss.xPendedTicks
+                0x00000000008000ef        0x2
+ .bss.xPendedTicks
+                0x00000000008000ef        0x2 build/default/debug/FreeRTOS/tasks.o
+
+.bss.uxTopReadyPriority
+                0x0000000000800118        0x1
+ .bss.uxTopReadyPriority
+                0x0000000000800118        0x1 build/default/debug/FreeRTOS/tasks.o
+
+.bss.xTickCount
+                0x00000000008000f1        0x2
+ .bss.xTickCount
+                0x00000000008000f1        0x2 build/default/debug/FreeRTOS/tasks.o
+
+.bss.pxOverflowDelayedTaskList
+                0x00000000008000f3        0x2
+ .bss.pxOverflowDelayedTaskList
+                0x00000000008000f3        0x2 build/default/debug/FreeRTOS/tasks.o
+
+.bss.pxDelayedTaskList
+                0x00000000008000f5        0x2
+ .bss.pxDelayedTaskList
+                0x00000000008000f5        0x2 build/default/debug/FreeRTOS/tasks.o
+
+.bss.pxReadyTasksLists
+                0x0000000000800060       0x5a
+ .bss.pxReadyTasksLists
+                0x0000000000800060       0x5a build/default/debug/FreeRTOS/tasks.o
+
+.bss.pxCurrentTCB
+                0x00000000008000f7        0x2
+ .bss.pxCurrentTCB
+                0x00000000008000f7        0x2 build/default/debug/FreeRTOS/tasks.o
+                0x00000000008000f7                pxCurrentTCB
+
+.bss.ADC_InterruptHandler
+                0x00000000008000f9        0x2
+ .bss.ADC_InterruptHandler
+                0x00000000008000f9        0x2 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+
+.bss.INT1_InterruptHandler
+                0x00000000008000fb        0x2
+ .bss.INT1_InterruptHandler
+                0x00000000008000fb        0x2 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+
+.bss.SPI_InterruptHandler
+                0x00000000008000fd        0x2
+ .bss.SPI_InterruptHandler
+                0x00000000008000fd        0x2 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+
+.bss.counter    0x00000000008000ff        0x2
+ .bss.counter   0x00000000008000ff        0x2 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+                0x00000000008000ff                counter
+
+.bss.timer0_preload
+                0x0000000000800119        0x1
+ .bss.timer0_preload
+                0x0000000000800119        0x1 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+
+.bss.TMR0_Compare_Match_InterruptHandler
+                0x0000000000800101        0x2
+ .bss.TMR0_Compare_Match_InterruptHandler
+                0x0000000000800101        0x2 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+
+.bss.TMR0_Over_FlowInterruptHandler
+                0x0000000000800103        0x2
+ .bss.TMR0_Over_FlowInterruptHandler
+                0x0000000000800103        0x2 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+
+.bss.timer1_preload
+                0x0000000000800105        0x2
+ .bss.timer1_preload
+                0x0000000000800105        0x2 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+
+.bss.TMR1_Input_Capture_InterruptHandler
+                0x0000000000800107        0x2
+ .bss.TMR1_Input_Capture_InterruptHandler
+                0x0000000000800107        0x2 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+
+.bss.TMR1_Compare_Match_Unit_B_InterruptHandler
+                0x0000000000800109        0x2
+ .bss.TMR1_Compare_Match_Unit_B_InterruptHandler
+                0x0000000000800109        0x2 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+
+.bss.TMR1_Over_FlowInterruptHandler
+                0x000000000080010b        0x2
+ .bss.TMR1_Over_FlowInterruptHandler
+                0x000000000080010b        0x2 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+
+.bss.end_time.3886
+                0x000000000080010d        0x2
+ .bss.end_time.3886
+                0x000000000080010d        0x2 build/default/debug/application.o
+
+.bss.start_time.3885
+                0x000000000080010f        0x2
+ .bss.start_time.3885
+                0x000000000080010f        0x2 build/default/debug/application.o
+
+.bss.mode.3884  0x000000000080011a        0x1
+ .bss.mode.3884
+                0x000000000080011a        0x1 build/default/debug/application.o
+
+.bss.distance   0x0000000000800111        0x2
+ .bss.distance  0x0000000000800111        0x2 build/default/debug/application.o
+                0x0000000000800111                distance
+
+.bss._time      0x0000000000800113        0x2
+ .bss._time     0x0000000000800113        0x2 build/default/debug/application.o
+                0x0000000000800113                _time
+
+.text.Timer1_Init
+                0x0000000000000120      0x836
+ .text.Timer1_Init
+                0x0000000000000120      0x836 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+                0x0000000000000120                Timer1_Init
+
+.text.xTaskIncrementTick
+                0x0000000000000956      0x23e
+ .text.xTaskIncrementTick
+                0x0000000000000956      0x23e build/default/debug/FreeRTOS/tasks.o
+                0x0000000000000956                xTaskIncrementTick
+
+.text.lcd_4bit_intialize
+                0x0000000000000b94       0xf4
+ .text.lcd_4bit_intialize
+                0x0000000000000b94       0xf4 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+                0x0000000000000b94                lcd_4bit_intialize
+
+.text.lcd_4bit_send_uint32
+                0x0000000000000c88       0xd4
+ .text.lcd_4bit_send_uint32
+                0x0000000000000c88       0xd4 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+                0x0000000000000c88                lcd_4bit_send_uint32
+
+.text.vTaskSwitchContext
+                0x0000000000000d5c       0xcc
+ .text.vTaskSwitchContext
+                0x0000000000000d5c       0xcc build/default/debug/FreeRTOS/tasks.o
+                0x0000000000000d5c                vTaskSwitchContext
+
+.text.vPortYieldFromTick
+                0x0000000000000e28       0xb8
+ .text.vPortYieldFromTick
+                0x0000000000000e28       0xb8 build/default/debug/FreeRTOS/port.o
+                0x0000000000000e28                vPortYieldFromTick
+
+.text.dio_pin_direction_intialize
+                0x0000000000000ee0       0xae
+ .text.dio_pin_direction_intialize
+                0x0000000000000ee0       0xae build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+                0x0000000000000ee0                dio_pin_direction_intialize
+
+.text.Timer1_APP_ISR
+                0x0000000000000f8e       0xae
+ .text.Timer1_APP_ISR
+                0x0000000000000f8e       0xae build/default/debug/application.o
+                0x0000000000000f8e                Timer1_APP_ISR
+
+.text.dio_set_pin_pull_up
+                0x000000000000103c       0xac
+ .text.dio_set_pin_pull_up
+                0x000000000000103c       0xac build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+                0x000000000000103c                dio_set_pin_pull_up
+
+.text.Timer1_Input_capture_Change_Sense_Edge
+                0x00000000000010e8       0xa4
+ .text.Timer1_Input_capture_Change_Sense_Edge
+                0x00000000000010e8       0xa4 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+                0x00000000000010e8                Timer1_Input_capture_Change_Sense_Edge
+
+.text.dio_pin_write_logic
+                0x000000000000118c       0x94
+ .text.dio_pin_write_logic
+                0x000000000000118c       0x94 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+                0x000000000000118c                dio_pin_write_logic
+
+.text.main      0x0000000000001220       0x94
+ .text.main     0x0000000000001220       0x94 build/default/debug/application.o
+                0x0000000000001220                main
+
+.text.__vector_11
+                0x00000000000012b4       0x86
+ .text.__vector_11
+                0x00000000000012b4       0x86 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+                0x00000000000012b4                __vector_11
+
+.text.keypad_initialize
+                0x000000000000133a       0x82
+ .text.keypad_initialize
+                0x000000000000133a       0x82 build/default/debug/HAL_Layer/keypad/hal_keypad.o
+                0x000000000000133a                keypad_initialize
+
+.text.__vector_10
+                0x00000000000013bc       0x80
+ .text.__vector_10
+                0x00000000000013bc       0x80 build/default/debug/MCAL_Layer/Timers/mcal_timer0.o
+                0x00000000000013bc                __vector_10
+
+.text.hal_led_initialize
+                0x000000000000143c       0x6a
+ .text.hal_led_initialize
+                0x000000000000143c       0x6a build/default/debug/HAL_Layer/LED/hal_led.o
+                0x000000000000143c                hal_led_initialize
+
+.text.lcd_send_4bits
+                0x00000000000014a6       0x60
+ .text.lcd_send_4bits
+                0x00000000000014a6       0x60 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+
+.text.__vector_2
+                0x0000000000001506       0x58
+ .text.__vector_2
+                0x0000000000001506       0x58 build/default/debug/MCAL_Layer/Interrupt/mcal_external_interrupt.o
+                0x0000000000001506                __vector_2
+
+.text.__vector_6
+                0x000000000000155e       0x58
+ .text.__vector_6
+                0x000000000000155e       0x58 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+                0x000000000000155e                __vector_6
+
+.text.__vector_8
+                0x00000000000015b6       0x58
+ .text.__vector_8
+                0x00000000000015b6       0x58 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+                0x00000000000015b6                __vector_8
+
+.text.__vector_9
+                0x000000000000160e       0x58
+ .text.__vector_9
+                0x000000000000160e       0x58 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+                0x000000000000160e                __vector_9
+
+.text.lcd_4bit_send_uint32_pos
+                0x0000000000001666       0x56
+ .text.lcd_4bit_send_uint32_pos
+                0x0000000000001666       0x56 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+                0x0000000000001666                lcd_4bit_send_uint32_pos
+
+.text.__vector_16
+                0x00000000000016bc       0x54
+ .text.__vector_16
+                0x00000000000016bc       0x54 build/default/debug/MCAL_Layer/ADC/hal_adc.o
+                0x00000000000016bc                __vector_16
+
+.text.lcd_4bit_send_command
+                0x0000000000001710       0x52
+ .text.lcd_4bit_send_command
+                0x0000000000001710       0x52 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+                0x0000000000001710                lcd_4bit_send_command
+
+.text.lcd_4bit_send_char_data
+                0x0000000000001762       0x52
+ .text.lcd_4bit_send_char_data
+                0x0000000000001762       0x52 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+                0x0000000000001762                lcd_4bit_send_char_data
+
+.text.__vector_12
+                0x00000000000017b4       0x52
+ .text.__vector_12
+                0x00000000000017b4       0x52 build/default/debug/MCAL_Layer/SPI/mcal_spi.o
+                0x00000000000017b4                __vector_12
+
+.text.application_initialize
+                0x0000000000001806       0x52
+ .text.application_initialize
+                0x0000000000001806       0x52 build/default/debug/application.o
+                0x0000000000001806                application_initialize
+
+.text.libgcc.div
+                0x0000000000001858       0x44
+ .text.libgcc.div
+                0x0000000000001858       0x44 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_udivmodsi4.o)
+                0x0000000000001858                __udivmodsi4
+
+.text.lcd_4bit_set_cursor
+                0x000000000000189c       0x42
+ .text.lcd_4bit_set_cursor
+                0x000000000000189c       0x42 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+
+.text.dio_pin_intialize
+                0x00000000000018de       0x40
+ .text.dio_pin_intialize
+                0x00000000000018de       0x40 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+                0x00000000000018de                dio_pin_intialize
+
+.text.prvResetNextTaskUnblockTime
+                0x000000000000191e       0x38
+ .text.prvResetNextTaskUnblockTime
+                0x000000000000191e       0x38 build/default/debug/FreeRTOS/tasks.o
+
+.text.lcd_4bit_send_enable_signal
+                0x0000000000001956       0x36
+ .text.lcd_4bit_send_enable_signal
+                0x0000000000001956       0x36 build/default/debug/HAL_Layer/LCD/hal_lcd.o
+
+.text.Timer1_Read_Input_Capture_Unit_Value
+                0x000000000000198c       0x22
+ .text.Timer1_Read_Input_Capture_Unit_Value
+                0x000000000000198c       0x22 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+                0x000000000000198c                Timer1_Read_Input_Capture_Unit_Value
+
+.text.libgcc.mul
+                0x00000000000019ae       0x1e
+ .text.libgcc.mul
+                0x00000000000019ae       0x1e c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_umulhisi3.o)
+                0x00000000000019ae                __umulhisi3
+
+.text.exit      0x00000000000019cc       0x16
+ .text.exit     0x00000000000019cc       0x16 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+                0x00000000000019cc                exit
+
+.text.Timer1_Write_Value
+                0x00000000000019e2       0x12
+ .text.Timer1_Write_Value
+                0x00000000000019e2       0x12 build/default/debug/MCAL_Layer/Timers/mcal_timer1.o
+                0x00000000000019e2                Timer1_Write_Value
+
+.text.libgcc    0x00000000000019f4       0x10
+ .text.libgcc   0x00000000000019f4       0x10 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_2.o)
+                0x00000000000019f4                __xload_2
+
+.text.libgcc    0x0000000000001a04        0xc
+ .text.libgcc   0x0000000000001a04        0xc c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+                0x0000000000001a04                __tablejump2__
+
+.text.__vector_7
+                0x0000000000001a10        0x6
+ .text.__vector_7
+                0x0000000000001a10        0x6 build/default/debug/FreeRTOS/port.o
+                0x0000000000001a10                __vector_7
+
+.text           0x0000000000001a16        0x4
+ .text          0x0000000000001a16        0x4 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/ATmega_DFP/3.0.158/xc8/avr/lib/avr5/memx-const/crtatmega32.o
+                0x0000000000001a16                __vector_1
+                0x0000000000001a16                __bad_interrupt
+                0x0000000000001a16                __vector_3
+                0x0000000000001a16                __vector_13
+                0x0000000000001a16                __vector_17
+                0x0000000000001a16                __vector_19
+                0x0000000000001a16                __vector_5
+                0x0000000000001a16                __vector_4
+                0x0000000000001a16                __vector_15
+                0x0000000000001a16                __vector_14
+                0x0000000000001a16                __vector_18
+                0x0000000000001a16                __vector_20
+
+.text._Exit     0x0000000000001a1a        0x4
+ .text._Exit    0x0000000000001a1a        0x4 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(_Exit.o)
+                0x0000000000001a1a                _Exit
+
+.text.__dummy_fini
+                0x0000000000001a1e        0x2
+ .text.__dummy_fini
+                0x0000000000001a1e        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+                0x0000000000001a1e                _fini
+
+.text.__dummy_funcs_on_exit
+                0x0000000000001a20        0x2
+ .text.__dummy_funcs_on_exit
+                0x0000000000001a20        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+                0x0000000000001a20                __funcs_on_exit
+
+.text.__dummy_simulator_exit
+                0x0000000000001a22        0x2
+ .text.__dummy_simulator_exit
+                0x0000000000001a22        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a(exit.o)
+                0x0000000000001a22                __simulator_exit
+
+.data.Timer1    0x00000000008000ba       0x15 load address 0x0000000000001a24
+ .data.Timer1   0x00000000008000ba       0x15 build/default/debug/application.o
+                0x00000000008000ba                Timer1
+
+.data.port_registers
+                0x00000000008000cf        0x8 load address 0x0000000000001a39
+ .data.port_registers
+                0x00000000008000cf        0x8 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+                0x00000000008000cf                port_registers
+
+.data.ddr_registers
+                0x00000000008000d7        0x8 load address 0x0000000000001a41
+ .data.ddr_registers
+                0x00000000008000d7        0x8 build/default/debug/MCAL_Layer/DIO/mcal_dio.o
+                0x00000000008000d7                ddr_registers
+
+.data.keypad    0x00000000008000df        0x8 load address 0x0000000000001a49
+ .data.keypad   0x00000000008000df        0x8 build/default/debug/application.o
+                0x00000000008000df                keypad
+
+.data.lcd       0x00000000008000e7        0x6 load address 0x0000000000001a51
+ .data.lcd      0x00000000008000e7        0x6 build/default/debug/application.o
+                0x00000000008000e7                lcd
+
+.data.Pin_D5    0x000000000080011b        0x1 load address 0x0000000000001a57
+ .data.Pin_D5   0x000000000080011b        0x1 build/default/debug/application.o
+                0x000000000080011b                Pin_D5
+
+.data.ICP1      0x000000000080011c        0x1 load address 0x0000000000001a58
+ .data.ICP1     0x000000000080011c        0x1 build/default/debug/application.o
+                0x000000000080011c                ICP1
+
+.data.led1      0x000000000080011d        0x1 load address 0x0000000000001a59
+ .data.led1     0x000000000080011d        0x1 build/default/debug/application.o
+                0x000000000080011d                led1

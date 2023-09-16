@@ -47,11 +47,6 @@ typedef struct {
 #define SFIORbits      (*((volatile SFIORbits_t *) 0x50))  
     
     
-    
-    
-    
-    
-    
-    
+  
 #endif	/* INTERRUPT_REG_CFG_H */
 

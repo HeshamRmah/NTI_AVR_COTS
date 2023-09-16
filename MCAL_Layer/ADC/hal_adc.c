@@ -160,6 +160,7 @@ Std_ReturnType ADC_GetConversion_Polling(const adc_t *_adc, adc_result_t *conver
         ret = E_NOT_OK;
     }
     else{
+        adc_input_channel_and_gain_selections_config(_adc);
         ret = ADC_StartConversion(_adc);
         while(!ADC_Get_Conversion_Status());
         ret = ADC_GetConversionResult(_adc, conversion_result);

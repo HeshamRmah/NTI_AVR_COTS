@@ -7,9 +7,9 @@
 
 #include "hal_usart.h"
 
-static void (*USART_TxCompleteInterruptHandler)(void) = NULL;
-static void (*USART_RxCompleteInterruptHandler)(void) = NULL;
-static void (*USART_DataRegisterEmptyInterruptHandler)(void) = NULL;
+//static void (*USART_TxCompleteInterruptHandler)(void) = NULL;
+//static void (*USART_RxCompleteInterruptHandler)(void) = NULL;
+//static void (*USART_DataRegisterEmptyInterruptHandler)(void) = NULL;
 
 static void USART_Baud_Rate_Configration(const usart_t *_usart);
 static void USART_Transmission_Speed_Configration(const usart_t *_usart);

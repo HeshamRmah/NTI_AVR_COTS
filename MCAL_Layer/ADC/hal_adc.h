@@ -12,7 +12,6 @@
 #include "adc_reg_cfg.h"
 #include "../mcal_std_types.h"
 #include "../DIO/mcal_dio.h"
-/***/
 #include "../../MCAL_Layer/Interrupt/interrupt_config.h"
 
 /* ----------------- Macro Declarations -----------------*/

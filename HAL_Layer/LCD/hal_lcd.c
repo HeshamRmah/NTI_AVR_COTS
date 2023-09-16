@@ -309,7 +309,8 @@ Std_ReturnType convert_string_to_uint32(uint8 *str, uint32 *value){
     if((NULL == str) || (NULL == value)){
         ret = E_NOT_OK;
     }
-    else{    
+    else{  
+        *value = 0;
         while(*str != '\0'){
             *value = ((*value) * 10) + ((*str++) - 0x30);
         }

@@ -20,7 +20,16 @@
 #include "MCAL_Layer/USART/uart_int.h"
 #include "MCAL_Layer/SPI/mcal_spi.h"
 #include "MCAL_Layer/Timers/mcal_timer0.h"
+#include "MCAL_Layer/Timers/mcal_timer1.h"
+#include "MCAL_Layer/I2C/mcal_i2c.h"
 
+#include "FreeRTOS/FreeRTOSConfig.h"
+#include "FreeRTOS/FreeRTOS.h"
+#include "FreeRTOS/task.h"
+#include "FreeRTOS/semphr.h"
+#include "FreeRTOS/projdefs.h"
+#include "FreeRTOS/event_groups.h"
+#include "FreeRTOS/queue.h"
 
 Std_ReturnType application_initialize(void);
 
@@ -28,6 +37,7 @@ void Int1_APP_ISR(void);
 void ADC_APP_ISR(void);
 void SPI_APP_ISR(void);
 void Timer0_APP_ISR(void);
+void Timer1_APP_ISR(void);
 
 chr_lcd_4bit_t lcd = {
     .lcd_rs.port = PORTA_INDEX,
@@ -42,8 +52,8 @@ chr_lcd_4bit_t lcd = {
     .lcd_en.logic = DIO_LOW,
     .lcd_en.pullup = PULL_UP_DISABLE,
     
-    .lcd_data[0].port = PORTD_INDEX,
-    .lcd_data[0].pin = DIO_PIN7,
+    .lcd_data[0].port = PORTB_INDEX,
+    .lcd_data[0].pin = DIO_PIN0,
     .lcd_data[0].direction = DIO_DIRECTION_OUTPUT,
     .lcd_data[0].logic = DIO_LOW,
     .lcd_data[0].pullup = PULL_UP_DISABLE,
@@ -71,6 +81,17 @@ chr_lcd_4bit_t lcd = {
 led_t led1 = {
     .port = PORTA_INDEX,
     .pin = DIO_PIN5,
+    .led_status = DIO_LOW
+};
+
+led_t led2 = {
+    .port = PORTA_INDEX,
+    .pin = DIO_PIN4,
+    .led_status = DIO_LOW
+};
+led_t led3 = {
+    .port = PORTB_INDEX,
+    .pin = DIO_PIN7,
     .led_status = DIO_LOW
 };
 
@@ -173,13 +194,29 @@ interrupt_INTx_t int1_obj = {
 };
 
 adc_t adc_obj = {
-    .ADC_InterruptHandler = ADC_APP_ISR,
+    .ADC_InterruptHandler = NULL,
+    .channel_gain = ADC_INPUT_ADC0,
+    .convertion_alert = ADC_CONVERSTION_COMPLETE_POLLING,
+    .prescaler = ADC_PRESCALER_DIV_8,
+    .reference = AREF_EXTERNAL_REFERENCE_VOLTAGE,
+    .result_adjust = ADC_RESULT_LEFT_ADJUST,
+    .trigger_scr = DISABLE_AUTO_TRIGGER,
+    
+    .pin_obj.port = PORTA_INDEX,
+    .pin_obj.pin = DIO_PIN0, 
+    .pin_obj.direction = DIO_DIRECTION_INPUT,
+    .pin_obj.logic = DIO_LOW,
+    .pin_obj.pullup = PULL_UP_ENABLE
+};
+
+adc_t adc_obj_2 = {
+    .ADC_InterruptHandler = NULL,
     .channel_gain = ADC_INPUT_ADC1,
     .convertion_alert = ADC_CONVERSTION_COMPLETE_POLLING,
     .prescaler = ADC_PRESCALER_DIV_8,
     .reference = AREF_EXTERNAL_REFERENCE_VOLTAGE,
     .result_adjust = ADC_RESULT_LEFT_ADJUST,
-    .trigger_scr = FREE_RUNNING_MODE,
+    .trigger_scr = DISABLE_AUTO_TRIGGER,
     
     .pin_obj.port = PORTA_INDEX,
     .pin_obj.pin = DIO_PIN1, 
@@ -224,11 +261,28 @@ SPI_Config SPI_obj = {
 timer0_t Timer0 = {
     .TMR0_Over_FlowInterruptHandler = NULL,
     .TMR0_Compare_Match_InterruptHandler = NULL,
-    .clock_select = CLOCK_DIV_BY_1024,
-    .compare_output_mode = SET_OC0_ON_COMPARE_MATCH,
+    .clock_select = CLOCK_DIV_BY_8,
+    .compare_output_mode = CLEAR_OC0_ON_COMPARE_MATCH,
     .waveform_generation_mode = FAST_PWM,
+    .preload = 6,
+    .ocr = 63
+};
+
+timer1_t Timer1 = {
+    .TMR1_Compare_Match_Unit_A_InterruptHandler = NULL,
+    .TMR1_Compare_Match_Unit_B_InterruptHandler = NULL,
+    .TMR1_Input_Capture_InterruptHandler = Timer1_APP_ISR,
+    .TMR1_Over_FlowInterruptHandler = NULL, 
+    
+    .clock_select = TIMER1_CLOCK_DIV_BY_8,
+    .waveform_generation_mode = TIMER1_NORMAL_MODE,
+    .compare_output_uintA_mode = TIMER1_NORMAL_PORT_OPERATION,
+    .compare_output_uintB_mode = TIMER1_NORMAL_PORT_OPERATION,
+    .input_capture_mode = INPUT_CAPTURE_UNIT_WITH_NOISE_CANCELER_SENSE_RISING_EDGE,
     .preload = 0,
-    .ocr = 127
+    .ocr_A = 8000,
+    .ocr_B = 4000,
+    .icr = 16000
 };
 
 pin_config_t OC0 = {
@@ -238,6 +292,65 @@ pin_config_t OC0 = {
     .direction = DIO_DIRECTION_OUTPUT,
     .pullup = PULL_UP_DISABLE,
 };
+
+pin_config_t OC1A = {
+    .port = PORTD_INDEX,
+    .pin = DIO_PIN5,
+    .logic = DIO_LOW,
+    .direction = DIO_DIRECTION_OUTPUT,
+    .pullup = PULL_UP_DISABLE,
+};
+
+pin_config_t OC1B = {
+    .port = PORTD_INDEX,
+    .pin = DIO_PIN4,
+    .logic = DIO_LOW,
+    .direction = DIO_DIRECTION_OUTPUT,
+    .pullup = PULL_UP_DISABLE,
+};
+
+pin_config_t ICP1 = {
+    .port = PORTD_INDEX,
+    .pin = DIO_PIN6,
+    .logic = DIO_LOW,
+    .direction = DIO_DIRECTION_INPUT,
+    .pullup = PULL_UP_ENABLE,
+};
+
+pin_config_t Pin_D5 = {
+    .port = PORTD_INDEX,
+    .pin = DIO_PIN5,
+    .logic = DIO_LOW,
+    .direction = DIO_DIRECTION_OUTPUT,
+    .pullup = PULL_UP_DISABLE,
+};
+
+i2c_t I2C = {
+    .I2C_InterruptHandler = NULL,
+    .adress = 0x70,
+    .alert_mode = I2C_POLLING_CHECK,
+    .bit_rate_factor = 36,
+    .prescaler = I2C_PRESCALER_DIV_BY_1,
+    .status_code = 0 
+};
+
+pin_config_t SCL = {
+    .port = PORTC_INDEX,
+    .pin = DIO_PIN0,
+    .logic = DIO_LOW,
+    .direction = DIO_DIRECTION_OUTPUT,
+    .pullup = PULL_UP_DISABLE,
+};
+
+pin_config_t SDA = {
+    .port = PORTC_INDEX,
+    .pin = DIO_PIN1,
+    .logic = DIO_LOW,
+    .direction = DIO_DIRECTION_OUTPUT,
+    .pullup = PULL_UP_DISABLE,
+};
+
+
 
 
 #endif	/* APPLICATION_H */

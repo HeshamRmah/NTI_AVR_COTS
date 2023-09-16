@@ -15,6 +15,7 @@
 /* ----------------- Macro Declarations -----------------*/
 #define KEYPAD_ROWS    4
 #define KEYPAD_COLUMNS 4
+#define NO_KEY         127
 
 /* ----------------- Macro Functions Declarations -----------------*/
 

@@ -7,389 +7,353 @@
 
 #include "application.h"
 
+void Calculator_voidGetString(void);
+void Calculator_voidAnalysisString(void);
+void Calculator_voidCalculate(void);
+void Calculator_voidRunable(void);
 
-//void lcd_print_story (void);
-//void calculator_program(void);
-//void calculator_program_one_operation(void);
+uint8 str[40];
+uint8 str_count;
+uint8 eq_flag;
+sint32 numbers_arr[20];
+uint8 operations_arr[20];
+uint8 numbers_arr_count ;
+uint8 operations_arr_count ;
+sint32 result;
+uint8 clear_flag;
 
 
-//extern led_t led1;
-//extern segment_t segment;
-//extern chr_lcd_4bit_t lcd;
-//extern keypad_t keypad;
 
-volatile uint16 adc_value_Interrupt = 0;
+volatile uint16 _time = 0;
+uint16 distance = 0;
+
+Std_ReturnType ret = E_OK;
 
 int main() {
     
-    //Std_ReturnType ret = E_OK;
-    //uint8 get_keypad = 'A', old_get_keypad = 0;
-    //uint8 str[]= "1230456";
-    //uint8 str2[11];
-    //uint32 value = 1230456;
-    //uint16 adc_value = 0;
-    //uint8 timer0_value = 0;
-    
     application_initialize();
-    hal_led_turn_on(&led1);
-    
-    //lcd_print_story();
-    //calculator_program();
-    
-    //lcd_4bit_send_char_data_pos(&lcd, 2, 1, 'A');
-    //lcd_4bit_send_uint32(&lcd, 654708);
-    //convert_string_to_uint32(str, &value);
-    //convert_uint32_to_string(value, str2);
-    //lcd_4bit_send_string_pos(&lcd, 1, 1, str);
-    //lcd_4bit_send_char_data(&lcd, 'V');
-    //lcd_4bit_set_cursor(&lcd, 2, 1);
-    //lcd_4bit_send_uint32(&lcd, 654708);
-    
-    //lcd_4bit_send_uint32_pos(&lcd, 2, 1, 123400578);
-    
-    //lcd_4bit_send_uint32(&lcd, 987654321);
-    //lcd_4bit_send_string_pos(&lcd, 4, 1, str);
-    
-    //ADC_voidEnable();
-    //USART_Transmit(get_keypad);
-    //lcd_4bit_send_string_pos(&lcd, 3, 1, str);
+
     while(1){
-        
-        //Timer0_Read_Value(&Timer0, &timer0_value);
-        //lcd_4bit_send_uint32_pos(&lcd, 2, 1, (uint32)timer0_value);
-        
-        
-        
-        
-        
-        
-        //ADC_GetConversion_Polling(&adc_obj, &adc_value);
-        //ADC_StartConversion_Interrupt(&adc_obj);
-        //lcd_4bit_send_uint32_pos(&lcd, 3, 1, (uint32)adc_value);
-        
-        //SPI_Send_Byte_Interrupt(&SPI_obj, '0');
-        //_delay_ms(1000);
-        //SPI_Send_Byte_Interrupt(&SPI_obj, '1');
-        //_delay_ms(1000);
-        //SPI_Send_Byte_Interrupt(&SPI_obj, '2');
-        //_delay_ms(1000);
-        //SPI_Send_Byte_Interrupt(&SPI_obj, '3');
-        //_delay_ms(1000);
-        //SPI_Send_Byte_Interrupt(&SPI_obj, '4');
-        //_delay_ms(1000);
-        //SPI_Send_Byte_Interrupt(&SPI_obj, '5');
-        //_delay_ms(1000);
-        //lcd_4bit_clear_command(&lcd);
-        
-        
-        //lcd_4bit_send_command(&lcd, _LCD_CLEAR);
-        //get_keypad++;
-        //USART_Transmit(get_keypad);
-        //_delay_ms(500);
-        //old_get_keypad = USART_Receive();
-        
-        //lcd_4bit_send_char_data(&lcd, old_get_keypad);
-        
-        
-        /*
-        keypad_get_value(&keypad, &get_keypad);
-        
-        if(old_get_keypad != get_keypad){
-            lcd_4bit_send_char_data(&lcd, get_keypad);
-            old_get_keypad = get_keypad;
-        }*/
-        
-        
+        dio_pin_write_logic(&Pin_D5, DIO_HIGH);
+        _delay_us(10);
+        dio_pin_write_logic(&Pin_D5, DIO_LOW);
+        distance = _time / 57;
+        lcd_4bit_send_uint32_pos(&lcd, 2, 1, (uint32)distance);
+        _delay_ms(50);
+            
     }
     
     return (EXIT_SUCCESS);
 }
 
-
 Std_ReturnType application_initialize(void){
     Std_ReturnType ret = E_OK;
+    
     //INTERRUPT_GlobalInterruptEnable();
-    ret  = hal_led_initialize(&led1); 
-    //ret |= lcd_4bit_intialize(&lcd);
+    
+    ret |= hal_led_initialize(&led1); 
+    
+    //ret |= hal_led_initialize(&led2); 
+    //ret |= hal_led_initialize(&led3); 
+    ret |= lcd_4bit_intialize(&lcd);
+    ret |= keypad_initialize(&keypad);
+    //ret |= ADC_Init(&adc_obj);
+    //ret |= ADC_Init(&adc_obj_2);
     //ret |= hal_button_initialize(&button);
     //ret |= hal_button_initialize(&button_T0);
     //ret |= hal_seven_segement_intialize(&segment);
-    //ret |= keypad_initialize(&keypad);
     //ret |= Interrupt_INTx_Init(&int1_obj);
-    //ret |= ADC_Init(&adc_obj);
     //ret |= SPI_Init(&SPI_obj);
-    ret |= Timer0_Init(&Timer0);
-    ret |= dio_pin_intialize(&OC0);
+    //ret |= Timer0_Init(&Timer0);
+    //ret |= dio_pin_intialize(&OC0);
+    ret |= dio_pin_intialize(&ICP1);
+    ret |= dio_pin_intialize(&Pin_D5);
+    //ret |= dio_pin_intialize(&OC1A);
+    //ret |= dio_pin_intialize(&OC1B);
+    ret |= Timer1_Init(&Timer1);
+    //ret |= I2C_Master_Init(&I2C);
+    //ret |= dio_pin_intialize(&SCL);
+    //ret |= dio_pin_intialize(&SDA);
     
     //USART_Init();
     
     return ret;
 }
 
-void Int1_APP_ISR(void){
-    hal_led_turn_toggle(&led1);
-    _delay_ms(25);
-}
 
-void ADC_APP_ISR(void){
-    adc_value_Interrupt++;
-    _delay_ms(1000);
-}
-
-void SPI_APP_ISR(void){
-    hal_led_turn_toggle(&led1);
-}
-void Timer0_APP_ISR(void){
-    hal_led_turn_toggle(&led1);
-}
-void Timer0_APP_CTC_ISR(void){
-    hal_led_turn_toggle(&led1);
-}
-
-#if 0
-void get_operand(uint32 *operand, uint8 *operation){
-    uint8 get_keypad = 0;
-    uint8 counter = 0;
-    uint8 arr[10];
-    uint8 condition = 1;
-    while(condition){
-       keypad_get_value(&keypad, &get_keypad);
-       _delay_ms(60);
-       switch(get_keypad){
-           case 0:
-               break;
-           case '#':
-               condition = 0;
-               *operation = '#';
-               break;
-            case '=':
-               condition = 0;
-               *operation = '=';
-               break;
-            case '*':
-               condition = 0;
-               *operation = '*';
-               break;
-            case '/':
-               condition = 0;
-               *operation = '/';
-               break;
-            case '+':
-               condition = 0;
-               *operation = '+';
-               break;
-            case '-':
-               condition = 0;
-               *operation = '-';
-               break;
-           default: 
-                    lcd_4bit_send_char_data(&lcd, get_keypad);
-                    arr[counter++] = get_keypad;  
-                    get_keypad = 0;
-               
-       }
-    }
-    lcd_4bit_send_char_data(&lcd, get_keypad);
-    convert_string_to_uint32(arr, operand);
-}
-
-void drop_array_uint8_ele(uint8 *ptr, uint8 ele_index, uint8 array_max_index){
-    uint8 index = 0;
-    for(index = ele_index; index <= array_max_index; index++){
-        ptr[index] = ptr[index+1];
-    }
-    ptr[array_max_index] = '#';
-}
-
-void drop_array_uint32_ele(uint32 *ptr, uint8 ele_index, uint8 array_max_index){
-    uint8 index = 0;
-    for(index = ele_index; index <= array_max_index; index++){
-        ptr[index] = ptr[index+1];
-    }
-    ptr[array_max_index] = '#';
-}
-
-void calculator_program(void){
-    uint32 operands[7];
-    uint8 operations[7];
-    uint8 counter = 0;
-    uint8 counter_logic = 0;
-    uint8 done_operation = 0;
-    uint8 str[10];
-    //uint8 clac[] = " Calc:  ";
-    //uint8 res[] = "Result: ";
-    //lcd_4bit_send_command(&lcd, _LCD_CLEAR);
-    //lcd_4bit_send_string_pos(&lcd, 1, 1, clac);
-    for(counter = 0; counter < 6; counter++){
-        get_operand(&(operands[counter]), &(operations[counter]));
-        if(operations[counter]== '='){
-            operands[counter+1] = '#';
-            operations[counter+1] = '#';
-            break;
-        }
-        else {/* DO NOTHING */}
-    }
-
-    /* first round to perform (*) or (/)*/
-    for(counter_logic = 0; counter_logic <= counter; counter_logic++){
-        switch(operations[counter_logic]){
-        case '*':
-            operands[counter_logic + 1] = operands[counter_logic] * operands[counter_logic + 1];
-            drop_array_uint8_ele(operations, counter_logic, counter);
-            drop_array_uint32_ele(operands, counter_logic, counter);
-            done_operation++;
-            counter_logic--;
-            break;
-        case '/':
-            operands[counter_logic + 1] = operands[counter_logic] / operands[counter_logic + 1];
-            drop_array_uint8_ele(operations, counter_logic, counter);
-            drop_array_uint32_ele(operands, counter_logic, counter);
-            done_operation++;
-            counter_logic--;
-            break;
-        default:
-            break;
-    }
+void Timer1_APP_ISR(void){
+    static uint8 mode = 0;
+    static uint16 start_time = 0;
+    static uint16 end_time = 0;
     
+    if(mode == 0){
+       Timer1_Read_Input_Capture_Unit_Value(&Timer1, &start_time);
+       //lcd_4bit_send_uint32_pos(&lcd, 3, 1, start_time);
+       Timer1_Input_capture_Change_Sense_Edge(&Timer1, INPUT_CAPTURE_UNIT_WITH_NOISE_CANCELER_SENSE_FALLING_EDGE);
+       Timer1_Write_Value(&Timer1, 0);
+       mode = 1;
+       
     }
-    counter -= done_operation;
-    /* second round to perform (+) or (-)*/
-    for(counter_logic = 0; counter_logic <= counter; counter_logic++){
+    else if(mode == 1){
         
-        switch(operations[counter_logic]){
-        case '+':
-            operands[counter_logic + 1] = operands[counter_logic] + operands[counter_logic + 1];
-            drop_array_uint8_ele(operations, counter_logic, counter);
-            drop_array_uint32_ele(operands, counter_logic, counter);
-            counter_logic--;
-            break;
-        case '-':
-            operands[counter_logic + 1] = operands[counter_logic] - operands[counter_logic + 1];
-            drop_array_uint8_ele(operations, counter_logic, counter);
-            drop_array_uint32_ele(operands, counter_logic, counter);
-            counter_logic--;
-            break;
-        default:
-            break;
+        Timer1_Read_Input_Capture_Unit_Value(&Timer1, &end_time);
+        //lcd_4bit_send_uint32_pos(&lcd, 4, 1, end_time);
+        Timer1_Input_capture_Change_Sense_Edge(&Timer1, INPUT_CAPTURE_UNIT_WITH_NOISE_CANCELER_SENSE_RISING_EDGE);
+        _time = end_time + start_time;
+        Timer1_Write_Value(&Timer1, 0);
+        end_time = 11;
+        start_time = 0;
+        mode = 0;
+        //lcd_4bit_send_uint32(&lcd, 2);
     }
-    
-    }
-    
-    //lcd_4bit_send_string_pos(&lcd, 2, 1, res);
-    convert_uint32_to_string(operands[0], str);
-    lcd_4bit_send_string(&lcd, str);
-    //lcd_4bit_send_string_pos(&lcd, 2, 1, str);
-    uint8 done[] = "Done";
-    lcd_4bit_send_string_pos(&lcd, 2, 1, done);
-    _delay_ms(3000);
-}
-
-void calculator_program_one_operation(void){
-    uint32 first_operand = 0;
-    uint8 first_operation = 0;
-    get_operand(&first_operand, &first_operation);
-    uint32 second_operand = 0;
-    uint8 second_operation = 0;
-    get_operand(&second_operand, &second_operation);
-    uint32 result = 0;
-    uint8 str[10];
-    
-    switch(first_operation){
-        case '*':
-            result = first_operand * second_operand;
-            convert_uint32_to_string(result, str);
-            if(second_operation == '='){
-                lcd_4bit_send_string_pos(&lcd, 2, 1, str);
-            }
-            break;
-        case '/':
-            result = (uint32)first_operand / (uint32)second_operand;
-            convert_uint32_to_string((uint32)result, str);
-            if(second_operation == '='){
-                lcd_4bit_send_string_pos(&lcd, 2, 1, str);
-            }
-            break;
-        case '+':
-            result = first_operand + second_operand;
-            convert_uint32_to_string(result, str);
-            if(second_operation == '='){
-                lcd_4bit_send_string_pos(&lcd, 2, 1, str);
-            }
-            break;
-        case '-':
-            result = first_operand - second_operand;
-            convert_uint32_to_string(result, str);
-            if(second_operation == '='){
-                lcd_4bit_send_string_pos(&lcd, 2, 1, str);
-            }
-            break;
-        default:
-            break;
+    else{
+        //lcd_4bit_send_uint32(&lcd, 3);
     }
     
 }
 
-void print_name_in_arabic(void){
-/* hesham*/
-    uint8 customha[] = {0x0F,0x09,0x0F,0x09,0x1F,0x00,0x00,0x00};
-    uint8 customsh[] = {0x04,0x0A,0x00,0x15,0x1F,0x00,0x00,0x00};
-    uint8 customaa[] = {0x08,0x08,0x08,0x08,0x0F,0x00,0x00,0x00};
-    uint8 custommme[] = {0x00,0x0E,0x02,0x0E,0x08,0x08,0x08,0x08};
-    uint8 custommms[] = {0x00,0x00,0x07,0x05,0x1F,0x00,0x00,0x00};
-    uint8 customha7[] = {0x00,0x00,0x0E,0x02,0x1F,0x00,0x00,0x00};
-    uint8 custommmb[] = {0x00,0x00,0x0E,0x0A,0x1F,0x00,0x00,0x00};
-    uint8 customdd[] = {0x00,0x00,0x0E,0x02,0x0F,0x00,0x00,0x00};
 
-    lcd_4bit_send_custom_char(&lcd, 1, 18,customha, 0);
-        lcd_4bit_send_custom_char(&lcd, 1, 17,customsh, 1);
-        lcd_4bit_send_custom_char(&lcd, 1, 16,customaa, 2);
-        lcd_4bit_send_custom_char(&lcd, 1, 15,custommme, 3);
-        lcd_4bit_send_char_data_pos(&lcd, 1, 14, ' ');
-        lcd_4bit_send_custom_char(&lcd, 1, 13,custommms, 4);
-        lcd_4bit_send_custom_char(&lcd, 1, 12,customha7, 5);
-        lcd_4bit_send_custom_char(&lcd, 1, 11,custommmb, 6);
-        lcd_4bit_send_custom_char(&lcd, 1, 10,customdd, 7);
+
+
+
+
+
+void Calculator_voidGetString(void)
+{
+	static uint8 op_flag = 0;
+	static uint8 sign_flag = 0;
+	uint8 key;
+    uint8 str_space[] = "                    ";
+    uint8 str_enter[] = "Enter your Equation:";
+    uint8 str_start[] = "";
+    
+    lcd_4bit_send_string_pos(&lcd, 1, 1, str_enter);
+    lcd_4bit_send_string_pos(&lcd, 2, 1, str_start);
+    keypad_get_value(&keypad, &key);
+    
+	if(key != NO_KEY)
+	{
+		if(clear_flag == 1)
+		{
+			clear_flag = 0;
+			numbers_arr_count = 0;
+			operations_arr_count = 0;
+			str_count = 0;
+			result = 0;
+            
+			for(int i = 0; str[i]; i++)
+			{
+				str[i] = 0;
+			}
+			for (int i = 0; i < 20; i++)
+			{
+				numbers_arr[i] = 0;
+				operations_arr[i] = 0;
+			}
+            lcd_4bit_send_string_pos(&lcd, 1, 1, str_space);
+			lcd_4bit_send_string_pos(&lcd, 2, 1, str_space);
+            lcd_4bit_send_string_pos(&lcd, 3, 1, str_space);
+            lcd_4bit_send_string_pos(&lcd, 4, 1, str_space);
+            lcd_4bit_send_string_pos(&lcd, 1, 1, str_enter);
+            lcd_4bit_send_string_pos(&lcd, 2, 1, str_start);
+		}
+        
+		if (str_count == 0)
+		{
+			if ((key >= '0') && (key <= '9'))
+			{
+				str[str_count] = key;
+				str_count++;
+			}
+			else if (key == '-')
+			{
+				str[str_count] = key;
+				str_count++;
+				sign_flag = 1;
+			}
+		}
+        
+		else if(str_count > 0)
+		{
+			if ((key >= '0') && (key<='9'))
+			{
+				str[str_count] = key;
+				str_count++;
+                // **************************************
+				sign_flag = 1;
+				op_flag = 0;
+			}
+			else if ( ( (key == '/')|| (key=='*') || (key=='-') || (key=='+') ) && (op_flag == 0) )
+			{
+				str[str_count] = key;
+				str_count++;
+				op_flag = 1;
+				sign_flag = 0;
+			}
+			else if( (sign_flag == 0) && (key == '-') && (op_flag == 1) )
+			{
+				str[str_count] = key;
+				str_count++;
+				sign_flag = 1;
+			}
+			else if ( ((key == '/') || (key == '*') || (key == '-') || (key == '+'))  && (op_flag == 1) && (sign_flag == 0) )
+			{
+				str_count--;
+				str[str_count] = key;
+				str_count++;
+			}
+			else if (key == '#')
+			{
+                
+				str_count--;
+				str[str_count] = 0;
+				if((str[str_count-2] == '*' || str[str_count-2] == '/' || str[str_count-2] == '-' || str[str_count-2] == '+') && str[str_count-1] == '-')
+				{
+					sign_flag = 1;
+					op_flag = 1;
+				}
+				else if(str[str_count-1] == '*' || str[str_count-1] == '/' || str[str_count-1] == '-' || str[str_count-1] == '+')
+				{
+					sign_flag = 0;
+					op_flag = 1;
+				}
+                
+			}
+			
+		}
+        
+		if( (str_count == 40) || (key == '='))
+		{
+			eq_flag = 1;
+		}
+		
+	}
 }
 
-void lcd_print_hamoksa(void){
-    uint8 custom1[] = {0x04,0x0E,0x04,0x0E,0x15,0x04,0x0A,0x00};
-    uint8 custom2[] = {0x04,0x0E,0x05,0x0E,0x14,0x04,0x0A,0x00};   
-    uint8 custom3[] = {0x04,0x0E,0x15,0x0E,0x04,0x04,0x0A,0x00};     
-    uint8 custom4[] = {0x04,0x0E,0x05,0x0E,0x14,0x04,0x0A,0x00};
-   
-    lcd_4bit_send_custom_char(&lcd, 1, 1,custom1, 1);
-    _delay_ms(500);
-    lcd_4bit_send_custom_char(&lcd, 1, 1,custom2, 1);
-    _delay_ms(500);
-    lcd_4bit_send_custom_char(&lcd, 1, 1,custom3, 1);
-    _delay_ms(500);
-    lcd_4bit_send_custom_char(&lcd, 1, 1,custom4, 1);
-    _delay_ms(500);
+void Calculator_voidAnalysisString(void)
+{
+	uint8 sign_flag = 0;
+	for (int i = 0; i < str_count; i++)
+	{
+		if(str[i] == '-' && i==0)
+		{
+			sign_flag = 1;
+		}
+        
+		else if ((str[i] == '-') && (str[i-1] == '*' || str[i-1] == '/' || str[i-1] == '-' || str[i-1] == '+'))
+		{
+			sign_flag = 1;
+		}
+        
+		else if (str[i] == '*' || str[i] == '/' || str[i] == '+' || str[i] == '-')
+		{
+			operations_arr[operations_arr_count] = str[i];
+			if (sign_flag == 1)
+			{
+				numbers_arr[numbers_arr_count] = numbers_arr[numbers_arr_count] * (-1);
+				sign_flag = 0;
+			}
+			operations_arr_count++;
+			numbers_arr_count++;
+		}
+        
+		else if ( (str[i] >= '0') && (str[i] <= '9') )
+		{
+			numbers_arr[numbers_arr_count] = ( ( ((sint32)numbers_arr[numbers_arr_count]) * (sint32)10 ) + ( (sint32)(str[i] - '0') ) );
+		}
+
+	}
+    
+	if (sign_flag == 1)
+	{
+		numbers_arr[numbers_arr_count] = numbers_arr[numbers_arr_count] * (-1);
+		sign_flag = 0;
+	}
+		
 }
 
-void lcd_print_story(void){
-    uint8 custom1[] = {0x04,0x0E,0x04,0x0E,0x15,0x04,0x0A,0x00};
-    uint8 custom2[] = {0x04,0x0E,0x05,0x0E,0x14,0x04,0x0A,0x00};   
-    uint8 custom3[] = {0x04,0x0E,0x15,0x0E,0x04,0x04,0x0A,0x00};     
-    uint8 custom4[] = {0x04,0x0E,0x05,0x0E,0x14,0x04,0x0A,0x00};
-   
-    uint8 str_1[] = " Hello This is Story"; 
-    uint8 str_2[] = "My Name is Hesham";
-    
-    lcd_4bit_send_string_pos(&lcd, 2, 1, str_1);
-    lcd_4bit_send_string_pos(&lcd, 4, 1, str_2);
-    
-    lcd_4bit_send_custom_char(&lcd, 1, 1,custom1, 1);
-    _delay_ms(250);
-    lcd_4bit_send_custom_char(&lcd, 1, 1,custom2, 1);
-    _delay_ms(250);
-    lcd_4bit_send_custom_char(&lcd, 1, 1,custom3, 1);
-    _delay_ms(250);
-    lcd_4bit_send_custom_char(&lcd, 1, 1,custom4, 1);
-    _delay_ms(250);
-    
-    
-    
-    
+void Calculator_voidCalculate(void)
+{
+	sint8 index = -1;
+	uint8 switch_flag = 0;
+	while(operations_arr_count != 0)
+	{
+		if (switch_flag == 0)
+		{
+			for (uint8 i = 0; i < operations_arr_count; i++)
+			{
+				switch_flag = 1;
+				if(operations_arr[i] == '*')
+				{
+					numbers_arr[i] = numbers_arr[i] * numbers_arr[i+1];
+					index = i;
+					operations_arr_count--;
+					switch_flag = 0;
+					break;
+				}
+                
+				else if(operations_arr[i] == '/')
+				{
+					numbers_arr[i] = numbers_arr[i] / numbers_arr[i+1];
+					index = i;
+					operations_arr_count--;
+					switch_flag = 0;
+					break;
+				}
+			}
+		}
+		else
+		{
+			for (uint8 i = 0; i < operations_arr_count; i++)
+			{
+				switch_flag = 1;
+				if(operations_arr[i] == '+')
+				{
+					numbers_arr[i] = numbers_arr[i] + numbers_arr[i+1];
+					index = i;
+					operations_arr_count--;
+					switch_flag = 0;
+					break;
+				}
+				else if(operations_arr[i] == '-')
+				{
+					numbers_arr[i] = numbers_arr[i] - numbers_arr[i+1];
+					index = i;
+					operations_arr_count--;
+					switch_flag = 0;
+					break;
+				}
+			}
+		}
+		
+		if(index != (-1))
+		{
+			for (uint8 i = index; i < operations_arr_count; i++)
+			{
+				operations_arr[i] = operations_arr[i+1];
+			}
+			for(uint8 i = index + 1; i <= operations_arr_count; i++)
+			{
+				numbers_arr[i] = numbers_arr[i+1];
+			}
+			index = -1;
+		}
+	}
+	result = numbers_arr[0];
+	
 }
-#endif
+void Calculator_voidRunable(void)
+{
+	Calculator_voidGetString();
+    lcd_4bit_send_string_pos(&lcd, 2, 1, str);
+	if (eq_flag == 1)
+	{
+		Calculator_voidAnalysisString();
+		Calculator_voidCalculate();
+        lcd_4bit_send_char_data_pos(&lcd,3, 1, '=');
+        lcd_4bit_send_uint32(&lcd, result);
+		clear_flag = 1;
+		eq_flag = 0;
+	}
+	
+}
